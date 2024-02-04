@@ -71,10 +71,10 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Documentation',
+            label: 'Documentación',
           },
           {
-            href: 'https://github.com/nicoloboo02/htld-doc',
+            href: 'https://github.com/ISPP-07/htld-doc',
             label: 'GitHub',
             position: 'right',
           },
@@ -88,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'Docu',
-                to: '/docs/Presentations',
+                to: '/docs/Inicio',
               },
             ],
           },
