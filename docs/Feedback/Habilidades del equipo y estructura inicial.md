@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Análisis de costes
+# Habilidades del equipo y estructura inicial
 
 ## Semana 1
 
