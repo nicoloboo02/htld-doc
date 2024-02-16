@@ -76,7 +76,7 @@ function ImportantDocument() {
 function Deployment() {
   const deployments = [
     {
-      name: "Docosaurus",
+      name: "Docusaurus",
       github: "https://github.com/ISPP-07/htld-doc.git",
       url_deploy: "https://htld-doc.vercel.app/",
     },
@@ -117,7 +117,7 @@ function Team() {
     },
     {
       name: "Álvaro González",
-      role: "Backend/Documentación/Gestión/QA",
+      role: "Backend/Documentación/QA",
       team: "Xtreme",
       photo: "/img/team/Alvaro_Gonzalez.png",
     },
@@ -183,7 +183,7 @@ function Team() {
     },
     {
       name: "Joaquín Martín",
-      role: "Backend/DevOps/Gestión",
+      role: "Backend/DevOps",
       team: "Beti",
       photo: "/img/team/Joaquin_Martin.png",
     },
