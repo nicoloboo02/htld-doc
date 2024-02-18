@@ -1,17 +1,23 @@
 ---
-id: registro-uso-ia-semanal-1
+id: registro-estadisticas-semanal-1
 title: Estadísticas - Semana 1
 sidebar_label: Estadísticas - Semana 1
 ---
 
 ## Registro de estadísticas de la semana 1
 
-A continuación, mostraremos las estadísticas de la semana del martes 6 al martes 13 de febrero de las distintas herramientas usadas por el equipo.
+A continuación, mostraremos las estadísticas de la semana del martes 30 de enero al martes 6 de febrero de las distintas herramientas usadas por el equipo.
 
-### Discord
+### Clockify
 
-##### Estadísticas generales
+| Reloj de proyecto                                                                 |
+| --------------------------------------------------------------------------------- |
+| ![Estadística reloj de grupo](/img/stats/06-02-2024/06-02-2024_relojProyecto.png) |
 
-| Texto                                                                                                          | Voz                                                                                                       |
-| -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| ![Estadística canales de texto más utilizados](/img/stats/13-02-2024/13-02-2024_canalesMasUsadosMensajes.jpeg) | ![Estadística canales de texto más utilizados](/img/stats/13-02-2024/13-02-2024_canalesMasUsadosVoz.jpeg) |
+| Reloj de subgrupos                                                                    |
+| ------------------------------------------------------------------------------------- |
+| ![Estadística reloj de subgrupo](/img/stats/06-02-2024/06-02-2024_relojSubgrupos.png) |
+
+| Horas trabajadas por día                                                                   |
+| ------------------------------------------------------------------------------------------ |
+| ![Estadística horas trabajadas por día](/img/stats/06-02-2024/06-02-2024_horasPorDias.png) |
