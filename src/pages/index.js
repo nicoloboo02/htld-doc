@@ -4,8 +4,6 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import Layout from "@theme/Layout"
 import Heading from "@theme/Heading"
 import styles from "./index.module.css"
-import { DocumentTextIcon } from "@heroicons/react/16/solid"
-import { SyncLoopHook } from "tapable"
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
