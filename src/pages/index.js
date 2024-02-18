@@ -2,9 +2,10 @@ import clsx from "clsx"
 import Link from "@docusaurus/Link"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import Layout from "@theme/Layout"
-
 import Heading from "@theme/Heading"
 import styles from "./index.module.css"
+import { DocumentTextIcon } from "@heroicons/react/16/solid"
+import { SyncLoopHook } from "tapable"
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
@@ -40,11 +41,11 @@ function HomepageHeader() {
 function ImportantDocument() {
   const documents = [
     {
-      name: "Documento de seguimiento del trabajo",
+      name: "Seguimiento del trabajo",
       url: "https://docs.google.com/spreadsheets/d/1wenixfjYUJOmG16ldb2o3kzurWDMY2AhNgM4goYPjB4/edit?usp=sharing",
     },
     {
-      name: "Documento de elicitación de requisitos funcionales",
+      name: "Elicitación de requisitos funcionales",
       url: "https://docs.google.com/document/d/16CpuOSAWVfMQ9BDRWoI0MiRYzeobkLTmaGbiyQ0F3Ec/edit",
     },
     {
@@ -62,13 +63,18 @@ function ImportantDocument() {
       className={clsx("important-documents", styles.importantDocuments)}
     >
       <h2>Documentos relevantes</h2>
-      <ul className='container'>
+      <div className={clsx("row", styles.row)}>
         {documents.map((document, index) => (
-          <li key={index}>
-            <Link to={document.url}>{document.name}</Link>
-          </li>
+          <article className='col col--3 margin--lg' key={index}>
+            <a
+              href={document.url}
+              className={clsx("card padding--lg cardContainer", styles.card)}
+            >
+              <h3 className='cardTitle'>📄 {document.name}</h3>
+            </a>
+          </article>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
@@ -84,19 +90,23 @@ function Deployment() {
   return (
     <div id='deploy' className={clsx("deploy", styles.deploy)}>
       <h2>Despliegues</h2>
-      <ul className='container'>
+      <div className={clsx("row", styles.row)}>
         {deployments.map((deploy, index) => (
-          <li key={index}>
-            <h3>{deploy.name}</h3>
-            <p>
-              GitHub: <a href={deploy.github}>{deploy.github}</a>
-            </p>
-            <p>
-              Desplegado en: <a href={deploy.url_deploy}>{deploy.url_deploy}</a>
-            </p>
-          </li>
+          <article className='col col--3 margin--lg' key={index}>
+            <div className={clsx("card padding--lg cardContainer", styles)}>
+              <h3 className='cardTitle'> {deploy.name}</h3>
+              <div className=''>
+                <a href={deploy.github} className={clsx("tag", styles.tag)}>
+                  GitHub
+                </a>
+                <a href={deploy.url_deploy} className={clsx("tag", styles.tag)}>
+                  Desplegado en
+                </a>
+              </div>
+            </div>
+          </article>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
@@ -217,13 +227,17 @@ function Team() {
             .map(member => (
               <div
                 key={member.name}
-                className={clsx("card-member", styles.cardMember)}
+                className={clsx(
+                  "card card-member",
+                  styles.cardMember,
+                  styles.card
+                )}
               >
                 <img src={member.photo} alt={member.name} />
                 <h6>{member.name}</h6>
                 <div>
                   {member.role.split("/").map((role, index) => (
-                    <span key={index} className={clsx(styles.roleTag)}>
+                    <span key={index} className={clsx(styles.tag)}>
                       {role}
                     </span>
                   ))}
@@ -238,13 +252,17 @@ function Team() {
             .map(member => (
               <div
                 key={member.name}
-                className={clsx("card-member", styles.cardMember)}
+                className={clsx(
+                  "card card-member",
+                  styles.cardMember,
+                  styles.card
+                )}
               >
                 <img src={member.photo} alt={member.name} />
                 <h6>{member.name}</h6>
                 <div>
                   {member.role.split("/").map((role, index) => (
-                    <span key={index} className={clsx(styles.roleTag)}>
+                    <span key={index} className={clsx(styles.tag)}>
                       {role}
                     </span>
                   ))}
@@ -259,13 +277,17 @@ function Team() {
             .map(member => (
               <div
                 key={member.name}
-                className={clsx("card-member", styles.cardMember)}
+                className={clsx(
+                  "card card-member",
+                  styles.cardMember,
+                  styles.card
+                )}
               >
                 <img src={member.photo} alt={member.name} />
                 <h6>{member.name}</h6>
                 <div>
                   {member.role.split("/").map((role, index) => (
-                    <span key={index} className={clsx(styles.roleTag)}>
+                    <span key={index} className={clsx(styles.tag)}>
                       {role}
                     </span>
                   ))}
