@@ -28,7 +28,8 @@ not(.dark) {
 }
 
 .card:hover,
-a:hover {
+a:hover,
+not(.navbar__item) {
   text-decoration: none;
   color: #606770;
   border-color: #cda569;
