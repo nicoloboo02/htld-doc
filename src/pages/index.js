@@ -43,12 +43,16 @@ function ImportantDocument() {
       url: "https://docs.google.com/spreadsheets/d/1wenixfjYUJOmG16ldb2o3kzurWDMY2AhNgM4goYPjB4/edit?usp=sharing",
     },
     {
-      name: "Elicitación de requisitos funcionales",
-      url: "https://docs.google.com/document/d/16CpuOSAWVfMQ9BDRWoI0MiRYzeobkLTmaGbiyQ0F3Ec/edit",
+      name: "Registro de requisitos",
+      url: "https://docs.google.com/document/d/1UX2aOw7Kbl1Abjg2I6Kup_tTIYTTHn5OPGxnu6Ij6No/edit?usp=sharing",
     },
     {
       name: "Documento del TCO",
       url: "https://docs.google.com/document/d/15Ec0rVvs0WLzxw44X9O8tN76Bq3HA88E3nXJo9LWjZk/edit",
+    },
+    {
+      name: "Documentos de uso de la IA",
+      url: "docs/category/uso-de-ia",
     },
     {
       name: "Documentos de uso de la IA",
