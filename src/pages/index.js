@@ -28,7 +28,7 @@ function HomepageHeader() {
             className='button button--secondary button--lg'
             to='/docs/Inicio'
           >
-            Acceso a la documentación
+            Acceso a la Analista
           </Link>
         </div>
       </div>
@@ -55,8 +55,8 @@ function ImportantDocument() {
       url: "docs/category/uso-de-ia",
     },
     {
-      name: "Documentos de uso de la IA",
-      url: "docs/category/uso-de-ia",
+      name: "Estadísticas del equipo",
+      url: "docs/category/estadísticas",
     },
   ]
   return (
@@ -64,18 +64,20 @@ function ImportantDocument() {
       id='importantDocuments'
       className={clsx("important-documents", styles.importantDocuments)}
     >
-      <h2>Documentos relevantes</h2>
-      <div className={clsx("row", styles.row)}>
-        {documents.map((document, index) => (
-          <article className='col col--3 margin--lg' key={index}>
-            <a
-              href={document.url}
-              className={clsx("card padding--lg cardContainer", styles.card)}
-            >
-              <h3 className='cardTitle'>📄 {document.name}</h3>
-            </a>
-          </article>
-        ))}
+      <div className='container'>
+        <h2>Documentos relevantes</h2>
+        <div className={clsx("row", styles.row)}>
+          {documents.map((document, index) => (
+            <article className='col col--3 margin--lg' key={index}>
+              <a
+                href={document.url}
+                className={clsx("card padding--lg cardContainer", styles.card)}
+              >
+                <h3 className='cardTitle'>📄 {document.name}</h3>
+              </a>
+            </article>
+          ))}
+        </div>
       </div>
     </div>
   )
@@ -91,23 +93,28 @@ function Deployment() {
   ]
   return (
     <div id='deploy' className={clsx("deploy", styles.deploy)}>
-      <h2>Despliegues</h2>
-      <div className={clsx("row", styles.row)}>
-        {deployments.map((deploy, index) => (
-          <article className='col col--3 margin--lg' key={index}>
-            <div className={clsx("card padding--lg cardContainer", styles)}>
-              <h3 className='cardTitle'> {deploy.name}</h3>
-              <div className=''>
-                <a href={deploy.github} className={clsx("tag", styles.tag)}>
-                  GitHub
-                </a>
-                <a href={deploy.url_deploy} className={clsx("tag", styles.tag)}>
-                  Desplegado en
-                </a>
+      <div className='container'>
+        <h2>Despliegues</h2>
+        <div className={clsx("row", styles.row)}>
+          {deployments.map((deploy, index) => (
+            <article className='col col--3 margin--lg' key={index}>
+              <div className={clsx("card padding--lg cardContainer", styles)}>
+                <h3 className='cardTitle'> {deploy.name}</h3>
+                <div className=''>
+                  <a href={deploy.github} className={clsx("tag", styles.tag)}>
+                    GitHub
+                  </a>
+                  <a
+                    href={deploy.url_deploy}
+                    className={clsx("tag", styles.tag)}
+                  >
+                    Desplegado en
+                  </a>
+                </div>
               </div>
-            </div>
-          </article>
-        ))}
+            </article>
+          ))}
+        </div>
       </div>
     </div>
   )
@@ -117,79 +124,79 @@ function Team() {
   const teamMembers = [
     {
       name: "Alejandro Medina",
-      role: "Documentación/Gestión",
+      role: "Analista/Gestión",
       team: "Xtreme",
       photo: "/img/team/Alejandro_Medina.png",
     },
     {
       name: "Álvaro Bernal",
-      role: "Documentación/Gestión/QA",
+      role: "Analista/Gestión/QA",
       team: "Xtreme",
       photo: "/img/team/Alvaro_Bernal.png",
     },
     {
       name: "Álvaro González",
-      role: "Backend/Documentación/QA",
+      role: "Backend/Analista/QA",
       team: "Xtreme",
       photo: "/img/team/Alvaro_Gonzalez.png",
     },
     {
       name: "Gonzalo Campos",
-      role: "Backend/DevOps/Documentación",
+      role: "Backend/DevOps/Analista",
       team: "Xtreme",
       photo: "/img/team/Gonzalo_Campos.png",
     },
     {
       name: "Ronald Montoya",
-      role: "Frontend/Documentación",
+      role: "Frontend/Analista",
       team: "Xtreme",
       photo: "/img/team/Ronald_Montoya.png",
     },
     {
       name: "Alejandro Gallardo",
-      role: "Backend/Documentación",
+      role: "Backend/Analista",
       team: "España",
       photo: "/img/team/Alejandro_Gallardo.png",
     },
     {
       name: "Antonio Rodríguez",
-      role: "Documentación/Gestión/QA",
+      role: "Analista/Gestión/QA",
       team: "España",
       photo: "/img/team/Antonio_Rodriguez.png",
     },
     {
       name: "David Gavira",
-      role: "Backend/Documentación",
+      role: "Backend/Analista",
       team: "España",
       photo: "/img/team/David_Gavira.png",
     },
     {
       name: "Francisco Benítez",
-      role: "Frontend/Documentación/QA",
+      role: "Frontend/Analista/QA",
       team: "España",
       photo: "/img/team/Francisco_Benitez.png",
     },
     {
       name: "Javier García",
-      role: "Frontend/Documentación",
+      role: "Frontend/Analista",
       team: "España",
       photo: "/img/team/Javier_Garcia.png",
     },
     {
       name: "Manuel García",
-      role: "Frontend/Documentación",
+      role: "Frontend/Analista",
       team: "España",
       photo: "/img/team/Manuel_Garcia.png",
     },
     {
       name: "Nicolás Herrera",
-      role: "Frontend/Documentación",
+      role: "Frontend/Analista",
       team: "España",
       photo: "/img/team/Nicolas_Herrera.png",
     },
     {
       name: "Alberto López",
-      role: "Backend/Documentación/QA",
+      role: "Backend/Analista/QA",
       team: "Beti",
       photo: "/img/team/Alberto_Lopez.png",
     },
@@ -201,27 +208,27 @@ function Team() {
     },
     {
       name: "José María García",
-      role: "Backend/Documentación/QA",
+      role: "Backend/Analista/QA",
       team: "Beti",
       photo: "/img/team/Jose_Maria_Garcia.png",
     },
     {
       name: "José Míguel García",
-      role: "Frontend/Documentación",
+      role: "Frontend/Analista",
       team: "Beti",
       photo: "/img/team/Jose_Miguel_Garcia.png",
     },
     {
       name: "Marco Chasco",
-      role: "Documentación/Gestión",
+      role: "Analista/Gestión",
       team: "Beti",
       photo: "/img/team/Marco_Chasco.png",
     },
   ]
   return (
     <div id='teams' className={clsx("meet-us", styles.meetUs)}>
-      <h2>Conoce al equipo</h2>
       <div className='container'>
+        <h2>Conoce al equipo</h2>
         <h4>Xtreme</h4>
         <div className={clsx("card-container", styles.cardContainer)}>
           {teamMembers
