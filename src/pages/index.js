@@ -28,7 +28,7 @@ function HomepageHeader() {
             className='button button--secondary button--lg'
             to='/docs/Inicio'
           >
-            Acceso a la Analista
+            Acceso a la documentación
           </Link>
         </div>
       </div>
