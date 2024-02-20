@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Uso de la IA por Alvaro Gonzales - 16/02/24
+# Uso de la IA por Alvaro Gonzalez - 16/02/24
 
 ## Desafío a solucionar
 
