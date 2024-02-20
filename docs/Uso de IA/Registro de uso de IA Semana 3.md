@@ -11,6 +11,7 @@ sidebar_label: Registro de Uso de IA - Semana 3
 | 2024-02-15 | Joaquín Martín | Perplexity, ChatGPT | [Consulta](https://chat.openai.com/share/49826c75-1325-4296-8308-da3faa2522a8) | 15 min | [Detalles](Detalles/2024-02-15_Joaquin) |
 | 2024-02-16 | Fran Benítez | ChatGPT | [Consulta](https://chat.openai.com/share/f07e536a-09bc-409b-9f00-7dd225220ae2) | 30 min | [Detalles](Detalles/2024-02-16-Fran-1) |
 | 2024-02-16 | Fran Benítez | ChatGPT | [Consulta](https://chat.openai.com/share/3fd45cfd-435a-4953-b28b-a857e45834dd) | 1 hora | [Detalles](Detalles/2024-02-16_Fran_2) |
+| 2024-02-15 | José Miguel García | Visily.ai | [Mockups](https://app.visily.ai/projects/674d461c-3e09-4831-98e5-abc2d86e4ff5/boards/767506) | 15 min | [Detalles](Detalles/2024-02-15_JoseMiguelGarcía) |
 | 2024-02-16 | Marco Chasco | ChatGPT | [Consulta](https://chat.openai.com/share/fba90b18-3c13-47dd-86d1-4c0f7d426c5b) | 15 min | [Detalles](Detalles/2024-02-16_Marco) |
 | 2024-02-15 | Alejandro Medina | ChatGPT | [Consulta](https://chat.openai.com/share/985cab5b-8262-4c26-a40e-d29250f94bf7) | 3 horas | [Detalles](Detalles/2024-02-15_Prieto) |
 | 2024-02-17 | Jose María García | ChatGPT | [Consulta](https://chat.openai.com/share/c4d40134-fa1b-48b6-aa3f-9e1218dc7756) | 30 min | [Detalles](Detalles/2024-02-17_JoseMaría) |

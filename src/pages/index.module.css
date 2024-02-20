@@ -16,17 +16,33 @@
 }
 
 .heroImage {
-  max-width: 100%;
+  max-width: 20%;
   height: auto;
 }
 
-.card {
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 270px;
-  margin-top: 10px;
+.card,
+a {
+  text-decoration: none;
+  color: var(--ifm-text-color);
+}
+
+.card:hover,
+a:hover {
+  text-decoration: none;
+  color: #606770;
+  border-color: #cda569;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: initial;
+  color: initial;
+}
+
+nav a:hover {
+  border-color: initial;
+  box-shadow: initial;
 }
 
 .cardContainer {
@@ -52,7 +68,7 @@
   margin-top: 2rem;
 }
 
-.roleTag {
+.tag {
   display: inline-block;
   margin-right: 5px;
   margin-top: 5px;

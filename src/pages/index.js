@@ -2,7 +2,6 @@ import clsx from "clsx"
 import Link from "@docusaurus/Link"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import Layout from "@theme/Layout"
-
 import Heading from "@theme/Heading"
 import styles from "./index.module.css"
 
@@ -40,12 +39,12 @@ function HomepageHeader() {
 function ImportantDocument() {
   const documents = [
     {
-      name: "Documento de seguimiento del trabajo",
+      name: "Seguimiento del trabajo",
       url: "https://docs.google.com/spreadsheets/d/1wenixfjYUJOmG16ldb2o3kzurWDMY2AhNgM4goYPjB4/edit?usp=sharing",
     },
     {
-      name: "Documento de elicitación de requisitos funcionales",
-      url: "https://docs.google.com/document/d/16CpuOSAWVfMQ9BDRWoI0MiRYzeobkLTmaGbiyQ0F3Ec/edit",
+      name: "Registro de requisitos",
+      url: "https://docs.google.com/document/d/1UX2aOw7Kbl1Abjg2I6Kup_tTIYTTHn5OPGxnu6Ij6No/edit?usp=sharing",
     },
     {
       name: "Documento del TCO",
@@ -55,20 +54,31 @@ function ImportantDocument() {
       name: "Documentos de uso de la IA",
       url: "docs/category/uso-de-ia",
     },
+    {
+      name: "Estadísticas del equipo",
+      url: "docs/category/estadísticas",
+    },
   ]
   return (
     <div
       id='importantDocuments'
       className={clsx("important-documents", styles.importantDocuments)}
     >
-      <h2>Documentos relevantes</h2>
-      <ul className='container'>
-        {documents.map((document, index) => (
-          <li key={index}>
-            <Link to={document.url}>{document.name}</Link>
-          </li>
-        ))}
-      </ul>
+      <div className='container'>
+        <h2>Documentos relevantes</h2>
+        <div className={clsx("row", styles.row)}>
+          {documents.map((document, index) => (
+            <article className='col col--3 margin--lg' key={index}>
+              <a
+                href={document.url}
+                className={clsx("card padding--lg cardContainer", styles.card)}
+              >
+                <h3 className='cardTitle'>📄 {document.name}</h3>
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
@@ -83,20 +93,29 @@ function Deployment() {
   ]
   return (
     <div id='deploy' className={clsx("deploy", styles.deploy)}>
-      <h2>Despliegues</h2>
-      <ul className='container'>
-        {deployments.map((deploy, index) => (
-          <li key={index}>
-            <h3>{deploy.name}</h3>
-            <p>
-              GitHub: <a href={deploy.github}>{deploy.github}</a>
-            </p>
-            <p>
-              Desplegado en: <a href={deploy.url_deploy}>{deploy.url_deploy}</a>
-            </p>
-          </li>
-        ))}
-      </ul>
+      <div className='container'>
+        <h2>Despliegues</h2>
+        <div className={clsx("row", styles.row)}>
+          {deployments.map((deploy, index) => (
+            <article className='col col--3 margin--lg' key={index}>
+              <div className={clsx("card padding--lg cardContainer", styles)}>
+                <h3 className='cardTitle'> {deploy.name}</h3>
+                <div className=''>
+                  <a href={deploy.github} className={clsx("tag", styles.tag)}>
+                    GitHub
+                  </a>
+                  <a
+                    href={deploy.url_deploy}
+                    className={clsx("tag", styles.tag)}
+                  >
+                    Desplegado en
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
@@ -105,79 +124,79 @@ function Team() {
   const teamMembers = [
     {
       name: "Alejandro Medina",
-      role: "Documentación/Gestión",
+      role: "Analista/Gestión",
       team: "Xtreme",
       photo: "/img/team/Alejandro_Medina.png",
     },
     {
       name: "Álvaro Bernal",
-      role: "Documentación/Gestión/QA",
+      role: "Analista/Gestión/QA",
       team: "Xtreme",
       photo: "/img/team/Alvaro_Bernal.png",
     },
     {
       name: "Álvaro González",
-      role: "Backend/Documentación/QA",
+      role: "Backend/Analista/QA",
       team: "Xtreme",
       photo: "/img/team/Alvaro_Gonzalez.png",
     },
     {
       name: "Gonzalo Campos",
-      role: "Backend/DevOps/Documentación",
+      role: "Backend/DevOps/Analista",
       team: "Xtreme",
       photo: "/img/team/Gonzalo_Campos.png",
     },
     {
       name: "Ronald Montoya",
-      role: "Frontend/Documentación",
+      role: "Frontend/Analista",
       team: "Xtreme",
       photo: "/img/team/Ronald_Montoya.png",
     },
     {
       name: "Alejandro Gallardo",
-      role: "Backend/Documentación",
+      role: "Backend/Analista",
       team: "España",
       photo: "/img/team/Alejandro_Gallardo.png",
     },
     {
       name: "Antonio Rodríguez",
-      role: "Documentación/Gestión/QA",
+      role: "Analista/Gestión/QA",
       team: "España",
       photo: "/img/team/Antonio_Rodriguez.png",
     },
     {
       name: "David Gavira",
-      role: "Backend/Documentación",
+      role: "Backend/Analista",
       team: "España",
       photo: "/img/team/David_Gavira.png",
     },
     {
       name: "Francisco Benítez",
-      role: "Frontend/Documentación/QA",
+      role: "Frontend/Analista/QA",
       team: "España",
       photo: "/img/team/Francisco_Benitez.png",
     },
     {
       name: "Javier García",
-      role: "Frontend/Documentación",
+      role: "Frontend/Analista",
       team: "España",
       photo: "/img/team/Javier_Garcia.png",
     },
     {
       name: "Manuel García",
-      role: "Frontend/Documentación",
+      role: "Frontend/Analista",
       team: "España",
       photo: "/img/team/Manuel_Garcia.png",
     },
     {
       name: "Nicolás Herrera",
-      role: "Frontend/Documentación",
+      role: "Frontend/Analista",
       team: "España",
       photo: "/img/team/Nicolas_Herrera.png",
     },
     {
       name: "Alberto López",
-      role: "Backend/Documentación/QA",
+      role: "Backend/Analista/QA",
       team: "Beti",
       photo: "/img/team/Alberto_Lopez.png",
     },
@@ -189,27 +208,27 @@ function Team() {
     },
     {
       name: "José María García",
-      role: "Backend/Documentación/QA",
+      role: "Backend/Analista/QA",
       team: "Beti",
       photo: "/img/team/Jose_Maria_Garcia.png",
     },
     {
       name: "José Míguel García",
-      role: "Frontend/Documentación",
+      role: "Frontend/Analista",
       team: "Beti",
       photo: "/img/team/Jose_Miguel_Garcia.png",
     },
     {
       name: "Marco Chasco",
-      role: "Documentación/Gestión",
+      role: "Analista/Gestión",
       team: "Beti",
       photo: "/img/team/Marco_Chasco.png",
     },
   ]
   return (
     <div id='teams' className={clsx("meet-us", styles.meetUs)}>
-      <h2>Conoce al equipo</h2>
       <div className='container'>
+        <h2>Conoce al equipo</h2>
         <h4>Xtreme</h4>
         <div className={clsx("card-container", styles.cardContainer)}>
           {teamMembers
@@ -217,13 +236,17 @@ function Team() {
             .map(member => (
               <div
                 key={member.name}
-                className={clsx("card-member", styles.cardMember)}
+                className={clsx(
+                  "card card-member",
+                  styles.cardMember,
+                  styles.card
+                )}
               >
                 <img src={member.photo} alt={member.name} />
                 <h6>{member.name}</h6>
                 <div>
                   {member.role.split("/").map((role, index) => (
-                    <span key={index} className={clsx(styles.roleTag)}>
+                    <span key={index} className={clsx(styles.tag)}>
                       {role}
                     </span>
                   ))}
@@ -238,13 +261,17 @@ function Team() {
             .map(member => (
               <div
                 key={member.name}
-                className={clsx("card-member", styles.cardMember)}
+                className={clsx(
+                  "card card-member",
+                  styles.cardMember,
+                  styles.card
+                )}
               >
                 <img src={member.photo} alt={member.name} />
                 <h6>{member.name}</h6>
                 <div>
                   {member.role.split("/").map((role, index) => (
-                    <span key={index} className={clsx(styles.roleTag)}>
+                    <span key={index} className={clsx(styles.tag)}>
                       {role}
                     </span>
                   ))}
@@ -259,13 +286,17 @@ function Team() {
             .map(member => (
               <div
                 key={member.name}
-                className={clsx("card-member", styles.cardMember)}
+                className={clsx(
+                  "card card-member",
+                  styles.cardMember,
+                  styles.card
+                )}
               >
                 <img src={member.photo} alt={member.name} />
                 <h6>{member.name}</h6>
                 <div>
                   {member.role.split("/").map((role, index) => (
-                    <span key={index} className={clsx(styles.roleTag)}>
+                    <span key={index} className={clsx(styles.tag)}>
                       {role}
                     </span>
                   ))}

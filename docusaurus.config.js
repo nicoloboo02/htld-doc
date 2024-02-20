@@ -8,8 +8,8 @@ import { themes as prismThemes } from "prism-react-renderer"
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Harmony LTD Documentation",
-  tagline: "Doc is cool",
+  title: "Harmony LTD Documentación",
+  tagline: "Documentación de la empresa Harmony LTD",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -30,8 +30,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "es",
+    locales: ["es"],
   },
 
   presets: [
@@ -61,9 +61,9 @@ const config = {
     ({
       // Replace with your project's social card
       navbar: {
-        title: "Home",
+        title: "Inicio",
         logo: {
-          alt: "My Site Logo",
+          alt: "Logo",
           src: "img/logo.png",
         },
         items: [
@@ -99,7 +99,7 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Documentación",
             items: [
               {
                 label: "Documentación",

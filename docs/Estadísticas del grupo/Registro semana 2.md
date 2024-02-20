@@ -40,6 +40,23 @@ Esta semana hemos añadido el día 8 de Febrero un bot en Discord que nos propor
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | ![Estadística personas más participativas en mensajes](/img/stats/13-02-2024/13-02-2024_personasMasMensajes.jpeg) | ![Estadística personas más participativas en canales de voz](/img/stats/13-02-2024/13-02-2024_personasMasVoz.jpeg) |
 
+```text
+Leyenda:
+    alvarob.c -> Álvaro Bernal
+    elninjaornitorrinco -> Nicolás Herrera
+    erflipao -> Antonio Rodríguez
+    jmartinacu -> Joaquín Martín
+    javigarcia_ -> Javier García
+    marcochasco -> Marco Chasco
+    bonder1 -> David Gavira
+    alvarogf10 -> Álvaro González
+    goncm -> Gonzalo Campos
+    dr.kenobi27 -> José María García
+    bycruxx -> Alberto López
+    thealexan28 -> Alejandro Gallardo
+    mangruiz -> Manuel García
+```
+
 ### Clockify
 
 | Reloj de proyecto                                                                 |
