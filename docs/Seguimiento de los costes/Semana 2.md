@@ -4,7 +4,7 @@ Para la semana 2 el número de horas total planificadas es de 170 horas.Teniendo
 
 | Reloj de proyecto                                                                 |
 | --------------------------------------------------------------------------------- |
-| ![Total reloj de semana 2](/img/costs/week2/week2-clockify.png) |
+|<img src="/img/costs/week2/week2-clockify.png" alt="Total reloj de semana 2" width="100%" height="100%"/>|
 
 
 Para las 170 horas planificadas, los costos teniendo en cuenta los distintos roles son los siguientes:

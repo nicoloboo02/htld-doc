@@ -4,7 +4,7 @@ Para la semana 3 el número de horas total planificadas es de 170 horas.Teniendo
 
 | Reloj de proyecto                                                                 |
 | --------------------------------------------------------------------------------- |
-| ![Total reloj de semana 3](/img/costs/week3/week3-clockify.png) |
+|<img src="/img/costs/week3/week3-clockify.png" alt="Total reloj de semana 3" width="100%" height="100%"/>|
 
 
 Para las 170 horas planificadas, los costos teniendo en cuenta los distintos roles son los siguientes:

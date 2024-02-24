@@ -4,7 +4,7 @@ Para la semana 1, el número total de horas planificadas es de 170 horas. Tenien
 
 | Reloj de proyecto                                                                 |
 | --------------------------------------------------------------------------------- |
-| ![Total reloj de semana 1](/img/costs/week1/week1-clockify.png) |
+|<img src="/img/costs/week1/week1-clockify.png" alt="Total reloj de semana 1" width="100%" height="100%"/> |
 
 
 Para las 170 horas planificadas, los costos teniendo en cuenta los distintos roles son los siguientes:
