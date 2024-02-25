@@ -58,6 +58,10 @@ function ImportantDocument() {
       name: "Estadísticas del equipo",
       url: "docs/category/estadísticas",
     },
+    {
+      name: "Seguimiento de costes",
+      url: "docs/category/costes-semanales",
+    },
   ]
   return (
     <div
