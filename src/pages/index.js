@@ -90,6 +90,18 @@ function Deployment() {
       github: "https://github.com/ISPP-07/htld-doc.git",
       url_deploy: "https://htld-doc.vercel.app/",
     },
+    {
+      name: "Backend",
+      github: "https://github.com/ISPP-07/backend.git",
+    },
+    {
+      name: "Frontend Cirio y Costal",
+      github: "https://github.com/ISPP-07/frontend-cyc.git",
+    },
+    {
+      name: "Frontend ACAT",
+      github: "https://github.com/ISPP-07/frontend-acat.git",
+    },
   ]
   return (
     <div id='deploy' className={clsx("deploy", styles.deploy)}>
@@ -101,15 +113,19 @@ function Deployment() {
               <div className={clsx("card padding--lg cardContainer", styles)}>
                 <h3 className='cardTitle'> {deploy.name}</h3>
                 <div className=''>
-                  <a href={deploy.github} className={clsx("tag", styles.tag)}>
-                    GitHub
-                  </a>
-                  <a
-                    href={deploy.url_deploy}
-                    className={clsx("tag", styles.tag)}
-                  >
-                    Desplegado en
-                  </a>
+                  {deploy.github ? (
+                    <a href={deploy.github} className={clsx("tag", styles.tag)}>
+                      GitHub
+                    </a>
+                  ) : null}
+                  {deploy.url_deploy ? (
+                    <a
+                      href={deploy.url_deploy}
+                      className={clsx("tag", styles.tag)}
+                    >
+                      Desplegado en
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </article>
