@@ -14,4 +14,4 @@ sidebar_label: Registro de Uso de IA - Semana 4
 
 | Miembro | Herramienta de IA | Contexto | Formato        | Para    | Tiempo ahorrado | Detalles                                |
 | ------- | ----------------- | -------- | -------------- | ------- | --------------- | --------------------------------------- |
-| Nicolas | Copilot           | Frontedn | Autocompletado | Feature | 1h (Código)     | [Detalles](Detalles/2024-02-26_Nicolas) |
+| Nicolas | Copilot           | Frontend | Autocompletado | Feature | 1h (Código)     | [Detalles](Detalles/2024-02-26_Nicolas) |
