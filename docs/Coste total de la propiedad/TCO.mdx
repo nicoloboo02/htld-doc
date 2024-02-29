@@ -13,7 +13,7 @@
 
 En este documento, se establece el coste total de la propiedad respectivo al proyecto. Para ello, se tiene en cuenta el precio de desarrollo del proyecto, y sus estimaciones de precio de mantenimiento y operación. Es decir que va más allá del precio inicial de compra y tiene más sentido si lo analizamos como un gasto a largo plazo.
 
-## 2. Costes de desarrollo del proyecto (Capex)
+## 2. Costes de capital (Capex)
 
 ### 2.1 Costes de personal
 
@@ -38,12 +38,12 @@ Para cada integrante del equipo, suponemos un portátil o equipo de un precio ap
 Coste total de material = 68.51 x 17 = 1164.67€
 
 
-### 2.3 Costes de desarrollo total
+### 2.3 Costes de adquisición total
 | Estimación de costes de desarrollo|
 | --------------------------------------------------------------------------------- |
 |<img src="/img/tco/estimacion-de-coste-de-desarrollo.png" alt="Total desarrollo" width="100%" height="100%"/> |
 
-El coste total de desarrollo del proyecto, teniendo en cuenta los costes de personal y de material:
+El coste total de desarrollo del proyecto, teniendo en cuenta los costes de personal y de material para el desarrollo:
 - Coste total de desarrollo = 33390.00€ + 1164.67€ = **34554.67€**
 
 ## 3. Costes de operación mensual (Opex)
@@ -130,12 +130,12 @@ En el siguiente gráfico, la “Opción1” representa la opción de un hosting 
 
 Finalmente, como buscamos el menor coste posible para las ONGs, nos decidimos por elegir la opción 2, que conlleva el despliegue del frontend en Vercel, el backend en AppEngine y la base de datos en PlanetScale, con un coste total mensual de 25,30€.
 
-### 3.2 Costes de personal
-En nuestro caso, teniendo en cuenta que tenemos una carga de usuarios mínima porque solamente utilizan el sistema los administradores de las ONG 'S, suponemos suficiente la contratación de 2 desarrolladores para el mantenimiento del sistema una vez esté en completo funcionamiento. 
+### 3.2 Costes de personal externo
+En nuestro caso, teniendo en cuenta que tenemos una carga de usuarios mínima porque solamente utilizan el sistema los administradores de las ONG 'S, suponemos suficiente la contratación de 2 desarrolladores externos a nosotros para el mantenimiento del sistema una vez esté en completo funcionamiento. 
 
 Como comentamos previamente, suponemos un sueldo de programador de 11.25 €/h. Suponemos también una dedicación de 5 horas semanales por desarrollador para el mantenimiento del sistema, por lo tanto el coste mensual de mantenimiento del sistema es de: 11.25 x 5 x 2 x 4 = 450.00€
 
-### 3.2 Costes de licencias
+### 3.2 Costes de licencias externas
 En este proyecto, para la CI/CD, se utiliza GitHub Actions, pues además se utiliza GitHub para el desarrollo de este. Hay que tener en cuenta que los repositorios de este proyecto son abiertos (open source), por lo que podemos contar con el plan gratuito que se ofrece en GitHub, sin tener que añadir así estos costes. En la siguiente imagen podemos ver qué nos ofrecen si nuestro repositorio es público. Suponemos que todo esto es suficiente para el correcto funcionamiento del sistema final.
 
 | GitHub Plan|
@@ -149,7 +149,7 @@ Aún así, en caso de que GitHub Actions dejase de ofrecer un plan gratuito para
 
 Como en la actualidad para los proyectos open source, como el nuestro, este plan es gratuito, en nuestro TCO actual los costes de la licencia de GitHub siguen siendo de 0€. 
 
-Además, el resto de herramientas que pueden necesitar los desarrolladores para la operación son de uso gratuito, como pueden ser los entornos de desarrollo integrados gratuitos como VSCode o sistemas de comunicación gratuitos como Discord.
+Además, el resto de herramientas que pueden necesitar los desarrolladores externos a nosotros para la operación son de uso gratuito, como pueden ser los entornos de desarrollo integrados gratuitos como VSCode o sistemas de comunicación gratuitos como Discord.
 
 ### 3.3 Costes de GDPR
 En este sistema, se tratan datos sensibles y personales sobre familiares o personas. Esto hace necesario la introducción de una serie de roles y responsabilidades para garantizar el cumplimiento de las normativas de protección de datos, Reglamento General de Protección de Datos (GDPR por sus siglas en inglés). 
