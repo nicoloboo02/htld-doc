@@ -154,7 +154,37 @@ Además, el resto de herramientas que pueden necesitar los desarrolladores exter
 ### 3.3 Costes de GDPR
 En este sistema, se tratan datos sensibles y personales sobre familiares o personas. Esto hace necesario la introducción de una serie de roles y responsabilidades para garantizar el cumplimiento de las normativas de protección de datos, Reglamento General de Protección de Datos (GDPR por sus siglas en inglés). 
 
-En nuestro caso, donde el sistema solamente va a ser utilizado por los administradores, y donde no va a haber una gran cantidad de usuarios, suponemos que es suficiente con la introducción de un Data Protection Officer (DPO). Suponemos también un sueldo medio de 22.50€ por hora, y una dedicación semanal de 10 horas. Por lo tanto, el coste mensual de GDPR es de: 22.50 x 10 x 4 = 900.00€
+### 3.4 Costes de SLA
+En nuestro caso, establecemos un SLA (Service Level Agreement) para el soporte al cliente que comprende la resolución de incidencias, solicitudes de usuarios y RFC (Request for Change) con los siguientes tiempos de respuesta (TTR):
+
+- **Resolución de Incidencias**: 30 minutos
+- **Solicitudes de Usuarios***: 60 minutos
+- **RFC**: 4 horas
+
+Además, se tiene en cuenta que la cantidad media de estos son:
+
+- **Resolución de Incidencias**: 50 peticiones/mes
+- **Solicitudes de Usuarios**: 20 peticiones/mes
+- **RFC**:2 petición/mes
+
+Para calcular los costes mensuales del SLA, primero calculamos el número total de horas dedicadas a cada tipo de servicio al mes:
+
+- **Resolución de Incidencias**: 25 horas/mes
+- **Solicitudes de Usuarios**: 20 horas/mes
+- **RFC**: 8 horas/mes
+
+Para el soporte al cliente se contratará a un técnico con un sueldo de 20€/hora, que se encargue de gestionarlo y dar solución a los problemas que puedan surgir.
+A continuación, calculamos los costes asociados a cada tipo de servicio:
+
+- **Resolución de Incidencias**: 25 x 20 = 500€
+- **Solicitudes de Usuarios**: 20 x 20 = 400€
+- **RFC**: 8 x 20 = 160€
+
+Por lo tanto, el coste total mensual del SLA sería:
+
+- **Coste total mensual del SLA**: 500€ + 400€ + 160€ = 1060€
+
+Este sería el costo mensual total de cumplir con el SLA para nuestro proyecto de software.
 
 ## 4. Costes de contingencia
 Hay que tener en cuenta que a la hora de analizar y prever los riesgos, también es necesario desarrollar un plan de contingencia para cada uno de ellos. Esto conlleva a que se tengan que dedicar una serie de costes para estos planes.  Para este sistema, suponemos un 15% de los costes totales a dedicar a los planes de contingencia, ya que se suele recomendar una cifra entre un 10% y un 20% de manera general.
@@ -173,8 +203,9 @@ Por lo tanto, teniendo en cuenta la estimación de costes de desarrollo del proy
 | OpEx   | Personal externo | 450.00€  | 5400.00€ (5.5K) |
 | OpEx   | Licencias externas | 0.00€ | 0.00€ (0K) |
 | OpEx   | GDPR | 900.00€ | 10800.00€ (10.9K)|
-| OpEx   | Contingencia | -  | 7658.75€ (7.7K) |
-| Total  | TCO | -  | **58717.02€ (60K)** |
+| OpEx   | SLA | 1060.00€  | 12720.00€ (12.8K) |
+|        | Contingencia | -  | 7658.75€ (7.7K) |
+| Total  | TCO | -  | **71437.02€ (71.5K)** |
 
 
-El coste total de la propiedad anual es de 60K.
+El coste total de la propiedad anual es de **71.5K**.
