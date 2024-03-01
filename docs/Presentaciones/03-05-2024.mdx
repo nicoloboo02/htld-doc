@@ -1,0 +1,150 @@
+# Guión para la presentación de evaluación del Sprint 1
+
+| Guión preliminar por | Presentador 1 | Presentador 2 | Tiempo |
+| -------------------- | ------------- | ------------- | ------ |
+| Antonio Rodriguez    | Fran Benítez  | Alberto Lopez | 15 min |
+
+## 1. Negocio (~ 3 min)
+
+### 1.1 Killer Opener + Elevator pitch (~ 1.5 min)
+
+_30 segundos para que se presenten un poco los presentadores contando algo de ellos interesante._
+
+[DIAPOSITIVA INICIAL CON NUESTRO LOGO]
+Somos Harmony y queremos traer la revolución al día a día a las ONG. Nuestra aplicación no es solo una herramienta, es un paso hacia delante en la ayuda social, reduciendo la carga administrativa y
+permitiendo a las ONG centrarse en lo que realmente importa: ayudar a quienes más lo necesitan.
+
+[DIAPOSITIVA ILUSTRATIVA DE UN CUADERNO Y FRUSTRACIÓN CON EXCEL]
+Y no hacemos esto a pasos de ciego, conocemos el problema. Hemos hablado con ONGs y hemos visto cómo se sienten frustradas por la dificultad de mantener todos sus datos con métodos anticuados como hojas de cálculo
+de Excel y registros a papel. Y no solo eso, sino que también les consume tiempo que de otra forma podrían dedicar a sus seres queridos y a ellos mismos.
+
+[DIAPOSITIVA CON LOS LOGOS DE ACAT Y CC]
+A dia de hoy ya proporcionamos nuestros servicios a ACAT (asociación ciudadana de ayuda al toxicómano), que se dedica a ayudar a personas con adicciones, y a Cirio y Costal que reparte alimentos a familias
+en situación de vulnerabilidad. Ambas hacen de nuestra comunidad un lugar mejor, y queremos que más ONGs se unan a este proyecto para hacer del mundo un lugar mejor.
+
+[DIAPOSITIVA DE GRAFICA HACIA ARRIBA]
+Desde Harmony, estamos comprometidos a llevar la gestión de nuestras ONG al siglo XXI, simplificando procesos, mejorando la comunicación interna y optimizando recursos para que puedan concentrarse en lo que realmente
+importa: ayudar a quienes más lo necesitan.
+
+- Transición con lo siguiente:
+  "Y por que confiar en nosotros?" (pasamos a la siguiente diapo)
+
+### Competidores (Herramientas existentes) (~ 40 segundos)
+
+Para empezar cada ONG es un mundo, cada una tiene sus necesidades particulares y por eso no creemos que haya una solución única.
+
+Nosotros hemos identificado dos entidades empresas que ofrecen gestión de alimentos e inventario para ONGs, como Stockio, una empresa española que porporciona un software para la gestión de inventarios y almacenes,
+pero no para la gestión de beneficiarios, cosa que si hace PantrySoft ademas de la gestion de inventario, pero que al estar basada en
+los Estados Unidos, no les garantiza a las ONGs espalñolas el cumplimiento de las leyes de proteccion de datos europeas.
+
+Y por otra parte existen una serie de herramientas Open Source que consideramos que podrían ser de utilidad para para la gestion de alimentos y beneficiarios de las ONGs, como django-CRM o CiviCRM,
+pero tras algo más de análisis hemos visto que estan mas orientadas a la gestion de clientes empresariales y que no se adaptan a las necesidades de las ONGs. Y es por ello que nosotros queremos ofrecer una solución
+más completa y adaptada a las necesidades de cada ONGs.
+
+### TCO (Total Cost of Ownership) (~ 40 segundos)
+
+Para el nuestro servicio hemos calculado un coste total de propiedad de unos 73.400€ en un periodo de 1 año, en el que el CapEx esta compuesto por los costes de personal, material y licencias.
+Y el OpEx por los costes despliegue, personal externo para el GDPR y el customer support, que se ha calculado teniendo en cuenta la prioridad y tipo de incidencias. Tambien hemos añadido al coste
+un fondo del 15% para planes de contingencia.
+
+Con respecto a las licencias cabe destacar que actualmente tienen un coste 0€ debido a la naturaleza Open Source de nuestro proyecto, pero si la politica cambiara hemos calculado un incremento de 26€ anuales.
+
+### Commitment Agreement (~ 15 segundos)
+
+_Repetir tabla de la semana pasada_
+
+Como podeis ver, hasta ahora hemos estado ha cumplido con el acuerdo de compromiso con un buen porcentaje, aunque alguna vez se ha tenido que aplicar nuestra politica de avisos, pero en general no encontramos
+ningun problema en el cumplimiento del mismo.
+
+## Prototipo (~ 2 min)
+
+**Incompleto todavia hasta el domingo o sabado noche**
+
+**Ideas**
+
+- Demo pregrabada de la aplicacion, explicando el estado del prototipo, que es fucional y que es "falso" (e.g. Clicar el boton de login y que te redirija del tiron a la pagina sin iniciar sesion)
+
+## Retrospectiva (~ 5.5 min)
+
+### Rendimiento (~ 1 min)
+
+Para medir el rendimiento de los desarrolladores que han hecho estas tareas, y del resto de miembros hemos definido metricas especificas para cada rol **Apoyarse en visual**, para los coordinadores una nota
+dada por el equipo en base a una serie de aspectos predefinidos, para QA basada en los errores encontrados en tareas despues de ser aprobadas, para los analistas basada en la puntuacion interna de sus tareas
+y para los desarrolladores en base a la calidad y complejidad de las tareas, para lo que tambien usamos puntos de historia.
+
+Finalmente hacemos una media de los roles desempeñados por una persona para sacar su nota esa semana.
+
+_Pasar a diapo con valores anonimos (Excepto miembros con mayor puntaje)_
+
+Aqui podemos observar la puntuacion de los diferentes miembros del equipo
+
+_Pasar diapo a una con grafico de excel de ronald a completar con las notas_
+
+Y con una grafica así podríamos ver la evolución de los miembros de nuestro equipo, que nos ayuda a juzgar si una persona se esfuerza continuamente, si mejora, o si empieza a fallar. Y esto es importante
+saberlo por que nos puede ayudar a identificar problemas interpersonales y de motivacion dentro del equipo.
+
+### Automatización de la calidad (~ 1 min)
+
+Ya solo nos falta medir la calidad de lo que estamos produciendo, y para ello usamos Codacy por una parte, que nos analiza el codigo de manera automatica en las distintas ramas y nos avisa si no seguimos los
+estánderes de calidad del codigo.
+
+_Pasar a diapo con valores de codacy_
+
+Con codacy estamos midiendo X e Y, y nos ayudamos de github actions para bloquear o permitir el merge de una rama si superan o no los estánderes de calidad.
+
+Y también integramos Bluejay, en este caso en los repositorios de backend y frontend de CyC para que nos ayude a medir y analizar el uso de buenas practicas de
+manejo de incidencias e integración de características en ambos repositorios.
+
+_Pasar a diapo con valores de bluejay_
+
+Con bluejay podemos medir que el flujo de las tareas sea de Todo, a en progreso creando una rama, a revisión con un pull request, y a done con un merge. Tambien nos ayuda a ver quienes participan en la revision
+de pull requests, si hacen comentarios positivos o negativos, si se aceptan finalmente o se rechazan, o si todo lo anterior sigue los estanderes de nomenclatura establecidos.
+
+_Diapo con stats_
+
+Y de aqui podemos ver que en el caso de CyC se cumplen todos los estanderes que se han podido medir hasta el momento, mientras que en backend tenemos que mejorar en relacionar las PR con los issues.
+
+### Problemas y soluciones (~ 2 min 50 seg)
+
+Y a pesar de estar midiendo todo esto, aveces se nos escapan cosas y durante este primer Sprint hemos tenido problemas con la comunicación y planificacion, que nos han generado los siguientes problemas:
+
+_Fotos de Al como apoyo_
+
+- Durante la planificación del Diccionario de la EDT no se tuvieron bien en cuenta las dependencias entre las tareas de backend y de frontend, lo que llevo a nustro equipo de frontend a congelar el progreso
+  de sus tareas. Se discutió entre varios miembros del equipo y se propuso replanificar las tareas de frontend, y usar MockAPI para simular llamadas a la API de backend. Como la segunda opción suponia menos
+  replanificación y permitia continuar el trabajo inmediatamente, decidimos ir con esta opción.
+
+- Por otra parte durante la semana 1 del Sprint 1 nos reunimos con ACAT y CyC para repasar los requisitos que habiamos definido y aclarar dudas. Durante esas reuniones se recogieron cambios en el modelo de datos
+  que backend implemento, pero que no se comunicaron a frontend de manera correcta, lo que llevo a conflictos entre lo que frontend defenia en sus formularios y vistas de detalles y lo que backend estaba haciendo.
+
+- Este problema viene tambien acompañado de un segundo a causa de fallos en la comunicacion nuevamente: Frontend esperaba tener versiones de la API desplegadas para poder conectar backend en entorno de desarrollo,
+  y backend tenia entendido que la API se iba a desplegar localmente para el desarrollo y no hacia falta en staging con urgencia. Esto llevo a que frontend no pudiera probar sus cambios en un entorno real y
+  el trabajo se retrasara sustancialmente.
+
+- Para solucionar estos ultimos problemas se hizo una reunion urgente con un representante de frontend, uno de backend y un coordinador a modo de mediador para aclarar malentendidos, establecer nuevas tareas para
+  solucionar los fallos, revisar los procesos de comunicacion y establecer un "vigilante", que tendra como responsabilidad asegurarse de que la comunicacion entre ambos equipos sea fluida y que cualquier cambio
+  que conlleve a una dependencia entre ambos equipos sea comunicado de manera inmediata.
+
+- Tambien nos hemos encontrado con el problema de la organización de documentos que se estaban amontonando en GDrive, que lo hemos solucionado comenzando a transicionar la documentacion a docosaurus,
+  donde es mucho mas facil navegar y hacer búsquedas para encontrar la informacion que necesitamos a veces y no esta en un solo documento.
+
+Esto nos viene genial para hablar tambien del estado de los riesgos, y es que con respecto a la semana pasada hemos mitigado por el momento el riesgo en el cambio de requisitos por parte del cliente
+gracias a una replanificación de los Sprint 2 y 3, pero con respecto a otros las cosas no han ido tan bien. Por una parte han entrado en advertencia los riesgos de una mala definicion de requisitos, por
+el conflicto que hemos comentado antes del modelo de datos, y el riesgo de retrasos en entrega debido al retraso de tareas durante este Sprint. Por último la semana pasada ya teníamos en advertencia el riesgo
+de fallos en la comunicación, y durante esta semana ha empeorado, sin entrar en estado grave ya que las medidas que hemos tomado han estado surgiendo efecto en los ultimos dias.
+
+### Reloj de avance del proyecto (~ 40 min)
+
+_Cuando este ready ponerlo aqui_
+
+Al inicio del Sprint 1 teníamos una diferencia de 170 horas entre el tiempo planificado y el real, principalmente debido a la mala planificación y estimación de la complejidad de las tareas,
+acompañado con problemas de comunicación internas que nos obligo a rehacer muchas tareas, y al tiempo que se tuvo que dedicar a la comunicación con el cliente.
+
+Actualmente nos encontramos con una diferencia de X horas, Y de las cuales Y durante este Sprint, debido a problemas de comunicacion que de nuevo nos han llevado a dedicar mas tiempo del esperado
+a algunas tareas, y por tanto al Z% del reloj del proyecto.
+
+## Planificación (~ 2.5 min)
+
+## Usuarios Piloto (~ 1.5 min)
+
+## Uso de la IA (~ 30 seg)
