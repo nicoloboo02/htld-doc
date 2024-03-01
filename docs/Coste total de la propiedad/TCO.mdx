@@ -136,18 +136,20 @@ En nuestro caso, teniendo en cuenta que tenemos una carga de usuarios mínima po
 Como comentamos previamente, suponemos un sueldo de programador de 11.25 €/h. Suponemos también una dedicación de 5 horas semanales por desarrollador para el mantenimiento del sistema, por lo tanto el coste mensual de mantenimiento del sistema es de: 11.25 x 5 x 2 x 4 = 450.00€
 
 ### 3.2 Costes de licencias externas
-En este proyecto, para la CI/CD, se utiliza GitHub Actions, pues además se utiliza GitHub para el desarrollo de este. Hay que tener en cuenta que los repositorios de este proyecto son abiertos (open source), por lo que podemos contar con el plan gratuito que se ofrece en GitHub, sin tener que añadir así estos costes. En la siguiente imagen podemos ver qué nos ofrecen si nuestro repositorio es público. Suponemos que todo esto es suficiente para el correcto funcionamiento del sistema final.
+En este proyecto, para la CI/CD, se utiliza GitHub Actions, pues además se utiliza GitHub para el desarrollo de este. Hay que tener en cuenta el limite de minutos para la CI/CD.
 
 | GitHub Plan|
 | ------ |
 |<img src="/img/tco/github-precios.png" alt="GitHub Plan" width="100%" height="100%"/>
 
-Aún así, en caso de que GitHub Actions dejase de ofrecer un plan gratuito para proyectos open source, utilizamos la calculadora de GitHub para obtener el precio de este. Para ello, suponemos un número de workflows de 2 diarios (60 mensuales) y una duración aproximada de 5 minutos cada uno de ellos, lo que nos lleva a un precio final de 2.22€ mensuales.
+Utilizando la calculadora de precios de GitHub podemos ver el precio de 2 jobs diarios de 5 minutos cada uno para cada mes, lo cual suponemos suficiente, que es de 2.22€. Por lo que el coste mensual de las licencias externas es de 2.22€.
 | GitHub Actions|
 | ------ |
 |<img src="/img/tco/github-actions.png" alt="GitHub Actions" width="100%" height="100%"/>
 
-Como en la actualidad para los proyectos open source, como el nuestro, este plan es gratuito, en nuestro TCO actual los costes de la licencia de GitHub siguen siendo de 0€. 
+El total de minutos mensuales sería de 2 x 5 x 30 = 300 minutos.
+
+Como en la actualidad para los proyectos open source, como el nuestro, este plan es gratuito (ver plan de GitHub) pues el total se encuentra por debajo de los 2000 minutos mensuales, en nuestro TCO actual los costes de la licencia de GitHub siguen siendo de 0€. 
 
 Además, el resto de herramientas que pueden necesitar los desarrolladores externos a nosotros para la operación son de uso gratuito, como pueden ser los entornos de desarrollo integrados gratuitos como VSCode o sistemas de comunicación gratuitos como Discord.
 
@@ -189,7 +191,7 @@ Este sería el costo mensual total de cumplir con el SLA para nuestro proyecto d
 ## 4. Costes de contingencia
 Hay que tener en cuenta que a la hora de analizar y prever los riesgos, también es necesario desarrollar un plan de contingencia para cada uno de ellos. Esto conlleva a que se tengan que dedicar una serie de costes para estos planes.  Para este sistema, suponemos un 15% de los costes totales a dedicar a los planes de contingencia, ya que se suele recomendar una cifra entre un 10% y un 20% de manera general.
 
-Teniendo en cuenta todos los costes previos, se obtiene un coste total de 51058.27€. Por lo que el coste de contingencia sería: 0,15 x 51058.27 = 7658.75€.
+Teniendo en cuenta todos los costes previos, se obtiene un coste total de 63778.27€. Por lo que el coste de contingencia sería: 0,15 x 63778.27 = 9566.75€.
 
 ## 5. Coste total de la propiedad
 Para el TCO actual, aún no suponemos costes de marketing ni el ROI (Return of Investment), porque no tenemos un plan de negocio claro por lo que serían demasiadas suposiciones (por lo menos todavía).
@@ -198,14 +200,15 @@ Por lo tanto, teniendo en cuenta la estimación de costes de desarrollo del proy
 
 |  |     | Coste mensual| Coste anual|
 | ------- | ---------- | ------------------------ | ------------------------ |
-| CapEx  | Capital | -  | 34554.67€ (34.6K) |
+| CapEx  | Personal desarrollo | -  | 33390.00€ (33.4K) |
+| CapEx  | Material | -  | 1164.67€ (1.2K) |
 | OpEx   | Despliegues | 25.30€ | 303.60€ (0.4K) |
 | OpEx   | Personal externo | 450.00€  | 5400.00€ (5.5K) |
 | OpEx   | Licencias externas | 0.00€ | 0.00€ (0K) |
 | OpEx   | GDPR | 900.00€ | 10800.00€ (10.9K)|
 | OpEx   | SLA | 1060.00€  | 12720.00€ (12.8K) |
-|        | Contingencia | -  | 7658.75€ (7.7K) |
-| Total  | TCO | -  | **71437.02€ (71.5K)** |
+|        | Contingencia | -  | 9566.75€ (9.6K) |
+| Total  | TCO | -  | **73345.02€ (73.4K)** |
 
 
-El coste total de la propiedad anual es de **71.5K**.
+El coste total de la propiedad anual es de **73.4K**.
