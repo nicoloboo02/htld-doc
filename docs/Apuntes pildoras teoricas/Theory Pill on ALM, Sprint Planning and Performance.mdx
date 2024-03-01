@@ -12,7 +12,7 @@
 
 Es el funcionamiento normal de cualquier proyecto que hemos realizado:
 - Se crean ramas para desarrollar tareas
-- Se suben los cambios y se usa CI
+- Se suben los cambios y se usa CI. CI se debe usar en todas las ramas antes y después de mergear una PR
 - Cuando esté toda la funcionalidad se hace un pull desde develop para solucionar posibles conflictos
 - Se crea PR a develop
 - El resto comenta en la PR y la acepta
@@ -28,18 +28,19 @@ Lo importante de aquí es que todo esto es __cíclico__, en cualquier punto pued
 - __como mínimo el 75% de las issues que están en progreso deben correlacionarse con una rama__, ya que pueden existir alguna issue que sea de gestión y no requiera de una rama (para todo el equipo, cada día)
 - __como mínimo el 75% de las issues que están en revisión debería correlacionarse con que se haya abierto una pull request__ (para todo el equipo, cada día)
 - __como mínimo el 75% de las issues que están en “done”  deben correlacionarse con que se haya hecho un merge__, es decir, que los cambios estén ya en la rama develop (para todo el equipo, cada día)
-- __como mínimo para cada PR que se acepte debe de haber una review positiva de una persona distinta al creador de esa PR__, no se refiere solo a escribir el comentario sino a aceptarla (para todo el equipo, cada semana)
 - A nivel individual cada miembro debe tener controlada el número de issues que tienen activas, __solo puede haber 1 issue en progreso por cada miembro del equipo.__(cada hora)
 - __Como mínimo cada miembro debe haber puesto una issue en "done" a la semana__
-- __Todos los miembros deben participar en las revisiones de las PRs__, debe de haber mínimo un comentario/aprobación de una PR por cada miembro(por miembro, todas las semanas)
-- __como mínimo el 75% de las PR/merges deben ser aceptadas.__
+- __como mínimo el 75% de los merge de las PR deben tener al menos una aprobación__ (a nivel de equipo y para las PR aceptadas por cada miembro, por hora)
+- __Si un miembro acepta el mergeo de una PR esta debe tener mínimo una aprobación.__(por miembro, por semana)
+- Todos los miembros deben participar en las revisiones de las PRs, __cada miembro debe de poner mínimo un comentario en al menos el 20% de las PR(no creada por el mismo)__ (por miembro, todas las semanas)
+- __Cada miembro debe comentar en al menos una PR(no creada por el mismo)__ (por miembro, cada semana)
 
 Para monitorizar todo lo anterior se usa la herramienta “Governify”, va chequeando cada hora todas las condiciones anteriores.
 
 
 ## 3. Sprint Planning
 
-- __El MVP debe de estar planificado antes del lanzamiento del producto.__
+- __El MVP debe de estar terminado antes del lanzamiento del producto.__
 - __Planificar las tareas que forman parte del core lo antes posible__, preferiblemente en el primer sprint. A partir de tener el core, se puede ir completando el resto del MVP con los posteriores sprints.
 
 Dividir las tareas en subtareas para las issues, se usa __planning poker__(cada miembro da una puntuación a cada tarea para estimar el esfuerzo necesario) para la asignación de tareas.
