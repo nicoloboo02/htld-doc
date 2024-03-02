@@ -28,7 +28,7 @@ Como se puede observar, el gasto total en los próximos 5 años asciende a 190.2
 
 ## 3. Análisis de ingresos
 
-Para realizar el análisis de ingresos, debemos establecer el precio de venta anual de la aplicación. Fijaremos un precio de 2.750 €/año por ONG. A continuación, se plantean tres escenarios posibles, el más pesimista, el más probable y el más optimista.
+Para realizar el análisis de ingresos, debemos establecer el precio de venta anual de la aplicación. Para ello, podemos fijarnos en el precio que tiene una aplicación similar conmo PantrySoft, previemente estudiada en el documento de "Análisis preliminar de competidores". Su plan deluxe tiene un precio de 115 €/mes, lo que supone un precio anual de 1.380 €/año. Dicho plan tiene limitaciones importantes, como un número máximo de inicios de sesión simultáneos de 3 o la no inclusión de cursos de formación. Además, para poder acceder a más funcionalidades se necesita realizar el pago de complementos que hacen aumentar aún más el precio base. Nuestro sistema no contará con este tipo de limitaciones ni será necesario adquirir complementos para acceder a todas las funcionalidades. Además, ofrecemos el mantenimiento de la aplicación, gestión del GDPR y establecemos un SLA para atender las incidencias de nuestros clientes. A raíz de esto, fijaremos un precio de 2.750 €/año por ONG, el cual consideramos que es un precio competitivo y asequible para las ONGs. A continuación, se plantean tres escenarios posibles, el más pesimista, el más probable y el más optimista.
 
 ### 3.1. Escenario pesimista
 
