@@ -52,6 +52,8 @@ En esta sección, se muestran los distintos costes relacionados con el mantenimi
 
 Los usuarios de la aplicación serán unos pocos voluntarios de la Tertulia Cofrade Cirio y Costal, exactamente dos personas el tesorero y el presidente, y de la Asociación Ciudadana de Ayuda al Toxicómano, donde la usarán tres personas. Por lo cual el uso y tráfico de nuestra aplicación va a ser muy limitado, por no decir insignificante. La infraestructura necesaria para mantener una aplicación con estas necesidades es mínima y más importante la carga de la aplicación no aumenta con el tiempo.
 
+Por lo tanto en caso de que se duplicase o triplicase nuestro tráfico, el coste de operación no aumentaría y se mantendría constante. Esto es debido a que contaríamos como mucho con unos 12 o 18 usuarios en total de manera simultanea, y los costes que se explican a continuación suponemos que tienen límites suficientes para soportar esta carga.
+
 ### 3.1 Costes de despliegue
 En nuestro caso, hay que tener en cuenta que contamos con el frontend, el backend y la base de datos. Se detalla así:
 - Para FastApi, lo más rentable es utilizar algún servicio en la nube que ofrezca sus servidores a sus clientes, en este caso a nosotros y a nuestros clientes. Puesto que desplegarlo en un servidor propio conlleva grandes gastos y no estaría al alcance de esta asignatura. Dentro de los servicios en la nube, hemos estudiado y analizado las distintas opciones que encontramos en el mercado. 
@@ -121,7 +123,7 @@ Otra opción para el despliegue de la infraestructura necesaria para la aplicaci
 
 El coste mensual de esta opción de infraestructura sería el costo mensual del backend en App Engine, ya que con el nivel gratuito de Vercel y PlanetScale sería suficiente. Este coste serían 25,30€ mensuales.
 
-Esta opción de despliegue se basa en una estimación de la carga y tráfico de las organizaciones, Tertulia Cofrade Cirio y Costal y Asociación Ciudadana de Ayuda al Toxicómano, donde su requerimientos no superan los límites gratuitos de Vercel y PlanetScale. Pues los usuarios que van a utilizar el sistema son solo sus administradores. Por lo tanto, aunque se duplicase o triplicase el número de usuarios, el coste seguiría siendo el mismo, pues entran dentro de los limites establecidos previamente.
+Esta opción de despliegue se basa en una estimación de la carga y tráfico de las organizaciones, Tertulia Cofrade Cirio y Costal y Asociación Ciudadana de Ayuda al Toxicómano, donde su requerimientos no superan los límites gratuitos de Vercel y PlanetScale. Pues los usuarios que van a utilizar el sistema son solo sus administradores. 
 
 En el siguiente gráfico, la “Opción1” representa la opción de un hosting completo en AppEngine explicada previamente, y la “Opción2” representa un hosting en Vercel, App Engine y  PlanetScale también detallada previamente. En el eje y se representa los subsistemas de los que está formado el sistema, y en el eje x el precio mensual de cada uno de ellos.
 
@@ -136,7 +138,7 @@ En nuestro caso, teniendo en cuenta que tenemos una carga de usuarios mínima po
 
 Como comentamos previamente, suponemos un sueldo de programador de 11.25 €/h. Suponemos también una dedicación de 5 horas semanales por desarrollador para el mantenimiento del sistema, por lo tanto el coste mensual de mantenimiento del sistema es de: 11.25 x 5 x 2 x 4 = 450.00€
 
-### 3.2 Costes de licencias externas
+### 3.3 Costes de licencias externas
 En este proyecto, para la CI/CD, se utiliza GitHub Actions, pues además se utiliza GitHub para el desarrollo de este. Hay que tener en cuenta el limite de minutos para la CI/CD.
 
 | GitHub Plan|
@@ -154,10 +156,12 @@ Como en la actualidad para los proyectos open source, como el nuestro, este plan
 
 Además, el resto de herramientas que pueden necesitar los desarrolladores externos a nosotros para la operación son de uso gratuito, como pueden ser los entornos de desarrollo integrados gratuitos como VSCode o sistemas de comunicación gratuitos como Discord.
 
-### 3.3 Costes de GDPR
+### 3.4 Costes de GDPR
 En este sistema, se tratan datos sensibles y personales sobre familiares o personas. Esto hace necesario la introducción de una serie de roles y responsabilidades para garantizar el cumplimiento de las normativas de protección de datos, Reglamento General de Protección de Datos (GDPR por sus siglas en inglés). 
 
-### 3.4 Costes de SLA
+En nuestro caso, donde el sistema solamente va a ser utilizado por los administradores, y donde no va a haber una gran cantidad de usuarios, suponemos que es suficiente con la introducción de un Data Protection Officer (DPO). Suponemos también un sueldo medio de 22.50€ por hora, y una dedicación semanal de 10 horas. Por lo tanto, el coste mensual de GDPR es de: 22.50 x 10 x 4 = 900.00€
+
+### 3.5 Costes de SLA
 En nuestro caso, establecemos un SLA (Service Level Agreement) para el soporte al cliente que comprende la resolución de incidencias, solicitudes de usuarios y RFC (Request for Change) con los siguientes tiempos de respuesta (TTR):
 
 - **Resolución de Incidencias**: 30 minutos
