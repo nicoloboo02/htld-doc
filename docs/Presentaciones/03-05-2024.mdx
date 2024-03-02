@@ -4,7 +4,7 @@
 | -------------------- | ------------- | ------------- | ------ |
 | Antonio Rodriguez    | Fran Benítez  | Alberto Lopez | 15 min |
 
-## 1. Negocio (~ 3 min)
+## 1. Negocio (~ 3 min 20 seg)
 
 ### 1.1 Killer Opener + Elevator pitch (~ 1.5 min)
 
@@ -41,13 +41,23 @@ Y por otra parte existen una serie de herramientas Open Source que consideramos 
 pero tras algo más de análisis hemos visto que estan mas orientadas a la gestion de clientes empresariales y que no se adaptan a las necesidades de las ONGs. Y es por ello que nosotros queremos ofrecer una solución
 más completa y adaptada a las necesidades de cada ONGs.
 
-### TCO (Total Cost of Ownership) (~ 40 segundos)
+### TCO (Total Cost of Ownership) (~ 1 min)
 
 Para el nuestro servicio hemos calculado un coste total de propiedad de unos 73.400€ en un periodo de 1 año, en el que el CapEx esta compuesto por los costes de personal, material y licencias.
 Y el OpEx por los costes despliegue, personal externo para el GDPR y el customer support, que se ha calculado teniendo en cuenta la prioridad y tipo de incidencias. Tambien hemos añadido al coste
 un fondo del 15% para planes de contingencia.
 
 Con respecto a las licencias cabe destacar que actualmente tienen un coste 0€ debido a la naturaleza Open Source de nuestro proyecto, pero si la politica cambiara hemos calculado un incremento de 26€ anuales.
+
+_Diapo de ROI_
+
+Además, tras un análisis exhaustivo de los costes anuales y del crecimiento esperado, asumiendo una curva de crecimiento lineal y unos gastos anuales fijos de poco mas de 29.000€ anuales entre CapEx y OpEx,
+hemos calculado un retorno de la inversión de 5 años, en los cuales iriamos incrementando el numero de clientes en 5 cada uno y siendo el coste para las ONG de un servicio personalizado con atención al cliente
+de 230€ mensuales, parte de los cuales podrian ser subvencionados por ayudas para la digitalización de las ONGs.
+
+_Tabla con gastos acumulados por años (1er año 73.400€, 2º año 102.586€, 3er año 131.792€, 4º año 161.015€, 5º año 190.239€)_
+
+_Retorno acumulado por año (1er año 13.750€, 2º año 41.250€, 3er año 82.500€, 4º año 137.500€, 5º año 206.250€)_
 
 ### Commitment Agreement (~ 15 segundos)
 
@@ -90,9 +100,12 @@ estánderes de calidad del codigo.
 
 _Pasar a diapo con valores de codacy_
 
-Con codacy estamos midiendo X e Y, y nos ayudamos de github actions para bloquear o permitir el merge de una rama si superan o no los estánderes de calidad.
+Con codacy estamos midiendo tanto la cobertura de código como haciendo un análisis estático del codigo, y nos ayudamos de github actions para bloquear o permitir el merge de una rama si superan o no
+los estánderes de calidad. Mas concretamente hemos establecido una cobertura mínima del 80% para cada feature y un límite de code smells adicionales por cada una.
 
-Y también integramos Bluejay, en este caso en los repositorios de backend y frontend de CyC para que nos ayude a medir y analizar el uso de buenas practicas de
+_Pasar diapo_
+
+Por otro lado también integramos Bluejay, en este caso en los repositorios de backend y frontend de CyC para que nos ayude a medir y analizar el uso de buenas practicas de
 manejo de incidencias e integración de características en ambos repositorios.
 
 _Pasar a diapo con valores de bluejay_
@@ -110,12 +123,16 @@ Y a pesar de estar midiendo todo esto, aveces se nos escapan cosas y durante est
 
 _Fotos de Al como apoyo_
 
-- Durante la planificación del Diccionario de la EDT no se tuvieron bien en cuenta las dependencias entre las tareas de backend y de frontend, lo que llevo a nustro equipo de frontend a congelar el progreso
-  de sus tareas. Se discutió entre varios miembros del equipo y se propuso replanificar las tareas de frontend, y usar MockAPI para simular llamadas a la API de backend. Como la segunda opción suponia menos
+_Herida 1: "Congelado"_
+
+- Durante la planificación del Diccionario de la EDT **AL** no se tuvo bien en cuenta las dependencias entre las tareas de backend y de frontend, lo que llevo al equipo de frontend a congelar el progreso
+  de sus tareas. Tras una reunion extraordinaria se propuso bien replanificar las tareas de frontend, o bien usar MockAPI para simular llamadas a la API de backend. Como la segunda opción suponia menos
   replanificación y permitia continuar el trabajo inmediatamente, decidimos ir con esta opción.
 
-- Por otra parte durante la semana 1 del Sprint 1 nos reunimos con ACAT y CyC para repasar los requisitos que habiamos definido y aclarar dudas. Durante esas reuniones se recogieron cambios en el modelo de datos
-  que backend implemento, pero que no se comunicaron a frontend de manera correcta, lo que llevo a conflictos entre lo que frontend defenia en sus formularios y vistas de detalles y lo que backend estaba haciendo.
+_Herida 2&3: "Pierna rota por falta de coordinacion"_
+
+- Por otra parte durante la semana 1 del Sprint 1 **AL** se reunió con ACAT y CyC para repasar los requisitos que habiamos definido y aclarar dudas. Durante esas reuniones se recogieron cambios en el modelo de datos
+  que backend implemento, pero que no comunicó a frontend de manera correcta, lo que llevo a conflictos entre lo que frontend definía en sus formularios y vistas de detalles y lo que backend estaba haciendo.
 
 - Este problema viene tambien acompañado de un segundo a causa de fallos en la comunicacion nuevamente: Frontend esperaba tener versiones de la API desplegadas para poder conectar backend en entorno de desarrollo,
   y backend tenia entendido que la API se iba a desplegar localmente para el desarrollo y no hacia falta en staging con urgencia. Esto llevo a que frontend no pudiera probar sus cambios en un entorno real y
@@ -125,8 +142,11 @@ _Fotos de Al como apoyo_
   solucionar los fallos, revisar los procesos de comunicacion y establecer un "vigilante", que tendra como responsabilidad asegurarse de que la comunicacion entre ambos equipos sea fluida y que cualquier cambio
   que conlleve a una dependencia entre ambos equipos sea comunicado de manera inmediata.
 
-- Tambien nos hemos encontrado con el problema de la organización de documentos que se estaban amontonando en GDrive, que lo hemos solucionado comenzando a transicionar la documentacion a docosaurus,
-  donde es mucho mas facil navegar y hacer búsquedas para encontrar la informacion que necesitamos a veces y no esta en un solo documento.
+_Herida 4: "Estrellitas como de confusion, mareado, por ser dificil encontrar lo que se quiere"_
+
+- **AL** también sufrio a principios de semana mareos y confusión al hacerse exponecialmente dificil con cada semana que pasa encontrar la documentación que necesitaba para hacer su trabajo entre la masa de documentos
+  en GDrive, por lo que se ha empezado a transicionar la documentacion a docosaurus, donde es mucho mas facil navegar y hacer búsquedas para encontrar la informacion que necesitamos a veces y no esta en un solo
+  documento.
 
 Esto nos viene genial para hablar tambien del estado de los riesgos, y es que con respecto a la semana pasada hemos mitigado por el momento el riesgo en el cambio de requisitos por parte del cliente
 gracias a una replanificación de los Sprint 2 y 3, pero con respecto a otros las cosas no han ido tan bien. Por una parte han entrado en advertencia los riesgos de una mala definicion de requisitos, por
@@ -145,6 +165,21 @@ a algunas tareas, y por tanto al Z% del reloj del proyecto.
 
 ## Planificación (~ 2.5 min)
 
-## Usuarios Piloto (~ 1.5 min)
+## Usuarios Piloto (~ 45 seg)
+
+_Matriz de contactados/no contactados, informados/implicados_
+
+Ahora bien, conforme vamos avanzando en el proyecto nos es necesario tener personas que prueben nuestra aplicación y nos den feedback, y para ello contamos con usuarios piloto ya establecidos,
+un miembro de ACAT, un miembro de CyC y un estudiante de ultimo año de ingenieria del software. Los dos primeros probaran la aplicacion desde un pusto de vista del uso diario, mientras que el
+estudiante nos podra ayudar a identificar problemas que quizas los otros no ven a simple vista.
+
+Para manejar estas relaciones tenemos un plan de contacto periódico, a traves del cual cada semana se le mandara un formulario junto a unas instrucciones para probar nuevas características o revisitar
+características mejoradas. Durante este primer Sprint hemos estado en contacto con ellos, y ahora que tenemos desplegada una primera versión del sistema hemos comenzado a enviarle estos primeros formularios, y aun esperamos
+sus respuestas.
+
+Ademas de esto tendremos abierto en todo momento un portal de incidencias con iTop, donde podran reportar cualquier problema que encuentren o soicitar nuevas características.
 
 ## Uso de la IA (~ 30 seg)
+
+Durante este Sprint hemos usado sobre todo herramientas como Copilot o ChatGPT para escribir código, entender librerias mejor y mas rápido, testear funcionalidades y arreglar fallos.
+En total estimamos un ahorro de X horas (Reportadas 5 hasta el momento)
