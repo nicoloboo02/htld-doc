@@ -13,6 +13,7 @@ sidebar_label: Registro de Uso de IA - Semana 4
 
 # Uso de las IAs Codigo
 
-| Miembro | Herramienta de IA | Contexto | Formato        | Para    | Tiempo ahorrado | Detalles                                |
-| ------- | ----------------- | -------- | -------------- | ------- | --------------- | --------------------------------------- |
-| Nicolas | Copilot           | Frontend | Autocompletado | Feature | 1h (Código)     | [Detalles](Detalles/2024-02-26_Nicolas) |
+| Miembro   | Herramienta de IA | Contexto | Formato        | Para    | Tiempo ahorrado   | Detalles                                |
+| --------- | ----------------- | -------- | -------------- | ------- | ----------------- | --------------------------------------- |
+| Nicolas   | Copilot           | Frontend | Autocompletado | Feature | 1h (Código)       | [Detalles](Detalles/2024-02-26_Nicolas) |
+| Alvaro G. | Copilot           | Backend  | Chat           | Feature | 0.5h (Investigar) | [Detalles](Detalles/2024-02-26_AlvaroG) |
