@@ -1,0 +1,27 @@
+## (13/02/2024 - 19/02/2024)
+
+- Previo a la presentacion hay que hacer una demo interna y dar feedback
+- Rama de presentacion docosaurus para que el resto de la clase de feeback
+- No ponerse delante de lo que desea presentar
+- Con el grado de compromiso de cada persona contemplar incorporar el concepto de la nota objetivo dentro del commitment agreement. Si alguien tiene como ojbetivo sacar un cinco pelado contemplarlo en el CA.
+- Debemos incorporar numero de horas de github actions, con la calculadora de github.
+- Añadir la traza del commitment agreement y clausulas y cuantas veces lo ha nviolado.
+- Estrategia para gestion de la documentación como codigo. usar alguna metodlogoia para esta tarea
+- Los usuarios pilotos tiene que estar totalmente claro: el numero y estado de estos.
+- Enseñar la presentación delante de todo el grupo.
+- Al final de la presentación realizar una autodefensa de las tareas hechas.
+- Probar IA en el enseña para ver si se puede hacer un resumen mayor de la presentación.
+- A partir del proximo dia son de 15 minutos. Para ir al grano.
+- En el primer sprint ya hay usuarios pilotos, contactar con los usuarios disponibles para comunicarles cuando va a estar disponible el sistema. Cuando se va a desplegar el sistema. Hacer un agenda de usuarios pilotos.
+- Habra que hacer un formulario de microsoft para los usuarios pilotos.
+- Presentacion siguiente: Hacer presentacion tecnico del desarrollo, una parte inicial tiene que ser un resumen del proyecto/negocio, un 15-20 porciente tienen que ser para las ideas de negocio, killer opeener, elevator spitch, resumen analisis de costes y operación, mejora de equipos en base a roles, resumen estado de commit agreement. El resto tiene que ser el seguimiento de proyecto de desarrollo otro 15-20 para explicar lo que ya esta implementado y enseñarlo sino hay nada mostrar mockups, la parte mas imprtante en torno a 40-50 va a ser la restrispectiva de la semana, de la mitad del sprint, en esta restropectiva tiene que estar la medida del rendimiento del equipo en base a roles.
+- Recomendacion una diapositiva para comparar los rendimientos de todo el equipo.
+- No solo el estado de los riesgos, sino hablar sobre problemas y soluciones que han salido en el sprint, con mediciones de las soluciones proporcionadas.
+- Lecciones aprendidas del trabajo.
+- Reloj avance del proyecto cuanto se ha invertido en total. Poner las horas registradas respecto a un total estimado en general (no del proyecto sino del sprint, semana).
+- Enlace clockify para acceder al dashboard, una buena forma es hacer una landing page del proyecto.
+- Si se cambian las semanas de trabajo en vez de lunes a domingo, de martes a martes, cmabiar las graficas de clockify.
+- Si no da tiempo a hacer las tareas, si es necesario cambiar las responsabilidades del sprint1 comunicarlo en la presentación.
+- Gestión de usuarios pilotos: Tener muy encuenta el feedback que dan las ONG. Tener toda la información para ellos definida, como accedre a la aplicación, donde esta el formulario... Evaluar que partes del feedback av a ser incorporada y justificar si algo no se mejora.
+- Report de uso de inteligencia artificial: Es muy importante.
+- Tener medidas de cohesión y acoplamiento, toda medida es revertible. No buscar machar con la medicion del rendimiento.
