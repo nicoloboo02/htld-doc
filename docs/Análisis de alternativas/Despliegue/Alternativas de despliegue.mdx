@@ -1,0 +1,64 @@
+## 1. Google Cloud
+Desplegar aplicaciones frontend en Google Cloud ofrece una serie de ventajas y desventajas:
+
+__Pros:__
+
+- Escalabilidad: Google Cloud Platform (GCP) ofrece una infraestructura altamente escalable que permite aumentar o disminuir los recursos según las necesidades de tu aplicación frontend. Esto garantiza un rendimiento óptimo incluso en momentos de alta demanda.
+- Fiabilidad y disponibilidad: GCP cuenta con una infraestructura global que proporciona una alta disponibilidad y confiabilidad para tus aplicaciones. Sus centros de datos distribuidos garantizan que tus aplicaciones estén disponibles para los usuarios en todo momento, reduciendo al mínimo el tiempo de inactividad.
+- Amplia gama de servicios: GCP ofrece una amplia variedad de servicios que pueden ser útiles para desplegar y gestionar aplicaciones frontend, como Google App Engine para el alojamiento de aplicaciones web, Cloud Storage para el almacenamiento de archivos estáticos, y Cloud CDN para la entrega de contenido.
+- Integración con herramientas de desarrollo: Google Cloud Platform se integra fácilmente con herramientas populares de desarrollo y despliegue, como Google Cloud Build, que permite automatizar el proceso de construcción y despliegue de aplicaciones frontend.
+
+__Desventajas:__
+
+- Costo: Aunque GCP ofrece un modelo de precios flexible y escalable, desplegar aplicaciones frontend en la nube puede resultar costoso, especialmente si no se optimizan adecuadamente los recursos utilizados. Es importante tener en cuenta los costos asociados con el almacenamiento, el ancho de banda y el uso de servicios adicionales.
+- Complejidad de configuración: Configurar y desplegar aplicaciones frontend en GCP puede ser más complejo que utilizar servicios de alojamiento tradicionales. Es posible que necesites configurar correctamente roles de acceso, políticas de seguridad y configuraciones de red para garantizar la seguridad y el rendimiento de tus aplicaciones.
+- Bloqueo de proveedor: Al optar por utilizar los servicios de Google Cloud Platform, puedes quedar bloqueado en su ecosistema, lo que puede dificultar la migración a otro proveedor en el futuro. Es importante considerar la portabilidad y la flexibilidad de tu aplicación al elegir una plataforma de alojamiento en la nube.
+
+## 2. PlanetScale
+PlanetScale es una plataforma de base de datos distribuida diseñada para escalar aplicaciones modernas.
+
+__Pros:__
+
+- Escalabilidad horizontal: PlanetScale permite escalar horizontalmente las bases de datos de manera transparente a medida que crece la carga de trabajo. Esto significa que puedes agregar fácilmente más recursos y capacidad de almacenamiento a tu base de datos sin interrumpir el servicio o afectar el rendimiento.
+- Alta disponibilidad y redundancia: PlanetScale ofrece alta disponibilidad y redundancia incorporada para garantizar la continuidad del servicio y la protección contra la pérdida de datos. Las bases de datos distribuidas se replican automáticamente en múltiples ubicaciones geográficas para minimizar el riesgo de fallas y garantizar la integridad de los datos.
+- Compatibilidad con MySQL: PlanetScale es compatible con MySQL, lo que facilita la migración de aplicaciones y datos existentes a la plataforma sin necesidad de realizar cambios significativos en la aplicación. Esto permite a los desarrolladores aprovechar las herramientas y habilidades existentes mientras se benefician de las capacidades de escalabilidad y rendimiento de PlanetScale.
+- Seguridad y cumplimiento: PlanetScale ofrece características de seguridad avanzadas, como cifrado en reposo y en tránsito, autenticación multifactor, y control de acceso granular, para proteger los datos confidenciales y cumplir con los estándares de seguridad y privacidad de la industria.
+
+__Desventajas:__
+
+- Dependencia de la conectividad a internet: PlanetScale es una plataforma basada en la nube, lo que significa que requiere una conexión a internet para su uso. La dependencia de la conectividad puede ser una limitación para aquellas organizaciones que necesitan trabajar en entornos con conexiones lentas o inestables.
+
+## 3. AppEngine
+Google App Engine es una plataforma de servicios en la nube completamente administrada que permite a los desarrolladores crear y escalar aplicaciones web y móviles de manera eficiente.
+
+__Pros:__
+
+- Escalabilidad automática: App Engine ofrece escalabilidad automática, lo que significa que la plataforma maneja automáticamente la asignación de recursos en función de la demanda de la aplicación. Esto permite que las aplicaciones escalen de manera eficiente para manejar picos de tráfico sin intervención manual.
+- Totalmente administrado: App Engine es una plataforma completamente administrada, lo que significa que Google se encarga de la administración de la infraestructura subyacente, incluida la administración del servidor, el aprovisionamiento de recursos, las actualizaciones de software y la supervisión de la salud del sistema. Esto permite a los desarrolladores centrarse en la creación de aplicaciones sin preocuparse por la administración de la infraestructura.
+- Integración con servicios de Google Cloud: App Engine se integra estrechamente con otros servicios de Google Cloud Platform, como Cloud Storage, BigQuery, Firestore y Cloud SQL. Esto facilita la integración de servicios adicionales en tu aplicación y aprovechar las capacidades avanzadas de la plataforma.
+- Soporte multiidioma: App Engine es compatible con varios lenguajes de programación populares, incluidos Python, Java, Node.js, Go y PHP. Esto permite a los desarrolladores elegir el lenguaje que mejor se adapte a sus necesidades y habilidades, sin comprometer la escalabilidad o la eficiencia.
+
+__Desventajas:__
+ 
+- Bloqueo en el ecosistema de Google Cloud: Al utilizar App Engine, estás bloqueado en el ecosistema de Google Cloud Platform, lo que puede limitar tus opciones de implementación y afectar la portabilidad de la aplicación a otras plataformas en el futuro.
+- Costos potenciales: Aunque App Engine ofrece una capa gratuita y opciones de precios flexibles, el uso intensivo de recursos o el escalado automático pueden resultar en costos significativos para aplicaciones de alto tráfico o con grandes volúmenes de datos. Es importante comprender y controlar los costos asociados con el uso de la plataforma.
+- Dependencia de la conectividad a internet: App Engine es una plataforma basada en la nube, lo que significa que requiere una conexión a internet para su uso. La dependencia de la conectividad puede ser una limitación para aquellas organizaciones que necesitan trabajar en entornos con conexiones lentas o inestables.
+
+## 4. Vercel
+Vercel es una plataforma de desarrollo y alojamiento web que permite a los desarrolladores crear, implementar y escalar aplicaciones web estáticas y dinámicas de forma rápida y sencilla.
+
+__Pros:__
+
+- Despliegue rápido: Vercel ofrece un proceso de despliegue rápido y sencillo para aplicaciones web estáticas y dinámicas. Con integraciones directas con repositorios de Git y herramientas de desarrollo como Next.js y React, los desarrolladores pueden implementar cambios en la aplicación de forma rápida y eficiente.
+- Escalabilidad automática: Vercel proporciona escalabilidad automática para manejar picos de tráfico y demanda de forma transparente. La plataforma distribuye automáticamente los recursos necesarios para garantizar un rendimiento óptimo, lo que permite a las aplicaciones escalar sin problemas a medida que crece el tráfico.
+- Integración continua y entrega continua (CI/CD): Vercel ofrece integración continua y entrega continua integradas, lo que facilita la automatización del proceso de desarrollo y despliegue. Los desarrolladores pueden configurar flujos de trabajo de CI/CD personalizados para garantizar la calidad y la estabilidad del código antes de su implementación.
+- Funciones de servidor sin servidor: Vercel permite la implementación de funciones de servidor sin servidor (serverless functions) que pueden ejecutarse bajo demanda en respuesta a eventos específicos, como solicitudes HTTP. Esto facilita la creación de aplicaciones web dinámicas y altamente escalables sin tener que administrar la infraestructura del servidor.
+
+__Desventajas:__
+
+- Costos potenciales: Si bien Vercel ofrece una capa gratuita y opciones de precios flexibles, el uso intensivo de recursos o el escalado automático pueden resultar en costos adicionales para aplicaciones de alto tráfico o con grandes volúmenes de datos. Es importante comprender y controlar los costos asociados con el uso de la plataforma.
+
+## 5. Conclusión
+- Para el despliegue del frontend nos hemos decantado por Vercel, debido a su rápido funcionamiento y a su uso gratuito, el cual es muy importante porque tratamos de minimizar los costes de las ONGs.
+- Para el despliegue del backend nos hemos decantado por AppEngine, porque pese a que tiene un costo mensual de 25.30€, resulta la mejor opción en cuanto a calidad-precio, y ya hemos tenido contacto previo con esta herramienta.
+- Para el despliegue de la base de datos nos hemos decantado por PlanetScale, debido principalmente a su plan gratuito y porque suponemos que con lo que ofrece es suficiente para el correcto funcionamiento del sistema.

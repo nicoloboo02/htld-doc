@@ -1,0 +1,81 @@
+## 1. Spring Boot
+Spring Boot es un marco de trabajo de desarrollo de aplicaciones Java que facilita la creación de aplicaciones Java empresariales con una configuración mínima.
+
+__Pros:__
+
+- Ofrece una amplia gama de funcionalidades integradas y módulos que facilitan la creación de API RESTful, como soporte para anotaciones, gestión de dependencias, seguridad, pruebas unitarias y mucho más.
+- Gracias a su enfoque de convención sobre configuración y a la amplia gama de herramientas y bibliotecas disponibles, Spring Boot permite a los desarrolladores crear API de manera eficiente y productiva.
+- Al utilizar Spring Boot, se puede aprovechar todo el ecosistema de Spring, lo que incluye Spring MVC para el desarrollo web, Spring Data para el acceso a bases de datos, Spring Security para la seguridad de la aplicación, entre otros.
+
+__Desventajas:__
+
+- A veces, la abstracción proporcionada por Spring Boot puede ocultar detalles importantes sobre cómo funciona realmente la aplicación, lo que puede dificultar la depuración de problemas complejos.
+- Para proyectos pequeños o simples, la infraestructura proporcionada por Spring Boot puede ser excesiva, lo que puede resultar en una sobrecarga innecesaria.
+- Si no se configura adecuadamente, Spring Boot podría introducir una sobrecarga de inicio y consumir más recursos de los necesarios, lo que podría afectar al rendimiento de la aplicación.
+
+## 2. Django
+Django es un framework de desarrollo web de alto nivel y de código abierto, escrito en Python, que permite la creación rápida de aplicaciones web, incluidas las API.
+
+__Pros:__
+
+- Proporciona una gran cantidad de funcionalidades listas para usar, como el sistema de administración, autenticación de usuarios, y ORM (Mapeo Objeto Relacional) que facilitan el desarrollo rápido de aplicaciones y APIs.
+- Tiene características de seguridad integradas que ayudan a proteger las aplicaciones web contra vulnerabilidades comunes, como ataques de inyección SQL, CSRF (Cross-Site Request Forgery), y XSS (Cross-Site Scripting).
+- Cuenta con una gran comunidad de desarrolladores activos y una documentación extensa y detallada, lo que facilita la resolución de problemas y el aprendizaje de la plataforma.
+
+__Desventajas:__
+
+- Aunque Django es rápido y eficiente, no es tan rápido como algunos otros frameworks más ligeros, especialmente para aplicaciones con requisitos de rendimiento extremadamente altos.
+- Para aplicaciones pequeñas o simples, Django puede ser excesivo y puede requerir más configuración y tiempo de desarrollo del necesario.
+- Aunque Django ofrece mucha funcionalidad integrada, a veces puede ser demasiado restrictivo para los desarrolladores que desean un control absoluto sobre todos los aspectos de su aplicación.
+
+## 3. FastAPI
+FastAPI es un framework de Python, orientado al desarrollo de sistemas backend. Es un framework moderno que usa Python 3.8+ y está basado en los estándares de Python, como los nuevos estándares de tipado para Python.
+
+__Pros:__
+
+- FastAPI es un framewok moderno y con una alta eficiencia a la par de las tecnologías más usadas en el backend como Go o NodeJS. Siendo este uno de los framewoks más rápidos y eficientes de Python.
+- FastAPI está basado en estándares, de Python y del desarrollo backend, como OpenAPI para la documentación del sistema y JSON Schema para el uso e intercambio de datos por medio de la tecnología JSON.
+- Es un framework intuitivo y sencillo de utilizar con tener conocimientos del lenguaje de programación Python es suficiente para desarrollar aplicaciones usando esta herramienta.
+- FastAPI es un framework backend minimalista, en comparación con otras tecnologías como Django, tienen mucha más flexibilidad y libertad de elección para el desarrollo de aplicaciones.
+- FastAPI genera automáticamente la documentación del sistema que se esta desarrollando, gracias a que está basado en los estándares de OpenAPI. Desde el inicio del desarrollo accediendo a la ruta /docs se puede acceder a una interfaz interactiva Swagger, donde se puede llamar y probar la aplicación directamente desde el explorador, o también la ruta /redoc donde se crea otra interfaz interactiva basada en el estándar de RedHoc.
+- Al ser un framework basado en los estándares de Python todo el ecosistema de paquetes se puede integrar en la aplicación.
+
+__Desventajas:__
+
+- Al ser un framework minimalista y abierto es necesario seguir buenas prácticas en el desarrollo de la arquitectura y la aplicación. Ya que al no ser un sistema cerrado y con las decisiones sobre las estructura y arquitectura del sistema ya tomadas, hay más probabilidad de fallo en un grupo de desarrollo sin experiencia en el desarrollo de APIs.
+- El equipo de desarrollo va a tener que documentarse y formarse sobre el uso de tipos en Python. Y algunas funcionalidades de Python poco conocidas como el uso de async/await en el código Python.
+- Es un framework menos maduro que otras tecnologías de Python, como Django o el estándar WSGI, estándar para la conexión entre un servidor hecho en Python y la web.
+
+## 4. Django-CRM
+Django-CRM es una extensión de Django que se enfoca en proporcionar herramientas específicas para la gestión de relaciones con el cliente (CRM, por sus siglas en inglés).
+
+__Pros:__
+
+- Integración nativa con Django: Al ser una extensión de Django, Django-CRM se integra fácilmente con las aplicaciones existentes desarrolladas con Django. Esto facilita la incorporación de funcionalidades de CRM a proyectos ya establecidos.
+- Amplia comunidad y documentación: Django cuenta con una gran comunidad de desarrolladores y una extensa documentación. Esto significa que hay una abundancia de recursos disponibles para ayudar en el desarrollo con Django-CRM, desde tutoriales hasta bibliotecas de terceros.
+- Funcionalidades específicas de CRM: Django-CRM proporciona herramientas específicas para la gestión de relaciones con el cliente, como seguimiento de clientes potenciales, gestión de contactos, gestión de ventas, entre otras. Esto puede acelerar el desarrollo de aplicaciones CRM completas.
+- Seguridad y estabilidad: Django es conocido por su enfoque en la seguridad y la estabilidad. Al utilizar Django-CRM, se heredan estas características, lo que puede ser crucial para aplicaciones que manejan datos sensibles de los clientes.
+- Documentación detallada: La documentación exhaustiva disponible para Django-CRM simplifica su implementación y personalización, lo que permite a las ONGs adoptar y adaptar la herramienta con relativa facilidad.
+
+__Desventajas:__
+- Complejidad adicional: Si bien Django-CRM proporciona funcionalidades específicas para CRM, también introduce una capa adicional de complejidad en comparación con el desarrollo de una aplicación CRM desde cero. Esto puede resultar en una mayor sobrecarga de mantenimiento y personalización, especialmente para proyectos más pequeños o simples,  lo que podría no ser viable para todas las organizaciones sin fines de lucro
+- Flexibilidad limitada: Aunque Django-CRM ofrece muchas funcionalidades listas para usar, es posible que no satisfaga todas las necesidades específicas de cada proyecto. Personalizar o extender Django-CRM para adaptarse a requisitos únicos puede requerir un esfuerzo adicional y puede no ser tan sencillo como en otros frameworks más flexibles.
+- Soporte técnico limitado: Aunque existe una comunidad activa alrededor de Django-CRM, el soporte técnico dedicado puede ser limitado en comparación con soluciones comerciales, lo que podría ser una preocupación para las organizaciones que dependen de una asistencia más directa
+
+## 5. CiviCRM con Wordpress
+CiviCRM es una solución de gestión de relaciones con clientes (CRM) que se integra con WordPress, una popular plataforma de gestión de contenido en línea..
+
+__Pros:__
+
+- Integración con WordPress: CiviCRM se integra sin problemas con WordPress, lo que simplifica su implementación y gestión para las organizaciones que ya utilizan WordPress para su presencia en línea. Esto permite aprovechar las capacidades de gestión de contenido de WordPress junto con las funcionalidades de CRM de CiviCRM.
+- Funcionalidades específicas para ONGs: CiviCRM está diseñado específicamente para las necesidades de las organizaciones sin fines de lucro. Ofrece una amplia gama de funcionalidades adaptadas, como la gestión de donaciones, voluntarios y eventos, lo que lo convierte en una opción atractiva para este sector.
+- Comunidad activa: Al ser de código abierto, CiviCRM cuenta con una comunidad activa que proporciona soporte y contribuye con actualizaciones y mejoras. Esto garantiza su relevancia y confiabilidad a largo plazo, además de proporcionar recursos y conocimientos compartidos.
+- Amplia gama de extensiones: CiviCRM ofrece una variedad de extensiones y complementos que permiten ampliar sus funcionalidades según las necesidades específicas de una ONG. Esto brinda flexibilidad y adaptabilidad a la plataforma, permitiendo personalizarla para adaptarse a casos de uso específicos.
+
+__Desventajas:__
+- Complejidad de configuración: La configuración inicial de CiviCRM puede resultar compleja, especialmente para usuarios sin experiencia previa en sistemas de CRM. Esto podría requerir una curva de aprendizaje significativa y un esfuerzo adicional para configurar adecuadamente la plataforma.
+- Posibles costos: Aunque la plataforma en sí es gratuita, pueden surgir costos adicionales asociados con la integración, la formación y el soporte técnico. Esto podría aumentar los costos totales de propiedad y afectar la viabilidad financiera para algunas organizaciones, especialmente si no se planifican adecuadamente.
+- Desconocimiento de WordPress: El equipo no está familiarizado con WordPress y sus limitaciones en la implementación de proyectos, esto podría representar un desafío adicional. Se requerirá un tiempo para aprender y comprender cómo integrar y trabajar eficazmente con WordPress en conjunto con CiviCRM.
+
+## 6. Conclusión
+El framework de backend que se ha optado por utilizar es FastAPI, debido a  varias razones, como la facilidad con las que se puede adaptar su arquitectura o que su consumo de recursos es muy reducido. Además, es el más rápido en términos de eficiencia de entre las opciones que barajamos, es más seguro que el resto de frameworks analizados y es el que cuenta con una menor tasa de fallos por peticiones al servidor. Cabe mencionar mencionar que hemos descartado las opciones de usar una solución de tipo CRM debido a que hemos establecido que el equipo de backend se debe centrar en crear una API para que sea consumida desde el frontend.

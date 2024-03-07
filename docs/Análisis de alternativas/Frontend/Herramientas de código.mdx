@@ -1,0 +1,31 @@
+## 1. Eslint
+ESLint es una herramienta de linting para JavaScript que ayuda a detectar errores y aplicar estándares de codificación de manera consistente en un proyecto.
+
+__Pros:__
+
+- Detecta errores y mala prácticas: ESLint analiza el código JavaScript en busca de errores, patrones problemáticos o prácticas poco comunes que pueden causar problemas en el rendimiento, la legibilidad o la seguridad del código. Esto ayuda a mantener un código limpio y de alta calidad.
+- Personalizable: ESLint es altamente personalizable y permite configurar reglas específicas para adaptarse a las necesidades y preferencias del equipo de desarrollo. Puedes habilitar, deshabilitar o ajustar las reglas según los estándares de codificación de tu proyecto.
+- Integración con el flujo de trabajo de desarrollo: ESLint se puede integrar fácilmente en el flujo de trabajo de desarrollo a través de herramientas de construcción como Webpack, Gulp o npm scripts. Puedes configurarlo para que se ejecute automáticamente durante el proceso de construcción o como parte de tu editor de código favorito.
+
+__Desventajas:__
+
+- Configuración inicial: Configurar ESLint para un proyecto específico puede llevar tiempo y esfuerzo, especialmente si necesitas ajustar las reglas predeterminadas o integrarlo con herramientas de construcción y editores de código.
+- Posibles falsos positivos: ESLint puede producir falsos positivos, es decir, errores reportados que no son realmente errores en el código. Esto puede ocurrir si las reglas de linting no están configuradas correctamente o si hay casos de uso específicos que no están cubiertos por las reglas existentes.
+- Dependencia del equipo: ESLint requiere que todos los miembros del equipo sigan las reglas de codificación establecidas, lo que puede ser un desafío si algunos desarrolladores no están familiarizados con ESLint o no están de acuerdo con las reglas configuradas. La falta de adopción uniforme puede afectar la eficacia de ESLint en la mejora de la calidad del código.
+
+## 2. Prettier
+Prettier es una herramienta de formateo de código que ayuda a mantener la consistencia en el estilo de código de un proyecto.
+
+__Pros:__
+
+- Formateo automático: Prettier reformatea automáticamente el código según las reglas de estilo predefinidas cada vez que guardas un archivo. Esto elimina la necesidad de preocuparse por el estilo de formato y ahorra tiempo al evitar ajustar manualmente la indentación, los espacios en blanco y otros aspectos del formato.
+- Configuración mínima: Prettier tiene una configuración mínima y se integra fácilmente con la mayoría de los editores de código y herramientas de construcción. Puedes comenzar a utilizarlo de inmediato sin necesidad de configurar reglas específicas de formato, lo que lo hace ideal para proyectos nuevos o equipos que desean una solución de formateo sin complicaciones.
+- Soporte para múltiples lenguajes: Prettier es compatible con una amplia gama de lenguajes de programación, incluidos JavaScript, TypeScript, HTML, CSS, JSON, YAML y muchos más. Esto lo hace útil para proyectos que utilizan una variedad de tecnologías y quieren mantener una consistencia en el estilo de código en todo el proyecto.
+- Mejora la legibilidad del código: Prettier ayuda a mejorar la legibilidad del código al aplicar un formato coherente y fácil de leer en todo el proyecto. Esto facilita la colaboración entre los miembros del equipo y mejora la comprensión del código, especialmente en proyectos grandes o complejos.
+
+__Desventajas:__
+
+- Integración con otras herramientas: Prettier puede tener conflictos con otras herramientas de linting o formateo de código en el mismo proyecto. Por ejemplo, puede haber discrepancias entre las reglas de formato de Prettier y las reglas de ESLint. Configurar correctamente las herramientas para que funcionen juntas puede requerir tiempo y esfuerzo adicionales.
+
+## 3. Conclusión
+Para mantener la coherencia al máximo en el código fuente hemos decidido usar un linter y un formatter, para ello Eslint y Prettier son los más usados con estos lenguajes y frameworks.
