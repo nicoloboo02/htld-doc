@@ -1,0 +1,92 @@
+## Historial de versiones
+
+| Versión | Fecha      | Diferencia entre versiones                                                                                                                                                                                 |
+| ------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.0     | 2024-03-08 | Versión inicial de los apuntes que se han sacado de los vídeos de teoría                                                                                   |
+
+## 1. Introducción
+
+Edgar W. Dijkstra: Los test pueden utilizarse para mostrar la presencia de errores, pero nunca para demostrar su ausencia.
+
+Los esfuerzos de automatización de pruebas más diligentes no son perfectos, a veces se pasan por alto algunos casos o no se puede automatizar una prueba para algo (usabilidad o diseño).
+
+## 2. Tests
+
+<img src="/img/Theory Pills/TP_test_granularidad.png" alt="test_granularidad" width="100%" height="100%"/>
+
+### 2.1 Test unitarios
+- El objetivo del test es una unidad
+- La mayoría de las pruebas de un conjunto de pruebas deben ser pruebas unitarias.
+- Tienen el alcance más limitado de todas las pruebas.
+- Deben ejecutarse muy rápido
+- Normalmente, los colaboradores externos se sustituyen por test dobles, especialmente si implican bases de datos, archivos o Internet.
+
+### 2.2 Test de integración
+
+Incluso si en cada módulo del software se realizan test unitarios aún podrían existir errores/bugs.
+
+__Objetivo del test de integración:__ Asegurarse de que la conexión con elementos externos funciona correctamente y que la información intercambiada se procesada correctamente. No es volver a probar la lógica de la aplicación.
+
+#### 2.2.1 Test de integración de la base de datos
+1. Iniciar una base de datos
+2. Conectar la aplicación a la base de datos
+3. Lanza una función dentro de tu código que escriba datos en la base de datos
+4. Compruebe que los datos esperados se han escrito en la base de datos preparando los datos de la base de datos
+
+#### 2.2.2 Test de integración de servicios externos
+1. Iniciar la aplicación
+2. Iniciar una instancia del servicio independiente (o un test doble con la misma interfaz)
+3. Lanza una función en el código que lea la API del servicio independiente
+4. Compruebe que su aplicación puede analizar la respuesta correctamente
+
+### 2.3 Test end-to-end
+
+__Comprueba todo el sistema integrado__ desde la interfaz de usuario. Son muy lentos. También se conocen como Broad Stack Tests.
+
+### 2.4 Test de aceptación
+¿El poducto final que he desarrollado cumple con la especificación que hizo el analista?
+¿El poducto final que he desarrollado cumple con lo que el cliente quería?
+
+A menudo se define durante el diseño de la historia de usuario ANTES de la codificación.
+
+_Ejemplo:_ Dado que hay un usuario conectado y hay un artículo "bicicleta". Cuando el usuario navega a la página de detalles del artículo "bicicleta y hace clic en el botón "Añadir a la cesta entonces el artículo "bicicleta" debería estar en su cesta de la compra
+
+Es muy buena práctica establecer ejemplos para cada especificación:
+<img src="/img/Theory Pills/TP_test_int_ejemplos.png" alt="test_int_ejemplos" width="85%" height="85%"/>
+
+Tanto "tests end-to-end" como "tests de aceptación" se suelen implementar como test de interfaz de usuario (son lentos), para ello se recomienda usar: Katalon Recorder + Selenium + JUnit 5
+
+#### 2.4.1 Katalon recorder
+Katalon recorder es una herramienta de extensión del navegador que automatiza la generación de scripts de pruebas de interfaz de usuario mediante la grabación de sus acciones en el navegador, esto permite:
+- Grabar casos de prueba como una secuencia de acciones.
+- Reproducir, depurar, pausar/reanudar casos de prueba automatizados.
+- Informe de registros y capturas de pantalla de captura .
+- Componer y organizar casos de prueba en suites.
+- Exporta scripts de Selenium WebDriver.
+
+#### 2.4.2 Selenium
+
+- La ejecución de scripts Selenium requiere una versión de del navegador que pueda controlar e interactuar y un conjunto de bibliotecas que permiten enviar instrucciones al navegador.
+- Selenium WebDriver se refiere tanto a los enlaces de lenguaje (librerías) como a las implementaciones del código. Esto se conoce comúnmente como WebDriver.
+- Selenium WebDriver controla un navegador de forma nativa, como lo haría un usuario, ya sea localmente o en máquinas remotas.
+- Desde junio de 2018, WebDriver se convirtió en una recomendación del W3C recomendación.
+
+### 2.5 Exploratory tests (test manual)
+- Es un enfoque de pruebas manuales.
+- Usa una mentalidad destructiva e inventa formas de provocar problemas y errores en la aplicación.
+- Documenta todo lo que descubras (errores, problemas de diseño, tiempos de respuesta lentos...).
+- Escribe pruebas automatizadas para los errores encontrados.
+
+__Verifica la funcionalidad pero no el como se está ofreciendo esa esa funcionalidad__, por ello se complementan con las pruebas de rendimiento
+
+#### 2.5.1 Pruebas de rendimiento
+
+Verifica el cómo se comporta el sistema. Las pruebas de rendimiento se refieren a las pruebas para determinar como un sistema en términos de estabilidad y capacidad da respuesta con una carga de trabajo determinada.
+
+En un entorno de desarrollo no se deben hacer pruebas de rendimiento. __Las pruebas de rendimiento se hacen en preproducción con máquinas que simulen lo más posible el entorno de producción__, una vez todo esté correcto se realiza la producción(aquí tampoco se hacen pruebas de rendimiento).
+
+__Test de carga:__ Identifica los cuellos de botella del sistema bajo diversas cargas de trabajo y comprueba cómo reacciona el sistema cuando la carga se incrementa gradualmente.
+
+__Test de estrés:__ Determina el punto de ruptura del sistema para revelar el punto máximo a partir del cual se rompe.
+
+Recomiendan usar __Gatling load testing__.
