@@ -1,0 +1,34 @@
+## 1. Axios
+Axios es una popular biblioteca de JavaScript que se utiliza para realizar solicitudes HTTP desde el navegador o desde Node.js.
+
+__Pros:__
+
+- Sintaxis simple y fácil de usar: Axios proporciona una API simple y fácil de entender para realizar solicitudes HTTP. Su sintaxis limpia y su estilo de codificación intuitivo facilitan su uso para desarrolladores de todos los niveles de experiencia.
+- Amplia compatibilidad: Axios es compatible con la mayoría de los navegadores modernos y también se puede utilizar en entornos de servidor con Node.js. Esto lo hace ideal para desarrollar aplicaciones web tanto en el frontend como en el backend.
+- Promesas basadas en HTTP: Axios utiliza promesas nativas de JavaScript para manejar las respuestas de las solicitudes HTTP, lo que simplifica el manejo de solicitudes asíncronas y mejora la legibilidad del código en comparación con enfoques basados en callbacks.
+- Personalizable y extensible: Axios permite personalizar y configurar fácilmente las solicitudes HTTP según las necesidades del proyecto. Además, es posible agregar interceptores para realizar operaciones comunes, como la autenticación o el manejo de errores, de manera centralizada.
+
+__Desventajas:__
+
+- Tamaño de la biblioteca: Axios tiene un tamaño de archivo relativamente grande en comparación con otras bibliotecas de solicitudes HTTP más livianas, como fetch API. Esto puede ser una consideración importante en aplicaciones donde el tamaño del paquete es crítico para el rendimiento.
+- Dependencia externa: Al utilizar Axios, estás agregando una dependencia externa a tu proyecto. Esto puede aumentar la complejidad de tu aplicación y requerir un mantenimiento adicional para asegurarte de que Axios esté actualizado y sea compatible con otras bibliotecas utilizadas en tu proyecto.
+- Sobreabundancia de características: Para algunos proyectos más pequeños o simples, Axios puede proporcionar más funcionalidad de la necesaria. En tales casos, una biblioteca más liviana podría ser una opción más adecuada para evitar el exceso de funcionalidad y mantener el tamaño del paquete bajo control.
+- Potencial de abuso de promesas: Aunque el uso de promesas en Axios puede simplificar el manejo de solicitudes asíncronas, también existe el riesgo de abusar de ellas y caer en situaciones de "promesas encadenadas" o "promesas en paralelo", lo que puede complicar la lógica del programa y dificultar el seguimiento y la depuración del código.
+
+## 2. React
+React es una biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas y reutilizables.
+
+__Pros:__
+
+- Componentización: React fomenta un enfoque de desarrollo basado en componentes, lo que permite dividir la interfaz de usuario en componentes independientes y reutilizables. Esto facilita la construcción y mantenimiento de aplicaciones complejas al tiempo que promueve la modularidad y la reutilización de código.
+- Virtual DOM: React utiliza un Virtual DOM para gestionar eficientemente los cambios en la interfaz de usuario y minimizar las actualizaciones en el DOM real. Esto mejora el rendimiento de las aplicaciones al reducir el tiempo de renderizado y optimizar la experiencia del usuario.
+- JSX: JSX es una extensión de sintaxis que permite escribir código HTML dentro de JavaScript, lo que facilita la creación de componentes de React y mejora la legibilidad del código. Esto elimina la necesidad de alternar entre archivos de plantillas y archivos de script, lo que simplifica el desarrollo y la depuración.
+- React Native: React cuenta con la biblioteca complementaria React Native, que permite construir aplicaciones móviles nativas para iOS y Android utilizando JavaScript y React. Esto facilita el desarrollo de aplicaciones multiplataforma al compartir gran parte del código entre las versiones web y móvil de la aplicación.
+
+__Desventajas:__
+
+- Herramientas y configuración complejas: Configurar un entorno de desarrollo para React puede ser complejo, especialmente para proyectos grandes o equipos nuevos en React. La configuración de herramientas como Webpack, Babel y ESLint puede requerir tiempo y esfuerzo adicional, especialmente para los desarrolladores menos experimentados.
+- Problemas de rendimiento en aplicaciones grandes: Aunque React ofrece un rendimiento excelente en la mayoría de los casos, las aplicaciones React muy grandes pueden experimentar problemas de rendimiento debido a la complejidad y la cantidad de componentes renderizados. Optimizar el rendimiento en estas situaciones puede requerir un cuidadoso análisis y ajuste del código.
+
+## 3. Conclusión
+Hemos decidido la utilización de estas 2 librerías. En cuanto a React la hemos elegido por la familiarización que tienen los miembros, y Axios debido a la facilidad que aporta a la realización de operaciones HTTP, ya que nos comunicaremos de esa forma con el backend.
