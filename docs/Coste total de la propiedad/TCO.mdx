@@ -97,11 +97,11 @@ Además, App Engine ofrece otro tipo de instancia que es la “B”, la cual es 
 | --------------------------------------------------------------------------------- |
 |<img src="/img/tco/engine-instancia-b.png" alt="Instancia B" width="100%" height="100%"/> 
 
-En nuestro caso, como se comentó previamente, con la poca carga de usuarios que va a recibir la aplicación, el uso de las instancias más pequeñas será suficiente para el despliegue del backend. En este caso, la “B1” ofrece un precio de 0.0579€ por hora de funcionamiento, pero AppEngine cuenta con 9 horas gratis en esta instancia. Por lo que para mantener el sistema diariamente (24 horas), el precio ascendería a lo equivalente a las 15 horas por el precio comentado para cada día de funcionamiento.
+En nuestro caso, como se comentó previamente, con la poca carga de usuarios que va a recibir la aplicación, el uso de las instancias más pequeñas será suficiente para el despliegue del backend. En este caso, la “B2” ofrece un precio de 0.1158€ por hora de funcionamiento, pero AppEngine cuenta con 9 horas gratis en esta instancia. Por lo que para mantener el sistema diariamente (24 horas), el precio ascendería a lo equivalente a las 15 horas por el precio comentado para cada día de funcionamiento.
 Por lo tanto, el coste de mantenimiento mensual con la utilización de AppEngine sería el siguiente:
 | Standard Environment|
 | --------------------------------------------------------------------------------- |
-|<img src="/img/tco/engine-environment.png" alt="Standard Environment" width="100%" height="100%"/> 
+|<img src="/img/tco/app-engine-total.png" alt="Standard Environment" width="100%" height="100%"/> 
 
 Donde, “Standard Environment” representa la instancia “B”, y “Standard Environment 2” representa la instancia “F”.
 Toda esta información ha sido encontrado en la página [Precios | App Engine | Google Cloud](https://cloud.google.com/appengine/pricing?hl=es) usando como sede física de las instancias Frankfurt (europe-west3).
@@ -117,15 +117,7 @@ Toda esta información ha sido encontrada en la página [Limits de Vercel](https
 Mientras estos límites no sean superados el despliegue en la plataforma de Vercel es gratuito, y en caso de que se excedan estos límites conlleva una espera de 30 días hasta poder retomar el uso de la aplicación o el aumento del nivel de pago a Pro, donde se tendría que llevar a cabo un pago de 20 dólares al mes.
 
 #### 3.1.3 Base de datos
-Existen dos sistemas de BBDD para escoger, relacionales y no relacionales teniendo características muy diferentes. Para nuestra aplicación hemos elegido usar bases de datos relacionales por las ayudas monetarias que vamos a recibir para el despliegue de la aplicación. Estas ayudas son para el servicio de Google SQL en Google Cloud, también hemos encontrado otro servicio relacional de PlanetScale, donde se puede desplegar y mantener una BBDD con un coste menor para la organización que Google Cloud.
-
-- Google SQL: Google Cloud ofrece un servicio totalmente gestionado de bases de datos relacionales de MySQL, PostgreSQL y SQL Server. Este servicio ofrece varios tipos de instancias para la base de datos, teniendo cada una de ellas diferente rendimiento. Para nuestro caso de uso ya definido anteriormente la potencia y el rendimiento necesarios para nuestro sistema son muy bajos, con lo cual podemos usar la instancia “db-f1-micro” para la base de datos.
-
-El costo del servicio también depende del almacenamiento usado por la organización. Para un despliegue, donde la base de datos esté en la región de Frankfurt (europe-west3), con una instancia “db-f1-micro” y un espacio de 50 GB los costes mensuales son los siguientes:
-
-| Costo de la base de datos|
-| ------ |
-|<img src="/img/tco/databases-prices.png" alt="Base de datos" width="100%" height="100%"/> 
+Existen dos sistemas de BBDD para escoger, relacionales y no relacionales teniendo características muy diferentes. Para nuestra aplicación hemos elegido usar bases de datos no relacionales para el correcto funcionamiento e integración del sistema. Hemos encontrado dos opciones factibles, que son PlanetScale y Mongo Atlas.
 
 - PlanetScale: Para una base de datos con menos de 5 GB de almacenamiento, esta solución en el servicio de PlanetScale es la más recomendable teniendo un nivel gratuito muy extenso, con la capacidad de dar servicio a las aplicaciones que lo usen.
 
@@ -133,12 +125,18 @@ El costo del servicio también depende del almacenamiento usado por la organizac
 | ------ |
 |<img src="/img/tco/row-reads.png" alt="PlanetScale" width="100%" height="100%"/> 
 
+- Mongo Atlas: Para una base de datos no relacional, el servicio de Mongo Atlas es el más recomendable, con la capacidad de dar servicio a las aplicaciones que lo usen. Cuenta con 3 tipos de planes y cada uno de ellos con distintas instancias.
+
+| MongoAtlas|
+| ------ |
+|<img src="/img/tco/mongo-atlas.png" alt="MongoAtlas" width="100%" height="100%"/> 
+
 #### 3.1.4 Conclusión
-Teniendo en cuenta lo expuesto anteriormente, hemos visto viables dos opciones para el despliegue de la infraestructura de la aplicación teniendo en cuenta la calidad del sistema:
+Teniendo en cuenta lo expuesto anteriormente, hemos visto viables tres opciones para el despliegue de la infraestructura de la aplicación teniendo en cuenta la calidad del sistema:
 
-La primera opción considerada es la de App Engine. En esta, se utilizará una instancia “F” para el frontend (NextJs) y una instancia tipo “B” para el backend (FastApi).  El precio de la instancia “F” sería gratis gracias a las 28 horas que ofrece AppEngine de manera gratuita en su plataforma, mientras que la de la instancia “B” sería un total de 25.30€ mensualmente. Respecto a la base de datos, utilizando el servicio más barato que ofrece donde tenemos un almacenamiento de 50GB, una RAM de 3.75GB y tipo SSD el coste total es de 17.28€ mensuales.
+La primera opción considerada es la de App Engine. En esta, se utilizará una instancia “F” para el frontend (NextJs) y una instancia tipo “B” para el backend (FastApi).  El precio de la instancia “F” sería gratis gracias a las 28 horas que ofrece AppEngine de manera gratuita en su plataforma, mientras que la de la instancia “B” sería un total de 65.60€ mensualmente. Respecto a la base de datos, utilizando el servicio más barato que ofrece donde tenemos un almacenamiento de 50GB, una RAM de 3.75GB y tipo SSD el coste total es de 17.28€ mensuales.
 
-Por lo tanto, el precio mensual total para el despliegue del sistema ascendería a 42.58€.
+Por lo tanto, el precio mensual total para el despliegue del sistema ascendería a 65.60€ + 0€ + 17.28€ = 82.88€.
 
 | Despliegue AppEngine|
 | ------ |
@@ -146,9 +144,11 @@ Por lo tanto, el precio mensual total para el despliegue del sistema ascendería
 
 Otra opción para el despliegue de la infraestructura necesaria para la aplicación, consistiendo esta en una aplicación para el frontend realizada en NextJs, otra para el backend con la tecnología FastAPI y su base de datos correspondiente. Podría ser una combinación de diferentes hosting diferentes, para aprovechar sus límites del nivel gratuito definidos anteriormente (podría ser utilizados debido al poco tráfico y carga de nuestra aplicación). En este caso se utilizarían los servicios de App Engine para el backend de la aplicación, Vercel para el despliegue del frontend y por último el servicio de PlanetScale para la base de datos relacional. 
 
-El coste mensual de esta opción de infraestructura sería el costo mensual del backend en App Engine, ya que con el nivel gratuito de Vercel y PlanetScale sería suficiente. Este coste serían 25,30€ mensuales.
+El coste mensual de esta opción de infraestructura sería el costo mensual del backend en App Engine, ya que con el nivel gratuito de Vercel y PlanetScale sería suficiente. Este coste serían de 65.60€ + 0€ + 0€ = 65.60€ mensuales.
 
 Esta opción de despliegue se basa en una estimación de la carga y tráfico de las organizaciones, Tertulia Cofrade Cirio y Costal y Asociación Ciudadana de Ayuda al Toxicómano, donde su requerimientos no superan los límites gratuitos de Vercel y PlanetScale. Pues los usuarios que van a utilizar el sistema son solo sus administradores. 
+
+La tercera opción que barajamos es la mejor en cuanto a rendimiento y funcionamiento, pero también la de mayor precio. En esta opción se utilizaría el servicio de Google Cloud para el despliegue de la aplicación, con el servicio de App Engine para el backend, Vercel para el frontend y Mongo Atlas dedicated para la base de datos. Este coste serían 65,60€ + 0€ + 57,00€ = 122,60€ mensuales.
 
 En el siguiente gráfico, la “Opción1” representa la opción de un hosting completo en AppEngine explicada previamente, y la “Opción2” representa un hosting en Vercel, App Engine y  PlanetScale también detallada previamente. En el eje y se representa los subsistemas de los que está formado el sistema, y en el eje x el precio mensual de cada uno de ellos.
 
@@ -156,7 +156,8 @@ En el siguiente gráfico, la “Opción1” representa la opción de un hosting 
 | ------ |
 |<img src="/img/tco/comparativa-precios.png" alt="Comparativa de precios" width="100%" height="100%"/>
 
-Finalmente, como buscamos el menor coste posible para las ONGs, nos decidimos por elegir la opción 2, que conlleva el despliegue del frontend en Vercel, el backend en AppEngine y la base de datos en PlanetScale, con un coste total mensual de 25,30€.
+Finalmente, como buscamos el mejor rendimiento dekl sistema sin llegar  aun coste excesivo, creemos que la mejor opción es la tercera. 
+Es decir que nos decantamos por el servicio de App Engine para el backend, Vercel para el frontend y Mongo Atlas dedicated para la base de datos.
 
 ### 3.3 Costes de GDPR
 En este sistema, se tratan datos sensibles y personales sobre familiares o personas. Esto hace necesario la introducción de una serie de roles y responsabilidades para garantizar el cumplimiento de las normativas de protección de datos, Reglamento General de Protección de Datos (GDPR por sus siglas en inglés). 
