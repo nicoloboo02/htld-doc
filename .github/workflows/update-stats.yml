@@ -1,0 +1,31 @@
+name: Actualizar estadísticas de GitHub
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 18 * * 1'
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '16'
+    - run: npm install
+    - run: npm run update-stats
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    - name: Create Pull Request
+        git config user.name ${{ secrets.USERNAME }}
+        git config user.email ${{ secrets.EMAIL }}
+        git config pull.rebase true
+        git fetch origin
+        git checkout -b update-github-stats-${{ github.run_id }}
+        git add docs/Seguimiento\ del\ equipo/Estadísticas\ de\ github.mdx
+        git commit -a -m "[bot] Update Github Stats with latest info"
+        git push origin update-github-stats-${{ github.run_id }}
+        curl -X POST -H "Authorization: token ${{ secrets.ACCESS_TOKEN }}" -H "Content-Type: application/json" -d '{"title": "[bot] Update Github Stats", "head": "update-github-stats-${{ github.run_id }}", "base": "main"}' "https://api.github.com/repos/ISPP-07/htld-doc/pulls"
