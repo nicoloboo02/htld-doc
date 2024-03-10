@@ -86,8 +86,28 @@ async function getRanking(owner, repo, accessToken,date, branch) {
     return ranking;
 }
 
+async function getDocStats(accessToken,date) {
+    const response = await axios.get(`https://api.github.com/repos/ISPP-07/htld-doc/commits?since=${date}`, {
+        headers: {
+            Authorization: `Bearer ${accessToken}`
+        }
+    });
+    const commits = await response.data;
+    const firstCommit = commits[commits.length - 1].sha;
+    const lastCommit = commits[0].sha;
+    const response2 = await axios.get(`https://api.github.com/repos/ISPP-07/htld-doc/compare/${firstCommit}...${lastCommit}`, {
+        headers: {
+            Authorization: `Bearer ${accessToken}`
+        }
+    });
+    const changes = await response2.data.files;
+    let stats = {};
+    for (let change of changes){
+        stats[change.filename] = { changes: change.changes, status: change.status };
+    }
+    return stats;
+}
 
-// Función principal para obtener estadísticas de todos los repositorios de la organización
 async function getStatsForOrganization(organization, accessToken) {
     const response = await axios.get(`https://api.github.com/orgs/${organization}/repos`, {
         headers: {
@@ -98,6 +118,9 @@ async function getStatsForOrganization(organization, accessToken) {
 
     const stats = [];
 
+    const date = new Date();
+    date.setDate(date.getDate() - 6);
+
     for (const repo of repos) {
         const {pulls, prComments} = await getPRs(organization, repo.name, accessToken);
         const {issues, issueComments} = await getIssuesInfo(organization, repo.name, accessToken);
@@ -107,8 +130,6 @@ async function getStatsForOrganization(organization, accessToken) {
         const realIssueComments = issueComments - prComments;
         const avgIssueComments = issues !== 0 ? (realIssueComments / realIssues).toFixed(2) : 0;
 
-        const date = new Date();
-        date.setDate(date.getDate() - 6);
         let commitRanking;
         if(repo.name === 'htld-doc'){
             commitRanking = await getRanking(organization, repo.name, accessToken, date, "main");
@@ -128,14 +149,15 @@ async function getStatsForOrganization(organization, accessToken) {
             commitRanking
         });
     }
+    const docStats = await getDocStats(accessToken, date.toISOString());
 
-    return stats;
+    return { stats, docStats };
 }
 
 const organization = 'ISPP-07';
 const accessToken = ACCESS_TOKEN;
 try{
-    const stats = await getStatsForOrganization(organization, accessToken);
+    const {stats, docStats} = await getStatsForOrganization(organization, accessToken);
     const date = new Date();
 
     const formattedDate = date.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -163,6 +185,14 @@ try{
         });
         console.log('Ranking de commits incluido en el archivo...');
     })
+
+    statsMDX += `\n\n### Cambios en el docusaurus en la semana del ${formattedDate}\n| Archivo | Nº de Cambios | Estado |\n| ------ | -------------- | ------ |\n`;
+    const changes = Object.entries(docStats);
+    changes.forEach(([file, change]) => {
+        statsMDX += `| ${file} | ${change.changes} | ${change.status} |\n`;
+    });
+    console.log('Cambios en la documentación incluidos en el archivo...');
+
     statsMDX += '\n<h4 align="center">Esta sección ha sido autogenerada mediante github actions, hecho por Álvaro Bernal Caunedo</h4>';
     await fs.writeFile('./docs/Seguimiento del equipo/Estadísticas de github.mdx', statsMDX, { flag: 'w' });
     console.log('Archivo de estadísticas actualizado correctamente.');
