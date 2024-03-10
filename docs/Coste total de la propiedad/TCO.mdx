@@ -5,11 +5,12 @@
 | 1.0     | 2024-02-08 | Versión inicial del documento |
 | 2.0     | 2024-02-09 | Finalización del documento |
 | 3.0     | 2024-02-10 | Corrección del documento  |
-| 4.0     | 2024-02-15 | Correción del documento |
-| 5.0     | 2024-02-16 | Correción del documento |
-| 6.0     | 2024-02-22 | Correción del documento |
-| 7.0     | 2024-03-01 | Correción del documento |
-| 8.0     | 2024-03-08 | Correción del documento |
+| 4.0     | 2024-02-15 | Corrección del documento |
+| 5.0     | 2024-02-16 | Corrección del documento |
+| 6.0     | 2024-02-22 | Corrección del documento |
+| 7.0     | 2024-03-01 | Corrección del documento |
+| 8.0     | 2024-03-08 | Corrección del documento |
+| 9.0     | 2024-03-10 | Corrección del documento |
 
 
 ## 1. Introducción
@@ -161,15 +162,15 @@ En el siguiente gráfico, la “Opción1” representa la opción de un hosting 
 | ------ |
 |<img src="/img/tco/comparativa-precios.png" alt="Comparativa de precios" width="100%" height="100%"/>
 
-Finalmente, como buscamos el mejor rendimiento dekl sistema sin llegar  aun coste excesivo, creemos que la mejor opción es la tercera. 
+Finalmente, como buscamos el mejor rendimiento del sistema sin llegar  aun coste excesivo, creemos que la mejor opción es la tercera. 
 Es decir que nos decantamos por el servicio de App Engine para el backend, Vercel para el frontend y Mongo Atlas dedicated para la base de datos.
 
-### 3.3 Costes de GDPR
+### 3.2 Costes de GDPR
 En este sistema, se tratan datos sensibles y personales sobre familiares o personas. Esto hace necesario la introducción de una serie de roles y responsabilidades para garantizar el cumplimiento de las normativas de protección de datos, Reglamento General de Protección de Datos (GDPR por sus siglas en inglés). 
 
 En nuestro caso, donde el sistema solamente va a ser utilizado por los administradores, y donde no va a haber una gran cantidad de usuarios, suponemos que es suficiente con la introducción de un Data Protection Officer (DPO). Suponemos también un sueldo medio de 22.50€ por hora, y una dedicación semanal de 10 horas. Por lo tanto, el coste mensual de GDPR es de: 22.50 x 10 x 4 = 900.00€
 
-### 3.4 Costes de SLA
+### 3.3 Costes de SLA
 En nuestro caso, establecemos un SLA (Service Level Agreement) para el soporte al cliente que comprende la resolución de incidencias, solicitudes de usuarios y RFC (Request for Change) con los siguientes tiempos de respuesta (TTR):
 
 - **Resolución de Incidencias**: 30 minutos
