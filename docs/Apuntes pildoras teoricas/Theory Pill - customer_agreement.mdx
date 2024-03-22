@@ -1,0 +1,37 @@
+## Historial de versiones
+
+| Versión | Fecha      | Diferencia entre versiones                                                                                                                                                                                 |
+| ------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.0     | 2024-03-16 | Versión inicial de los apuntes que se han sacado de los vídeos de teoría                                                                                   |
+
+## 1. Visión global
+
+__Los acuerdos de clientes son un conjunto de documentos legales que establecen los términos que regulan el uso de los servicios.__
+
+Se definen documentos como los términos generales del uso del servicio, los acuerdos a nivel de servicio, y cualquier otra política necesaria como la política de protección de datos. __Todos estos documentos se escriben con lenguaje natural y se explican las responsabilidades de cada una de las partes involucradas.__
+
+Por ejemplo en la asignatura hemos firmado un __CA__ interno __donde están las responsabilidades de cada miembro y unas cláusulas que cada cierto tiempo vamos monitorizando su cumplimiento, y finalmente se penaliza o premia a los miembros según el cumplimiento de estos objetivos.__ Todo esto para desarrollar un servicio a potenciales clientes (SaaS) y para darle valor añadido a este servicio lo normal es que nos hayamos suscrito o registrado en organizaciones para hacer uso de un servicio, esto significa que hemos firmado un acuerdo de cliente y se podrían tomar acciones legales si el proveedor no cumple con lo ofrecido.
+
+Ya con nuestro prototipo mínimo viable surge la necesidad de __dejar por escrito todas las responsabilidades tanto nuestras como la de los usuarios pilotos__, y para ello hay que definir un nuevo CA que también deberá monitorizarse y tener consecuencias en caso de no cumplir los objetivos.
+
+Los servicios tienen un CA, el cual __es un contrato legalmente vinculante entre proveedor y cliente, protegiendo a ambas partes según las disputas que surjan, y dejando por escrito los derechos y responsabilidades de cada una de las partes.__ Se presenta a los clientes en el proceso de registro y es esencial que lo firmen para que usen el servicio.
+
+## 2.Estructura lógica
+
+Desde un punto de vista lógico lo podemos considerar como una entidad simple con tres elementos:
+    - Los términos de servicio (política de privacidad, propiedad intelectual, ...)
+    - Planes de precio (cada uno con sus funcionalidades)
+    - SLAs (acuerdo a nivel de servicios). Indican ciertas métricas que en caso de incumplimiento de ciertos objetivos, el proveedor tendrá que compensar al cliente de alguna forma.
+
+Desde un punto de vista físico, debemos de tener una página con estos documentos y los planes de precio, debemos añadir una casilla de aceptación de términos y condiciones con un enlace que le lleve a poder leer dichos términos. 
+
+<img src="/img/Theory Pills/TP_terminos_condiciones.png" alt="terminos_condiciones" width="70%" height="70%"/>
+
+## 3. Mínimo contenido a cumplir
+
+Definir servicios que proveeemos, planes de precio y términos legales. Recomendado hacer el SLA.
+
+__Debemos evitar las cláusulas abusivas:__
+- Art. 3 of Directive 93/13: ___Una cláusulas contractual es abusiva si además de no ser negociada por las partes causa un desequilibrio importante entre los derechos y obligaciones de las partes en perjuicio del consumidor___. Para detectar estas cláusulas existen unas herramientas como CLAUDETTE que es capaz de detectar entre otras:
+    - La finalización unilateral del contrato, esto es que el proveedor tenga la disponibilidad de finalizar el contrato sin previo aviso, debería avisar con un tiempo de antelación por ejemplo.
+    - Cambios unilaterales, por ejemplo que el proveedor tenga el derecho de cambiar los servicios cuando quiera.
