@@ -5,6 +5,7 @@
 | 1.0     | 2024-03-01 | Versión inicial del documento                                                                                |
 | 2.0     | 2024-03-03 | Corrección del documento                                                                                |
 | 3.0     | 2024-03-11 | Añadir el problema del despliegue de la base de datos                                                                              |
+| 4.0     | 2024-03-24 | Añadida rúbrica y puntuación de la calidad de la solución                                                                              |
 
 
 ## 1. Resumen ejecutivo
@@ -15,6 +16,24 @@ Sirve como una herramienta fundamental para identificar, dcumentar y abordar de 
 El desarrollo de proyecto de software conlleva una serie de desafíos que pueden surgir en cualquier etapa del proceso.
 Desde la fase de planificación hasta la implemenetación y el mantenimiento, es crucial tener en cuenta que la ocurrencia de problemas es algo casi inevitable, y 
 que por eso es necesario contar con un plan de acción para abordarlos de manera efectiva.
+
+## 3. Rúbrica para medir la calidad de la solución
+
+Para medir la calidad de la solución se usará la fórmula: 
+
+Calidad de la Solución = (BNS + RU) / 2
+
+donde el resultado será un número entre el 0 y el 5, siendo 0 una mala solución y un 5 la mejor puntuación. Para aplicar esta fórmula se usará la siguiente rúbrica para los valores de beneficio neto de la solución(BNS) y la eficiencia en el uso de recursos(RU):
+
+| Valor | Beneficio Neto de la Solución (BNS) | Recursos Utilizados (RU) |
+|-------|------------------------------------|--------------------------|
+| 1     | La solución proporciona un beneficio mínimo o apenas perceptible. | Se requieren recursos significativos en comparación con el beneficio obtenido. |
+| 2     | La solución aporta un beneficio modesto pero aún no es suficiente para resolver completamente el problema. | Los recursos utilizados son moderados pero podrían optimizarse mejor. |
+| 3     | La solución proporciona un beneficio considerable y aborda parte del problema, pero hay margen de mejora. | Los recursos utilizados son razonables y están equilibrados con el beneficio obtenido. |
+| 4     | La solución tiene un impacto significativo y resuelve una gran parte del problema. | Los recursos utilizados son eficientes y proporcionales al beneficio obtenido. |
+| 5     | La solución aporta un beneficio excelente y resuelve completamente el problema de manera óptima. | Se requieren pocos recursos y la solución es altamente eficiente, maximizando el beneficio neto. |
+
+​
 
 ## 3. Problemas identificados
 
@@ -28,18 +47,18 @@ No aplica
 No aplica
 
 ### 3.4 Semana 4 (20/02/2024 - 26/02/2024)
-| Problema | Solución      | Objetivo            | Análisis de la solución |
-| ------- | ---------- | ---------------------------------| ---------------------------------|
-| Durante la planificación del Diccionario de la EDT no se tuvieron bien en cuenta las dependencias entre las tareas de backend y de frontend  | Uso de MockApi| Reducir la dependencia entre los distintos "departamentos"  |  Se manejaron dos alternativas, la primera de ellas era la reestructuración de la EDT y la segunda era el uso de MockApi ya que esto se comentó al principio del desarrollo. Finalmente, se eligió el uso de MockApi porque era lo que se había comentado en un principio y de las dos alternativas era la que menos tiempo requería teniendo en cuenta el avance que ya se había hecho del desarrollo                      |
+| Problema | Solución      | Objetivo            | Análisis de la solución | Calidad de la solución |
+| ------- | ---------- | ---------------------------------| ---------------------------------|---------------------------------|
+| Durante la planificación del Diccionario de la EDT no se tuvieron bien en cuenta las dependencias entre las tareas de backend y de frontend  | Uso de MockApi| Reducir la dependencia entre los distintos "departamentos"  |  Se manejaron dos alternativas, la primera de ellas era la reestructuración de la EDT y la segunda era el uso de MockApi ya que esto se comentó al principio del desarrollo. Finalmente, se eligió el uso de MockApi porque era lo que se había comentado en un principio y de las dos alternativas era la que menos tiempo requería teniendo en cuenta el avance que ya se había hecho del desarrollo                      | (5 + 4)/2 = 4.5 |
 
 
 ### 3.5 Semana 5 (27/02/2024 - 04/03/2024)
-| Problema | Solución      | Objetivo            | Análisis de la solución |
-| ------- | ---------- | ---------------------------------| ---------------------------------|
-| Falta de comunicación efectiva entre backend y frontend: como es la falta de un manual de instrucciones para el manejo del backend en local y la espera de frontend del despliegue de api| Realizar el manual y una comunicación mas constante entre "departamentos". Además inclusión de un miembro del grupo como "vigilante" de ambos grupos | Acelerar el proceso de desarrollo para tener un "prototipo funcional" desplegado antes de la entrega  | |
-| Backend se basa en los modelos nuevos actualizados y frontend se basa en los mockups no actualizados   |  Una comunicación mas constante entre los dos "departamentos"  | Facilitar el desarrollo y la cohesión  de ambos departamentos |  |
+| Problema | Solución      | Objetivo            | Análisis de la solución | Calidad de la solución |
+| ------- | ---------- | ---------------------------------| ---------------------------------|---------------------------------|
+| Falta de comunicación efectiva entre backend y frontend: como es la falta de un manual de instrucciones para el manejo del backend en local y la espera de frontend del despliegue de api| Realizar el manual y una comunicación mas constante entre "departamentos". Además inclusión de un miembro del grupo como "vigilante" de ambos grupos | Acelerar el proceso de desarrollo para tener un "prototipo funcional" desplegado antes de la entrega  | El grupo ha aceptado el cambio, teniendo un miembro del backend que escribir este manual. Las tareas de frontend se han visto beneficiadas en tiempo de implementación al disponer del manual. | (3 + 3)/2 = 3 |
+| Backend se basa en los modelos nuevos actualizados y frontend se basa en los mockups no actualizados   |  Una comunicación mas constante entre los dos "departamentos"  | Facilitar el desarrollo y la cohesión  de ambos departamentos | Los miembros de backend notifican a los de frontend cada vez que hay un cambio relevante, de esta forma en frontend se sabe cuando se está desactualizado.  | (5 + 5)/2 = 5|
 
 ### 3.6 Semana 6 (05/03/2024 - 11/03/2024)
-| Problema | Solución      | Objetivo            | Análisis de la solución |
-| ------- | ---------- | ---------------------------------| ---------------------------------|
-| **Despliegue de la base de datos:** Durante el primer Sprint nos dimos cuenta que el despliegue de la base de datos de forma remota suponía un coste de $2,37/h, siendo un coste elevado que puede afectar a la aceptación del producto. | La solución escogida ha sido cambiar de base de datos a MongoDB ya que, el despliegue en MongoAtlas es mucho más económico ($0,10/m) | Conseguir la aceptación del producto por parte del cliente | |
+| Problema | Solución      | Objetivo            | Análisis de la solución | Calidad de la solución |
+| ------- | ---------- | ---------------------------------| ---------------------------------|---------------------------------|
+| **Despliegue de la base de datos:** Durante el primer Sprint nos dimos cuenta que el despliegue de la base de datos de forma remota suponía un coste de $2,37/h, siendo un coste elevado que puede afectar a la aceptación del producto. | La solución escogida ha sido cambiar de base de datos a MongoDB ya que, el despliegue en MongoAtlas es mucho más económico ($0,10/m) | Conseguir la aceptación del producto por parte del cliente | Al evaluar el costo de despliegue de la base de datos, se encontró que el coste actual era demasiado alto y podía impactar negativamente en la aceptación del producto. Se optó por cambiar a MongoDB en MongoAtlas debido a su coste significativamente más bajo, lo que contribuirá a reducir los gastos y mejorar la aceptación del producto. Esto ha conllevado a una reestructurazión en backend, atrasándolo 1 semana respecto a la planificación inicial | (4 + 3)/2 = 3.5 |
