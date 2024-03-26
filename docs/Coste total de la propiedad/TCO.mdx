@@ -13,6 +13,8 @@
 | 9.0     | 2024-03-10 | Corrección del documento |
 | 10.0     | 2024-03-14 | Actualización del documento |
 | 11.0     | 2024-03-19 | Actualización del documento |
+| 12.0     | 2024-03-26 | Actualización del documento |
+
 
 
 
@@ -168,12 +170,17 @@ En el siguiente gráfico, la “Opción1” representa la opción de un hosting 
 Finalmente, como buscamos el mejor rendimiento del sistema sin llegar a un coste excesivo, creemos que la mejor opción es la tercera. 
 Es decir que nos decantamos por el servicio de App Engine para el backend, Vercel para el frontend y Mongo Atlas dedicated para la base de datos.
 
-### 3.2 Costes de GDPR
+
+### 3.2 Costes de APIs de verificación de email
+Para la verificación de los correos electrónicos de los usuarios, se ha decidido utilizar una API de verificación de email. En este caso, se ha elegido la API de SendGrid, que ofrece distintos planes y es una de las más populares en el mercado.
+
+
+### 3.3 Costes de GDPR
 En este sistema, se tratan datos sensibles y personales sobre familiares o personas. Esto hace necesario la introducción de una serie de roles y responsabilidades para garantizar el cumplimiento de las normativas de protección de datos, Reglamento General de Protección de Datos (GDPR por sus siglas en inglés). 
 
 En nuestro caso, donde el sistema solamente va a ser utilizado por los administradores, y donde no va a haber una gran cantidad de usuarios, suponemos que es suficiente con la introducción de un Data Protection Officer (DPO). Suponemos también un sueldo medio de 22.50€ por hora, y una dedicación semanal de 10 horas. Por lo tanto, el coste mensual de GDPR es de: 22.50 x 10 x 4 = 900.00€
 
-### 3.3 Costes de SLA
+### 3.4 Costes de SLA
 En nuestro caso, establecemos un SLA (Service Level Agreement) para el soporte al cliente que comprende la resolución de incidencias, solicitudes de usuarios y RFC (Request for Change) con los siguientes tiempos de respuesta (TTR):
 
 - **Resolución de Incidencias**: 30 minutos
@@ -206,7 +213,7 @@ Por lo tanto, el coste total mensual del SLA sería:
 Este sería el costo mensual total de cumplir con el SLA para nuestro proyecto de software.
 
 ## 4. Coste total de la propiedad
-Teniendo en cuenta la estimación de costes de desarrollo del proyecto, y la estimación respectiva a la operación del sistema, a los costes de GDPR y a los costes de contingencia, nos queda el siguiente Coste Total de la Propiedad (TCO) para un año:
+Teniendo en cuenta la estimación de costes de desarrollo del proyecto, y la estimación respectiva a la operación del sistema, a los costes de GDPR y a los costes de contingencia, nos queda el siguiente Coste Total de la Propiedad (TCO) para 2 años, diferenciando entre los 4 meses de desarrollo y el resto de los 20 meses para completar los 2 años:
 
 <iframe 
   src="https://docs.google.com/spreadsheets/d/1yN304q4Q146NLZuRgy5VLMnoqDNUq0S5W13AVQnaRB0/edit#gid=0"
@@ -216,7 +223,7 @@ Teniendo en cuenta la estimación de costes de desarrollo del proyecto, y la est
 </iframe>
 
 
-El coste total de la propiedad anual es de **74.5K**.
+El coste total de la propiedad anual es de **91.2K**.
 
 ## 5. Estado actual del TCO
 
