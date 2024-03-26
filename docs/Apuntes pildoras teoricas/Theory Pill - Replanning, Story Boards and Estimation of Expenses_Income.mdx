@@ -1,0 +1,110 @@
+## Historial de versiones
+
+| Versión | Fecha      | Diferencia entre versiones                                                                                                                                                                                 |
+| ------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.0     | 2024-03-08 | Versión inicial de los apuntes que se han sacado de los vídeos de teoría                                                                                   |
+
+## 1. Sprint Planning Tools
+
+Estrategias para la planificación de los sprints.
+
+GQM es un enfoque establecido orientado a __objetivos__, __preguntas__ que tenemos que hacernos para lograr esos objetivos, y las __métricas__ de software para mejorar y medir la calidad del software en base a esos objetivos.
+
+| Goal-Questions-Metrics (GQM)                                                            |
+| --------------------------------------------------------------------------------- |
+|<img src="/img/Theory Pills/TP_GQM.png" alt="GQM" width="100%" height="100%"/> |
+
+### 1.1 Aplicar GQM
+
+__Objetivo:__
+    - Mejorar nuestras estimaciones, reducir las desviaciones y cumplir las expectativas del cliente.
+
+__Preguntas:__
+    - ¿Cuál es la capacidad media de entrega del equipo por unidad de tiempo? (es decir, como soy capaz de terminar mis tareas a tiempo para cumplir las expectativas del cliente por unidad de tiempo)
+    - ¿El equipo entrega a un ritmo constante?
+
+__Métricas:__
+    - Puntos de historia (por historia de usuario).
+    - Velocidad con la termino las tareas
+    - Porcentaje de historias de usuario completadas por sprint
+
+#### 1.1.1 Ejemplo aplicación GQM
+
+__Objetivo:__
+    - Ser más productivos (invertir nuestro tiempo en las actividades que producen más valor, detectar ineficiencias y carencias en las habilidades del equipo)
+
+__Pregunta:__
+    - ¿Dónde se pierde tiempo en actividades que no aportan valor?
+
+__Métricas:__
+    - Eficiencia del ciclo de proceso (PCE): Identificar las actividades que aportan menos valor mientras les dedicamos más tiempo. (valor/tiempo empleado). (Control chart)
+    - Tiempo de espera
+    - Tiempo de ciclo
+
+### 1.2 Análisis de Montecarlos
+
+Sirve para predecir el rendimiento del equipo cuando hay muchas variables que entran en juego (por ejemplo: temporales, por habilidades de los miembros del equipo,...)
+
+| How Many                                                             |
+| --------------------------------------------------------------------------------- |
+|<img src="/img/Theory Pills/TP_montecarlos.png" alt="montecarlos" width="100%" height="100%"/> |
+
+También se puede usar para saber __cuando__ voy a tener finalizada un número/conjunto de tareas
+
+| When                                                           |
+| --------------------------------------------------------------------------------- |
+|<img src="/img/Theory Pills/TP_montecarlos2.png" alt="montecarlos2" width="100%" height="100%"/> |
+
+Se recomienda usar las gráficas burn up(representa la cantidad de producto entregado, se va acumulando con los sprints) y burn down(muestra el trabajo pendiente para el sprint).
+
+En el gráfico Cycle Time Chart debemos buscar que todas las tareas se completen en los días esperados y que no haya ninguna que tarde muchos más días que el resto. También se debe evitar que haya periodos en los que no se complete ninguna tarea. Las tareas que tardan más días de los esperados están mal planificadas y deberían haberse dividido en tareas más pequeñas.
+| Lead/Cycle Time Chart                                                          |
+| --------------------------------------------------------------------------------- |
+|<img src="/img/Theory Pills/TP_Cycle_Time_Chart.png" alt="Cycle Time Chart" width="100%" height="100%"/> |
+
+### 1.3 ¿Cuándo replanificar?
+
+- Cambios en los requisitos
+- Cambia la priorización de las tareas
+- Mala evolución del burndown
+- Mala evolución del Control Chart
+
+### 1.4 Rule of Thumb
+
+1. Definir Sprint Goal (GQM)
+2. Identificar las tareas en: "must have", "should have" y "could have"
+3. Enfocar el 60% de la capacidad del equipo a "must have"
+4. El otro 40% para replanificar si es necesario o sino a las tareas de "should have"
+
+## 2. Storyboard
+
+Una ilustración de todos los elementos que desea incluir en vídeo. Suele parecerse a los paneles de un cómic, y muestra las escenas clave de un vídeo, anuncio o película plano a plano.
+
+| Storyboard                                                         |
+| --------------------------------------------------------------------------------- |
+|<img src="/img/Theory Pills/TP_storyboard.png" alt="Storyboard" width="100%" height="100%"/> |
+
+- Deben ser simples
+- Enfocarse en la idea que queremos transmitir
+- Ser visual, evitar el texto
+
+Pasos para hacer un storyboard:
+1. __Historia.__ Poner escenas claves, crear una narración (opener, problema, solución y llamada a la acción), nivel de detalle de las escenas y describir bien las celdas/viñetas. 
+2. __Diseño.__ Manual vs digital (mejor digital), usar tips para el diseño, usar rejillas para mostrar perspectiva y resaltar lo importante poniéndole color.
+<img src="/img/Theory Pills/TP_design.png" alt="design" width="100%" height="100%"/>
+3. __Información adicional y detalles__. Enumeración de las viñetas, movimiento de cámara y detallar los diálogos.
+4. __Revisión y ajuste.__ Es bueno dejar durante un tiempo el storyboard y pedir feedback.
+
+## 3. Estimaciones de beneficios y gastos
+
+No hay que ser ni optimista ni negativo, algo intermedio
+
+<img src="/img/Theory Pills/TP_estimaciones.png" alt="estimaciones" width="100%" height="100%"/>
+
+Debemos incluir en nuestro proyecto las siguientes gráficas:
+
+- En esta se puede ver fácilmente en el momento que se empieza a obtener beneficio:
+<img src="/img/Theory Pills/TP_costesVSbeneficios.png" alt="costesVSbeneficios" width="100%" height="100%"/>
+
+- En la siguiente gráfica se puede observar fácilmente como se ha ido gastando el presupuesto del proyecto y los puntos de historia a lo largo del tiempo (las líneas verde y morado claritas son las ideales):
+<img src="/img/Theory Pills/TP_presupuesto_puntoshHistoria.png" alt="presupuesto_puntoshHistoria" width="100%" height="100%"/>
