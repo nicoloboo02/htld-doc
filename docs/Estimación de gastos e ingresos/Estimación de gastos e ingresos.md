@@ -75,8 +75,12 @@ En el escenario optimista, se plantea que en el primer año se consiga vender la
 
 Como se puede observar, el ingreso total en los próximos 5 años en el escenario optimista asciende a 426.250 €.
 
+## 4. Beneficios vs costes
+Teniendo en cuenta los beneficios anteriormente calculados y los costes que se encuentran en el TCO, se muestra una gráfica a modo de resumen:
 
-## 4. Conclusiones
+<img src="\img\graphs\beneficiosvscostes.png" alt="beneficiosvscostes" width="100%" height="100%"/>
+
+## 5. Conclusiones
 
 Tras haber realizado el análisis de gastos e ingresos estimados, se puede concluir que:
 
