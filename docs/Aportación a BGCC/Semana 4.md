@@ -45,25 +45,24 @@
 
 ### Apartados de la PPTX
 
-- Grandes bloques:
-  - Introducción del negocio (Resumen del modelo de negocio) 20%
+#### Grandes bloques:
+  ##### Introducción del negocio (Resumen del modelo de negocio) 20%
     - Killer opener
     - Elevator pitch
     - Resumen del análisis de competidores
     - Resumen del TCO (Separar CapEX - Horas de desarrollo, infraestructura propia que se va a amortizar en distintos proyectos, personal, licencias de software como producto, amortización de equipos y OpEX desde el punto de vista de **Harmony** - Coste de proveer el servicio a los clientes, licencias de software como servicio, hosting, cloud, mantenimiento, mejora, customer support, marketing. El coste suele ir al OpEx). Situación actual respecto al esperado
     - Análisis de gastos e ingresos estimados (Estimación por tres valores) en años. Si vendemos nuestra app a otras ONGs, cuantos usuarios u ONGs deberían ser clientes para que tuviesemos beneficios.
     - CA y estado de cumplimiento.
-  - Prototipo al final del Spint 15%
-  - Retrospectiva del Sprint 1 40%
+  ##### Prototipo al final del Spint 15%
+  ##### Retrospectiva del Sprint 1 40%
     - Rendimiento del equipo
     - Des-Anonimizar al que más ha hecho y el que más ha evolucionado respecto a la semana anterior.
     - Automatización de análisis de la calidad del código
     - Problemas> Solución > Objetivo > Análisis de la solución
     - Reloj del avance del proyecto (Semanal y global) Tiene que haber un enlace al clockify pero no en la Landing page.
-  - Gestión de usuarios pilotos
+  ##### Gestión de usuarios pilotos
     - Mostrar gráficamente la ventana de disponibilidad, ventana de feedback de usuarios, etc.
     - Customer support - Fórmula para ver el soporte (Plan de mantenimiento). En función del TTR, personal necesario y precio necesario en función del tipo de disponibilidad. Soporte con IA, soporte con personas.
-  - Planificación (Siguientes sprints)
+  ##### Planificación (Siguientes sprints)
     - Planificación del Sprint 2 (Tener en cuenta que son 4 semanas reales)
     - Si hace falta, replanificar el 3.
-  - Uso de la IA
