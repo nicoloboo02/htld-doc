@@ -38,7 +38,7 @@ Figura 2. Calidad de código de CyC
 <img src="\img\quality\backQ.png" alt="Backend" width="35%" height="35%"/>
 Figura 3. Calidad de código del repositorio de Backend
 </p>
-Cómo podemos ver, la calidad del código es algo importante para nosotros y hemos intentado mantener el software con el mínimo posible de "issues". Durante el final del sprint ha aumentado un poco el número de problemas encontrados debido a que el retraso en algunas tareas ha impedido que se pudiese dedicar tiempo extra para refactorizar dichos problemas, por ello, se ha pospuesto esta tarea al inicio del sprint 2. Por otra parte, destacar que en los dos repositorios de frontend el número de problemas enconrtados es menor y además son problemas de estilo de código (No son problemas como tal sino aspectos de mejora o buenas prácticas).
+La calidad del código es algo importante para nosotros y hemos intentado mantener el software con el mínimo posible de "issues". Durante el final del sprint ha aumentado un poco el número de problemas encontrados debido a que el retraso en algunas tareas ha impedido que se pudiese dedicar tiempo extra para refactorizar dichos problemas, por ello, se ha pospuesto esta tarea al inicio del sprint 2. Por otra parte, destacar que en los dos repositorios de frontend el número de problemas enconrtados es menor y además son problemas de estilo de código (No son problemas como tal sino aspectos de mejora o buenas prácticas).
 
 ### Cobertura
 Debido a que no se tienen imagenes detalladas de la cobertura del código en el sprint 1, se mostrará en la siguiente tabla:
@@ -87,7 +87,7 @@ Figura 8. Calidad de código de CyC
 </p>
 
 #### Backend
-Destacar en la siguiente figura la mejora de calidad de código de forma considerable, reduciendo más de un 10% el número de problemas de código. Esta subida en el número de problemas se dió en la fecha correspondiente al Sprint 1, siendo esto resuelto la semana siguiente con el objetivo de mejorar la mantenibilidad del código.
+Destacar en la **_Figura 9_** la mejora de calidad de código de forma considerable, reduciendo más de un 10% el número de problemas de código. Esta subida en el número de problemas se dió en la fecha correspondiente al Sprint 1, siendo esto resuelto la semana siguiente con el objetivo de mejorar la mantenibilidad del código.
 <p align="center">
 <img src="\img\quality\backQ2.png" alt="Backend2" width="80%" height="80%"/>
 Figura 9. Calidad de código del repositorio de backend
@@ -129,7 +129,7 @@ En la siguiente figura se muestra de forma clara cómo se ha mantenido la calida
 Figura 13. Niveles de calidad en cada sprint
 </p>
 
-Cómo podemos ver, en el segundo sprint el nivel de cobertura del código ha disminuido de forma notable, los motivos de esta bajada en la cobertura son:
+Cómo podemos ver en la **_Figura 14_**, en el segundo sprint el nivel de cobertura del código ha disminuido de forma notable, los motivos de esta bajada en la cobertura son:
 - Se han realizado la mayoría de módulos principales de la aplicación, ocasionando esto que al haber tantas líneas de código el número de tests equivalentes para mantener la cobertura del sprint anterior es muy alta en comparación al anterior. Por ello, hemos decidido centrarnos en probar las funcionalidades esenciales e importantes.
 - Se ha replanificado aumentar la cobertura de tests para el siguiente sprint. En el tercer sprint se buscará mejorar la cobertura de tests pero evitando hacer tests triviales, de forma que si aun así la cobertura se mantiene en estos niveles, daremos por finalizada dicha tarea.
 
