@@ -98,15 +98,15 @@ En la siguiente tabla se muestra de forma clara la cobertura de los repositorios
 
 | Repositorio | Cobertura |
 |-------------|-----------|
-| ACAT        | 70%      |
-| CyC         | 78,35%      |
+| ACAT        | 57,2%      |
+| CyC         | 68,18%      |
 | Backend     | 79%      |
 
 
 A continuación se muestran imágenes en detalle de los informes de cobertura de código generados:
 - Frontend ACAT
 <p align="center">
-<!-- <img src="\img\coverage\coverageACAT2.png" alt="ACAT" width="80%" height="80%"/> -->
+<img src="\img\coverage\coverageACAT2.png" alt="ACAT" width="80%" height="80%"/>
 Figura 10. Cobertura de código de ACAT
 </p>
 
