@@ -1,8 +1,8 @@
 {
-    "label": "Planificación",
-    "position": 13,
-    "link": {
+  "label": "Autoevaluación de los sprints",
+  "position": 4,
+  "link": {
       "type": "generated-index",
       "description": "¿Qué apartado deseas consultar?"
-    }
   }
+}

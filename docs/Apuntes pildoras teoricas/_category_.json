@@ -1,8 +1,8 @@
 {
   "label": "Apuntes píldoras teóricas",
-  "position": 6,
+  "position": 3,
   "link": {
-    "type": "generated-index",
-    "description": "¿Qué apartado deseas consultar?"
+      "type": "generated-index",
+      "description": "¿Qué apartado deseas consultar?"
   }
 }
