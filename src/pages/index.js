@@ -52,7 +52,7 @@ function ImportantDocument() {
     },
     {
       name: 'Pilots.md',
-      url: 'docs/Gestion%20de%20Usuarios%20Piloto/InformationProvidedByPilotUsers',
+      url: 'docs/Gestion%20de%20Usuarios%20Piloto/Pilots',
     },
     {
       name: 'Time-Effort-report.md',
@@ -68,7 +68,7 @@ function ImportantDocument() {
     },
     {
       name: 'PerformanceEvaluation.md',
-      url: 'docs/Gestion%20de%20Usuarios%20Piloto/PerformanceEvaluation',
+      url: 'docs/Seguimiento%20del%20equipo/PerformanceEvaluation',
     },
     {
       name: 'PilotUserPerformanceEvaluation.md',
