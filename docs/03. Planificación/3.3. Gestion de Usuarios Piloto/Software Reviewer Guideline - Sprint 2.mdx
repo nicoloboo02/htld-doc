@@ -1,0 +1,349 @@
+# Software Reviewer Guidelines - Sprint 2
+
+# Introduccion
+
+En el documento vigente se definirán las guías necesarias para probar cada una de las funcionalidades que las aplicaciones Web de Cirio y Costal y ACAT proporcionas. La guía estará definida para usuarios candidatos de la aplicación, cuyas actividades difieren en la aplicación de aquellas que realizan los usuarios representantes.
+
+# Información Importante
+
+Existen actualmente dos despliegues de nuestro sistema, uno para ONG que se beneficiará del mismo, debido a las diferencias entre sus necesidades. Se puede acceder a estas a través de los siguientes enlaces:
+- [ACAT](https://frontend-acat-sprint-2.vercel.app)
+- [CyC](https://frontend-cyc-sprint2.vercel.app/)
+
+## Navegadores compatibles
+Actualmente solo navegadores basados en la tecnología Chromium tienen soporte. En un futuro se pretende dar soporte para otros navegadores pero actualmente no se puede asegurar el correcto funcionamiento del sistema en navegadores basados en webkit como Safari, o independientes como Firefox.
+
+## Permisos
+En el sistema desarrollado se espera que todos los usuarios sean administradores, por lo que tanto en esta iteración como iteraciones posteriores se espera que cualquier persona con acceso al sistema pueda hacer cualquier operación permitida.
+
+## Información de Contacto
+Si en algún momento durante las pruebas necesita informar de alguna duda o problema, existen las siguientes vías:
+- Correo Electrónico: harmonyltd@outlook.es
+- Formulario: Podrás dejar cualquier tipo de feedback para reportar errores, recomendar cambios o proponer mejoras en el siguiente formulario: [enlace]
+
+## iTop
+Hemos facilitado una instancia de iTop para aquellos usuarios piloto que sean estudiantes de la Universidad de Sevilla, así como unas instrucciones en formato audiovisual, accesibles a través del siguiente enlace: [iTop.mp4](/docs/06.%20Recursos/6.4.%20Tutoriales/iTop.mdx).
+
+### Acceso
+Para acceder a iTop, el usuario debe ir a la dirección [https://oitilio.us.es](https://oitilio.us.es) y autenticarse con su uvus a través de SAML. Una vez hecho esto el usuario ha de navegar a la organización de iTop "Harmony".
+
+### User Requests
+El usuario piloto puede crear peticiones de servicio a través de la pestaña "User Requests" en la barra lateral de navegación, y de ahí a "New user Request". Una vez en el formulario podrá seleccionar el tipo de petición que desea realizar, y rellenar los campos necesarios para la misma:
+- Title: Título de la petición
+- Description: Descripción de la petición
+- Caller: Usuario que realiza la petición
+- Origin: Origen de la petición
+- Impact: Impacto de la petición
+- Urgency: Urgencia de la petición
+También podrá relacionar la petición con otras peticiones, incidencias, problemas y adjuntar archivos.
+
+### Incidencias
+El usuario piloto puede reportar incidencias a través de la pestaña "Incidents" en la barra lateral de navegación, y de ahí a "New Incident". Una vez en el formulario podrá rellenar los campos necesarios para la incidencia:
+- Title: Título de la incidencia
+- Description: Descripción de la incidencia
+- Caller: Usuario que reporta la incidencia
+- Origin: Origen de la incidencia
+- Impact: Impacto de la incidencia
+- Urgency: Urgencia de la incidencia
+Podrá relacionar la incidencia con otras incidencias, peticiones, problemas, y adjuntar archivos.
+
+### Problemas
+El usuario piloto puede reportar problemas a través de la pestaña "Problems" en la barra lateral de navegación, y de ahí a "New Problem". Una vez en el formulario podrá rellenar los campos necesarios para el problema, en el caso de problemas podremos seleccionar también el servicio afectado.
+- Title: Título del problema
+- Description: Descripción del problema
+- Caller: Usuario que reporta el problema
+- Origin: Origen del problema
+- Impact: Impacto del problema
+- Urgency: Urgencia del problema
+- Service: Servicio afectado
+- Subservice: Subservicio afectado
+Se podrá relacionar el problema con otros problemas, requests, incidencias, y adjuntar archivos.
+
+## Limitaciones Actuales
+Debido a diversas situaciones durante el desarrollo de esta segunda iteración del servicio, el sistema ha empezado a conectarse al backend, pero no está finalizado aún. Las limitaciones de cada apartado se marcarán en color <span style={{ color: 'red' }}>rojo</span>. Se indicará también con mayor claridad el comportamiento esperado en esos casos.
+Por otro lado, como parte de nuestra investigación sobre alternativas de despliegues gratuitas el sistema actual está desplegado con Vercel en su plan gratuito para recolectar feedback sobre su funcionamiento. Por tanto se espera que pueda haber problemas en los tiempos de respuesta, y aunque creemos que improbable, es posible experimentar errores ajenos a la aplicación, y relacionados con los límites de uso de Vercel. Estos errores pueden ser debido a un uso simultáneo exclusivo del servicio desplegado en un corto periodo de tiempo.
+
+# ACAT
+A lo largo de la prueba del sistema se podrá navegar a través de la aplicación mediante la barra lateral disponible. Toda la aplicación es responsive por lo que podrá ser usada en móvil u ordenador.
+
+<img src="/img/usermanual/sprint2/acat-sidebar.png" height="50%"/>
+
+## Login
+Para usar la aplicación es necesario iniciar sesión, por tanto esta página será la primera con la que te encuentres en el sistema. No existe desde este punto ningún enlace a un registro ya que en nuestro sistema un usuario solo puede ser creado por otro, y por tanto alguien externo al sistema no podrá acceder de ninguna manera.
+
+<img src="/img/usermanual/sprint2/acat-login.png" height="50%"/>
+
+Para iniciar sesión puede rellenar el siguiente formulario con sus credenciales (usuario: aruiz_acat, contraseña: aruiz123.), y avanzar a la siguiente vista.
+
+## Listado de Beneficiarios
+
+Los beneficiarios de ACAT son las personas que reciben los servicios de esta ONG. Desde este listado podemos ver sus nombres, número de citas totales, edad y si el servicio que tenían que proporcionarles está finalizado.
+
+<img src="/img/usermanual/sprint2/acat-beneficiarios.png" height="50%"/>
+
+También podemos ver un listado de los beneficiarios finalizados.
+
+<img src="/img/usermanual/sprint2/acat-finalizados.png" height="50%"/>
+
+Haciendo click en uno de estos beneficiarios nos llevaŕa a los detalles del mismo.
+
+## Exportar
+
+En los distintos listados veremos estos botones de importar y exportar datos en relación a los listados que se muestran en pantalla. A través de estos podremos descargar o subir* los datos correspondientes al tipo de entidad que se muestra.
+
+<img src="/img/usermanual/sprint2/acat-export.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>*La acción de importar no está implementada actualmente, por tanto el comportamiento esperado es un mensaje de error.</span>.
+
+## Detalles de Beneficiario
+
+<img src="/img/usermanual/sprint2/acat-beneficiariodetalle.png" height="50%"/>
+
+Desde esta vista podremos editar, finalizar o eliminar un beneficiario con los controles arriba a la derecha.
+
+<img src="/img/usermanual/sprint2/acat-beneficiarioedit.png" height="50%"/>
+<img src="/img/usermanual/sprint2/acat-beneficiariodelete.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Al hacer click en “Nueva intervención” nada deberá ocurrir, pues no está implementada esta feature desde esta vista.</span>
+- <span style={{ color: 'red' }}>El panel derecho, actualmente vacío, existe para en un futuro enseñar las intervenciones asociadas a un beneficiario.</span>
+
+## Dar de Alta
+
+De vuelta al listado de beneficiarios, podemos hacer click en el botón de Dar de alta en la esquina superior derecha para acceder al formulario de alta de un beneficiario.
+
+<img src="/img/usermanual/sprint2/acat-beneficiarioform.png" height="50%"/>
+
+A través de este formulario podemos añadir la información de un beneficiario y registrarlo en el sistema.
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>El número de teléfono puede ser cualquier número entre 1 y 15 caracteres o nulo.</span>
+- <span style={{ color: 'red' }}>El “Sexo” ha de ser “Man” o “Woman”. Por un error de diseño se ha dejado como entrada libre, algo que será corregido en un futuro.</span>
+- <span style={{ color: 'red' }}>Las validaciones de campos no están implementadas en este modal. Si hay algún error desde backend el comportamiento esperado es un mensaje desde el navegador que diga que ha habido un error.</span>
+
+## Listado de Intervenciones
+
+Las intervenciones de ACAT son las los servicios que provee ACAT a sus beneficiarios, y registran el quién, cuándo y qué de una intervención.
+
+<img src="/img/usermanual/sprint2/acat-intervenciones.png" height="50%"/>
+
+Haciendo click en uno de estos beneficiarios nos llevaŕa a los detalles del mismo.
+
+<img src="/img/usermanual/sprint2/acat-intervenciondetalle.png" height="50%"/>
+
+Haciendo click en una de estas tarjetas nos mostrará un modal con los detalles de esta intervención.
+
+Con los controles de la esquina superior derecha de la carta, podemos editar y eliminar una intervención.
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Si la observación de una intervención se elimina no se actualizará correctamente. Este es un error conocido y será resuelto en futuros despliegues.</span>
+
+## Crear Intervención
+
+A través del botón “Crear Intervención” podemos acceder al siguiente formulario y rellenarlo con los datos del beneficiario, tipo de atención, fecha, técnico, motivo y observaciones.
+
+<img src="/img/usermanual/sprint2/acat-intervencionform.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Las validaciones de campos no están implementadas en este modal. Si hay algún error desde backend el comportamiento esperado es un mensaje desde el navegador que diga que ha habido un error.</span>
+
+## Listar Usuarios
+
+La última entidad de este sistema son los usuarios. A través del listado se pueden observar los distintos usuarios con acceso al sistema. Hacer click en cualquiera de ellos nos llevará a sus detalles.
+
+<img src="/img/usermanual/sprint2/usuarios.png" height="50%"/>
+
+## Detalles de Usuario
+
+Desde los detalles de un usuario se podrán editar sus campos, incluido la contraseña.
+
+<img src="/img/usermanual/sprint2/usuariodetalle.png" height="50%"/>
+
+<img src="/img/usermanual/sprint2/usuarioedit.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Actualmente existe un error conocido en el que al actualizar el usuario si no cambiamos el usuario y el email dará un error de que estos ya existen. Si cambiamos ambos debería funcionar.</span>
+
+## Crear Usuario
+
+En nuestro sistema un usuario existente podrá añadir nuevos usuarios al sistema accediendo a un formulario a través de la barra lateral de navegación.
+
+<img src="/img/usermanual/sprint2/usuarioform.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Las validaciones de campos no están implementadas en este modal. Si hay algún error desde backend el comportamiento esperado es un mensaje desde el navegador que diga que ha habido un error.</span>
+
+## Cambiar/Restaurar Contraseña
+
+Nuestro sistema permite a un usuario cambiar su contraseña a través de lo que se conoce como un código de 2FA. Si uno navega al apartado “Cambiar Contraseña” del menú lateral verá un botón para generar un código QR. Si se ha generado un código con anterioridad, este se sobreescribirá con el nuevo, de modo que sólo exista a la vez un código de doble factor.
+
+<img src="/img/usermanual/sprint2/restaurar.png" height="50%"/>
+
+Una vez generado el QR se puede escanear con una aplicación de 2FA, como Google Authenticator.
+
+Si se nos olvida la contraseña podremos hacer click en el botón “¿Has olvidado tu contraseña?”.
+
+<img src="/img/usermanual/sprint2/acat-login.png" height="50%"/>
+
+<img src="/img/usermanual/sprint2/cambiarcontr.png" height="50%"/>
+
+# Cirio y Costal
+
+A lo largo de la prueba del sistema se podrá navegar a través de la aplicación mediante la barra lateral disponible. El sistema es responsive por lo que podrá ser utilizado tanto en dispositivos móviles como de escritorio.
+
+<img src="/img/usermanual/sprint2/cyc-sidebar.png" height="50%"/>
+
+## Login
+
+Para usar la aplicación es necesario iniciar sesión, por tanto esta página será la primera con la que te encuentres en el sistema. No existe desde este punto ningún enlace a un registro ya que en nuestro sistema un usuario solo puede ser creado por otro, y por tanto alguien externo al sistema no podrá acceder de ninguna manera.
+
+<img src="/img/usermanual/sprint2/cyc-home.png" height="50%"/>
+
+Para iniciar sesión puede rellenar el siguiente formulario con sus credenciales (usuario: aruiz_cyc, contraseña: aruiz123.), y avanzar a la siguiente vista.
+
+## Listado de Familias
+
+Las familias de Cirio y Costal son las personas que reciben los servicios de esta ONG. Desde este listado podemos ver su primer apellido, el número de entregas pendientes y si han sido contactados para recogerlas.
+
+<img src="/img/usermanual/sprint2/cyc-familias.png" height="50%"/>
+
+Haciendo click en una de estas familias nos llevaŕa a los detalles de la misma.
+
+# Exportar
+
+En los distintos listados veremos estos botones de importar y exportar datos en relación a los listados que se muestran en pantalla. A través de estos podremos descargar o subir* los datos correspondientes al tipo de entidad que se muestra.
+
+<img src="/img/usermanual/sprint2/acat-export.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>*La acción de importar no está implementada actualmente, por tanto el comportamiento esperado es un mensaje de error.</span>.
+
+## Detalles de Familia
+
+Desde los detalles de una familia podremos ver los detalles de una familia y sus miembros. De la misma manera podemos editarla o eliminarla con los controles superiores, así como eliminar miembros de la familia que no sean cabeza de familia.
+
+También se podrán ver los detalles de una entrega, editar su estado y eliminar ciertos productos si no se entregarán finalmente.
+
+<img src="/img/usermanual/sprint2/cyc-familiadetalle.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>En el panel derecho se ven las entregas de esa familia, pero no se podrá modificar el los detalles de un alimento por el momento.</span>
+- <span style={{ color: 'red' }}>En el formulario “Nueva Entrega” existen una serie de limitaciones que se discutirán posteriormente.</span>
+- <span style={{ color: 'red' }}>Existe un error conocido en la edición de una familia en la que los campos Teléfono, Dirección, Hermandad y observaciones actualmente no se pueden modificar.</span>
+
+## Dar de Alta
+
+De vuelta al listado de familias, podemos hacer click en el botón de Dar de alta en la esquina superior derecha para acceder al formulario de alta de una familia.
+
+<img src="/img/usermanual/sprint2/cyc-familiaform1.png" height="50%"/>
+
+<img src="/img/usermanual/sprint2/cyc-familiaform2.png" height="50%"/>
+
+A través de este formulario podemos añadir la información de una familia, así como información sobre sus miembros y registrarlos en el sistema.
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Las validaciones de campos no están implementadas en este modal. Si hay algún error desde backend el comportamiento esperado es un mensaje desde el navegador que diga que ha habido un error.</span>
+
+## Listado de Inventario
+
+El inventario de Cirio y Costal corresponde a los alimentos que residen en sus almacenes, tanto alimentos como la cantidad en cada uno de los almacenes. Si un producto está a punto de caducar se verá con un outline rojo.
+
+<img src="/img/usermanual/sprint2/cyc-inventario.png" height="50%"/>
+
+Haciendo click en una de estas tarjetas nos mostrará un modal con los detalles de este elemento.
+
+<img src="/img/usermanual/sprint2/cyc-inventariodetalle.png" height="50%"/>
+
+## Añadir Inventario
+
+Desde este listado podemos agregar nuevos elementos mediante el botón Añadir Elemento.
+
+<img src="/img/usermanual/sprint2/cyc-inventarioform.png" height="50%"/>
+
+A través de este formulario podemos añadir la información de un nuevo elemento en el inventario de la ONG.
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Las validaciones de campos no están implementadas en este modal. Si hay algún error desde backend el comportamiento esperado es un mensaje desde el navegador que diga que ha habido un error.</span>
+
+## Listar Almacenes
+
+En esta vista podremos ver todas los almacenes registrados en el sistema. La información que se guarda de cada almacén es únicamente su nombre.
+
+<img src="/img/usermanual/sprint2/cyc-almacenes.png" height="50%"/>
+
+Desde esta vista podremos eliminar o crear almacenes mediante los botones correspondientes **(Se solicita que no se borren almacenes ya existentes con alimentos en ellos. Borrarlos significa que los alimentos asociados se borren también del sistema).**
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>La función de edición no se encuentra disponible en estos momentos. Tratar de editar un almacén debería resultar en un error.</span>
+
+## Crear Almacén
+
+A través del botón “Añadir Almacén” podemos acceder al siguiente formulario.
+
+<img src="/img/usermanual/sprint2/cyc-almacenform.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Las validaciones de campos no están implementadas en este modal. Si hay algún error desde backend el comportamiento esperado es un mensaje desde el navegador que diga que ha habido un error.</span>
+
+## Listado de Entregas
+
+En esta vista podremos ver todas las entregas registradas en el sistema, incluyendo la familia, el estado, la fecha de entrega, así como los alimentos que la componen.
+
+<img src="/img/usermanual/sprint2/cyc-entregas.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>La actualización de estado de las entregas no está disponible actualmente. El comportamiento esperado es que deje al usuario seleccionar el valor del desplegable pero que no se actualice de forma persistente.</span>
+- <span style={{ color: 'red' }}>La actualización de las entregas o de sus alimentos no está disponible en estos momentos. Se espera que hacer click en dichos botones no resulte en ninguna acción del sistema.</span>
+
+## Crear Entrega
+
+A través del botón “Añadir Entrega” podemos acceder al siguiente formulario donde podremos crear una entrega con los alimentos necesarios, la cantidad de meses para los que esa entrega es válida, y el estado actual de la entrega y los alimentos.
+- La fecha ha de ser posterior a la actual para que se cree y se enseñe correctamente.
+- El valor del campo “Cantidad de meses” ha de ser 1 o superior.
+
+<img src="/img/usermanual/sprint2/cyc-entregaform.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Las validaciones de campos no están implementadas en este modal. Si hay algún error desde backend el comportamiento esperado es que la página se recargue y la entidad no se cree.</span>
+
+
+## Listar Usuarios
+
+La última entidad de este sistema son los usuarios. A través del listado se pueden observar los distintos usuarios con acceso al sistema. Hacer click en cualquiera de ellos nos llevará a sus detalles.
+
+<img src="/img/usermanual/sprint2/usuarios.png" height="50%"/>
+
+## Detalles de Usuario
+
+Desde los detalles de un usuario se podrán editar sus campos, incluido la contraseña.
+
+<img src="/img/usermanual/sprint2/usuariodetalle.png" height="50%"/>
+
+<img src="/img/usermanual/sprint2/usuarioedit.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Actualmente existe un error conocido en el que al actualizar el usuario si no cambiamos el usuario y el email dará un error de que estos ya existen. Si cambiamos ambos debería funcionar.</span>
+
+## Crear Usuario
+
+En nuestro sistema un usuario existente podrá añadir nuevos usuarios al sistema accediendo a un formulario a través de la barra lateral de navegación.
+
+<img src="/img/usermanual/sprint2/usuarioform.png" height="50%"/>
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>Las validaciones de campos no están implementadas en este modal. Si hay algún error desde backend el comportamiento esperado es un mensaje desde el navegador que diga que ha habido un error.</span>
+
+## Cambiar/Restaurar Contraseña
+
+Nuestro sistema permite a un usuario cambiar su contraseña a través de lo que se conoce como un código de 2FA. Si uno navega al apartado “Cambiar Contraseña” del menú lateral verá un botón para generar un código QR. Si se ha generado un código con anterioridad, este se sobreescribirá con el nuevo, de modo que sólo exista a la vez un código de doble factor.
+
+<img src="/img/usermanual/sprint2/restaurar.png" height="50%"/>
+
+Una vez generado el QR se puede escanear con una aplicación de 2FA, como Google Authenticator.
+
+Si se nos olvida la contraseña podremos hacer click en el botón “¿Has olvidado tu contraseña?”.
+
+<img src="/img/usermanual/sprint2/acat-login.png" height="50%"/>
+
+<img src="/img/usermanual/sprint2/cambiarcontr.png" height="50%"/>
