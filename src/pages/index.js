@@ -91,26 +91,29 @@ function Deployment() {
   const deployments = [
     {
       name: "Docusaurus",
-      github: "https://github.com/ISPP-07/htld-doc.git",
+      github: "https://github.com/ISPP-07/htld-doc",
       url_deploy: "https://htld-doc.vercel.app/",
     },
     {
       name: "Backend",
-      github: "https://github.com/ISPP-07/backend.git",
+      github: "https://github.com/ISPP-07/backend",
+      url_deploy: "https://isppbackend.duckdns.org/docs",
     },
     {
       name: "Frontend Cirio y Costal",
-      github: "https://github.com/ISPP-07/frontend-cyc.git",
+      github: "https://github.com/ISPP-07/frontend-cyc",
+      url_deploy: "https://frontend-cyc-sprint2.vercel.app/",
     },
     {
       name: "Frontend ACAT",
-      github: "https://github.com/ISPP-07/frontend-acat.git",
+      github: "https://github.com/ISPP-07/frontend-acat",
+      url_deploy: "https://frontend-acat-sprint-2.vercel.app/",
     },
   ]
   return (
     <div id='deploy' className={clsx("deploy", styles.deploy)}>
       <div className='container'>
-        <h2>Despliegues</h2>
+        <h2>Software</h2>
         <div className={clsx("row", styles.row)}>
           {deployments.map((deploy, index) => (
             <article className='col col--3 margin--lg' key={index}>
@@ -119,7 +122,7 @@ function Deployment() {
                 <div className=''>
                   {deploy.github ? (
                     <a href={deploy.github} className={clsx("tag", styles.tag)}>
-                      GitHub
+                      Repositorio
                     </a>
                   ) : null}
                   {deploy.url_deploy ? (
@@ -127,7 +130,7 @@ function Deployment() {
                       href={deploy.url_deploy}
                       className={clsx("tag", styles.tag)}
                     >
-                      Desplegado en
+                      Despliegue
                     </a>
                   ) : null}
                 </div>
@@ -248,8 +251,8 @@ function Team() {
   return (
     <div id='teams' className={clsx("meet-us", styles.meetUs)}>
       <div className='container'>
-        <h2>Conoce al equipo</h2>
-        <h4>Xtreme</h4>
+        <h2>Equipo</h2>
+        <h4>Grupo Xtreme</h4>
         <div className={clsx("card-container", styles.cardContainer)}>
           {teamMembers
             .filter(member => member.team === "Xtreme")
@@ -274,7 +277,7 @@ function Team() {
               </div>
             ))}
         </div>
-        <h4>España</h4>
+        <h4>Grupo España</h4>
         <div className={clsx("card-container", styles.cardContainer)}>
           {teamMembers
             .filter(member => member.team === "España")
@@ -299,7 +302,7 @@ function Team() {
               </div>
             ))}
         </div>
-        <h4>Beti</h4>
+        <h4>Grupo Beti</h4>
         <div className={clsx("card-container", styles.cardContainer)}>
           {teamMembers
             .filter(member => member.team === "Beti")
@@ -333,7 +336,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description='Description will go into a meta tag in <head />'
     >
       <HomepageHeader />
