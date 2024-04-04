@@ -69,7 +69,7 @@ function ImportantDocument() {
       className={clsx('important-documents', styles.importantDocuments)}
     >
       <div className="container">
-        <h2>Entrega</h2>
+        <h2>Documentos relevantes</h2>
         <div className={clsx('row', styles.row)}>
           {documents.map((document, index) => (
             <article className="col col--3 margin--lg" key={index}>
