@@ -39,28 +39,28 @@ function HomepageHeader() {
 function ImportantDocument() {
   const documents = [
     {
-      name: "Seguimiento del trabajo",
-      url: "https://docs.google.com/spreadsheets/d/1wenixfjYUJOmG16ldb2o3kzurWDMY2AhNgM4goYPjB4/edit?usp=sharing",
+      name: "Casos de uso",
+      url: "docs/Introducci%C3%B3n/1.2.%20Casos%20de%20uso",
     },
     {
-      name: "Registro de requisitos",
-      url: "https://docs.google.com/document/d/1UX2aOw7Kbl1Abjg2I6Kup_tTIYTTHn5OPGxnu6Ij6No/edit?usp=sharing",
+      name: "Acuerdo de compromiso",
+      url: "docs/Acuerdos%20y%20contratos/2.1.%20Acuerdo%20de%20compromiso",
     },
     {
-      name: "Documento del TCO",
-      url: "https://docs.google.com/document/d/15Ec0rVvs0WLzxw44X9O8tN76Bq3HA88E3nXJo9LWjZk/edit",
+      name: "Coste total de la propiedad (TCO)",
+      url: "docs/Planificaci%C3%B3n/3.8.%20TCO",
     },
     {
-      name: "Documentos de uso de la IA",
-      url: "docs/category/uso-de-ia",
+      name: "Gráficos burndown",
+      url: "docs/Seguimiento/4.4.%20Burndown",
     },
     {
-      name: "Estadísticas del equipo",
-      url: "docs/category/estadísticas",
+      name: "Medición del rendimiento",
+      url: "docs/Rendimiento/5.2.%20Medici%C3%B3n%20del%20rendimiento",
     },
     {
-      name: "Seguimiento de costes",
-      url: "docs/category/costes-semanales",
+      name: "Aportación a la BGCC",
+      url: "docs/category/anexo-i-aportaci%C3%B3n-a-la-bgcc",
     },
   ]
   return (
@@ -90,7 +90,7 @@ function ImportantDocument() {
 function Deployment() {
   const deployments = [
     {
-      name: "Docusaurus",
+      name: "Documentación como código",
       github: "https://github.com/ISPP-07/htld-doc",
       url_deploy: "https://htld-doc.vercel.app/",
     },
