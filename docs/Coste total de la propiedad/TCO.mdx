@@ -14,6 +14,7 @@
 | 10.0     | 2024-03-14 | Actualización del documento |
 | 11.0     | 2024-03-19 | Actualización del documento |
 | 12.0     | 2024-03-26 | Actualización del documento |
+| 13.0     | 2024-04-05 | Actualización del documento |
 
 
 
@@ -137,34 +138,43 @@ Existen dos sistemas de BBDD para escoger, relacionales y no relacionales tenien
 | ------ |
 |<img src="/img/tco/mongo-atlas.png" alt="MongoAtlas" width="100%" height="100%"/> 
 
-#### 3.1.4 Conclusión
-Teniendo en cuenta lo expuesto anteriormente, hemos visto viables tres opciones para el despliegue de la infraestructura de la aplicación teniendo en cuenta la calidad del sistema:
+#### 3.1.4 Amazon AWS
+Otra opción para el despliegue del backend es la de utilizar Amazon AWS, que además cuenta con planes de precio bajo demanda. Estas son algunas de las instancias disponibles:
+| Planes de AWS|
+| --------------------------------------------------------------------------------- |
+|<img src="/img/tco/aws.png" alt="Standard Environment" width="100%" height="100%"/>
+
+| Planes de AWS|
+| --------------------------------------------------------------------------------- |
+|<img src="/img/tco/aws 2.png" alt="Standard Environment" width="100%" height="100%"/>
+
+En nuestro caso, la instancia más adecuada sería la m7gd.2xlarge, la cual nos aseguraría un gran rendimiento a un muy buen precio. Suponemos un uso de 4 horas diarias, por lo tanto serían 120 mensuales. 
+Esto nos daría un coste de 120 x 0,4763 = 57,156USD mensuales, equivalente a 52,74€ mensuales.
+
+#### 3.1.5 Conclusión
+Teniendo en cuenta lo expuesto anteriormente, hemos visto viables 4 opciones para el despliegue de la infraestructura de la aplicación teniendo en cuenta la calidad del sistema:
 
 La primera opción considerada es la de App Engine. En esta, se utilizará una instancia “F” para el frontend (NextJs) y una instancia tipo “B” para el backend (FastApi).  El precio de la instancia “F” sería gratis gracias a las 28 horas que ofrece AppEngine de manera gratuita en su plataforma, mientras que la de la instancia “B” sería un total de 65.60€ mensualmente. Respecto a la base de datos, utilizando el servicio más barato que ofrece donde tenemos un almacenamiento de 50GB, una RAM de 3.75GB y tipo SSD el coste total es de 17.28€ mensuales.
 
 Por lo tanto, el precio mensual total para el despliegue del sistema ascendería a 65.60€ + 0€ + 17.28€ = 82.88€.
 
-| Despliegue AppEngine|
-| ------ |
-|<img src="/img/tco/engine-despliegue.png" alt="Despliegue AppEngine" width="100%" height="100%"/>
-
-Otra opción para el despliegue de la infraestructura necesaria para la aplicación, consistiendo esta en una aplicación para el frontend realizada en NextJs, otra para el backend con la tecnología FastAPI y su base de datos correspondiente. Podría ser una combinación de diferentes hosting diferentes, para aprovechar sus límites del nivel gratuito definidos anteriormente (podría ser utilizados debido al poco tráfico y carga de nuestra aplicación). En este caso se utilizarían los servicios de App Engine para el backend de la aplicación, Vercel para el despliegue del frontend y por último el servicio de PlanetScale para la base de datos relacional. 
+Otra opción, que es la segunda, es para el despliegue de la infraestructura necesaria para la aplicación, consistiendo esta en una aplicación para el frontend realizada en NextJs, otra para el backend con la tecnología FastAPI y su base de datos correspondiente. Podría ser una combinación de diferentes hosting diferentes, para aprovechar sus límites del nivel gratuito definidos anteriormente (podría ser utilizados debido al poco tráfico y carga de nuestra aplicación). En este caso se utilizarían los servicios de App Engine para el backend de la aplicación, Vercel para el despliegue del frontend y por último el servicio de PlanetScale para la base de datos relacional. 
 
 El coste mensual de esta opción de infraestructura sería el costo mensual del backend en App Engine, ya que con el nivel gratuito de Vercel y PlanetScale sería suficiente. Este coste serían de 65.60€ + 0€ + 0€ = 65.60€ mensuales.
 
 Esta opción de despliegue se basa en una estimación de la carga y tráfico de las organizaciones, Tertulia Cofrade Cirio y Costal y Asociación Ciudadana de Ayuda al Toxicómano, donde su requerimientos no superan los límites gratuitos de Vercel y PlanetScale. Pues los usuarios que van a utilizar el sistema son solo sus administradores. 
 
-La tercera opción que barajamos es la mejor en cuanto a rendimiento y funcionamiento, pero también la de mayor precio. En esta opción se utilizaría el servicio de Google Cloud para el despliegue de la aplicación, con el servicio de App Engine para el backend, Vercel para el frontend y Mongo Atlas dedicated para la base de datos. Este coste serían 65,60€ + 0€ + 57,00€ = 122,60€ mensuales.
+La tercera opción que barajamos es buena en cuanto a rendimiento y funcionamiento, pero también la de mayor precio. En esta opción se utilizaría el servicio de Google Cloud para el despliegue de la aplicación, con el servicio de App Engine para el backend, Vercel para el frontend y Mongo Atlas dedicated para la base de datos. Este coste serían 65,60€ + 0€ + 57,00€ = 122,60€ mensuales.
 
-En el siguiente gráfico, la “Opción1” representa la opción de un hosting completo en AppEngine explicada previamente, y la “Opción2” representa un hosting en Vercel, App Engine y  PlanetScale también detallada previamente. En el eje y se representa los subsistemas de los que está formado el sistema, y en el eje x el precio mensual de cada uno de ellos.
+La cuarta opción que barajamos, que es la mejor en cuanto a rendimiento debido a las instancias elegidas, es la de utilizar Amazon AWS para el despliegue del backend, Vercel para el despliegue del frontend y Mongo Atlas dedicated para la base de datos. Este coste serían 52,74€ + 0€ + 57,00€ = 109,74€ mensuales.
 
+En el siguiente gráfico, la “Opción1” representa la opción de un hosting completo en AppEngine explicada previamente, y la “Opción2” representa un hosting en Vercel, App Engine y  PlanetScale también detallada previamente. La "Opción 3" se basa en AppEngine para el backend, Vercel para el frontend y Mongo Atlas para la base de datos. La "Opción 4" se basa en Amazon AWS para el backend, Vercel para el frontend y Mongo Atlas para la base de datos. En el eje y se representa los subsistemas de los que está formado el sistema, y en el eje x el precio mensual de cada uno de ellos.
 | Comparativa de precios|
 | ------ |
 |<img src="/img/tco/comparativa-precios.png" alt="Comparativa de precios" width="100%" height="100%"/>
 
-Finalmente, como buscamos el mejor rendimiento del sistema sin llegar a un coste excesivo, creemos que la mejor opción es la tercera. 
-Es decir que nos decantamos por el servicio de App Engine para el backend, Vercel para el frontend y Mongo Atlas dedicated para la base de datos.
-
+Finalmente, como buscamos el mejor rendimiento del sistema, creemos que la mejor opción es la cuarta. 
+Es decir que nos decantamos por el servicio de Amazon AWS para el backend, Vercel para el frontend y Mongo Atlas dedicated para la base de datos.
 
 ### 3.2 Costes de APIs de verificación de email
 Para la verificación de los correos electrónicos de los usuarios, se ha decidido utilizar una API de verificación de email. En este caso, se ha elegido la API de SendGrid, que ofrece distintos planes y es una de las más populares en el mercado.
@@ -230,7 +240,7 @@ Teniendo en cuenta la estimación de costes de desarrollo del proyecto, y la est
 </iframe>
 
 
-El coste total de la propiedad para 24 meses es de **91.2K**.
+El coste total de la propiedad para 24 meses es de **90.9K**.
 
 ## 6. Estado actual del TCO
 
