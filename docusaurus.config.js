@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer"
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Harmony LTD Documentación",
+  title: "Harmony LTD - Documentación",
   tagline: "Documentación de la empresa Harmony LTD",
   favicon: "img/favicon.ico",
 
@@ -61,7 +61,7 @@ const config = {
     ({
       // Replace with your project's social card
       navbar: {
-        title: "Inicio",
+        title: "Página principal",
         logo: {
           alt: "Logo",
           src: "img/logo.png",
@@ -80,7 +80,7 @@ const config = {
           {
             href: "/#deploy",
             position: "left",
-            label: "Despliegues",
+            label: "Software",
           },
           {
             type: "docSidebar",
@@ -89,7 +89,7 @@ const config = {
             label: "Documentación",
           },
           {
-            href: "https://github.com/ISPP-07/htld-doc",
+            href: "https://github.com/ISPP-07",
             label: "GitHub",
             position: "right",
           },
@@ -99,12 +99,20 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Documentación",
+            title: "Enlaces relevantes",
             items: [
               {
                 label: "Documentación",
                 to: "/docs/Inicio",
               },
+              {
+                label: "GitHub",
+                href: "https://github.com/ISPP-07",
+              },
+              {
+                label: "Landing Page",
+                href: "https://alvarobc2412.wixsite.com/harmony-ltd",
+              }
             ],
           },
         ],
