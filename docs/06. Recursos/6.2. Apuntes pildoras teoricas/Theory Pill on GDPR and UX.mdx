@@ -2,36 +2,36 @@
 
 | Versión | Fecha      | Diferencia entre versiones                                                                                                                                                                                 |
 | ------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.0     | 2024-03-16 | Versión inicial de los apuntes que se han sacado de los vídeos de teoría                                                                                   |
+| 1.0     | 2024-04-05 | Versión inicial de los apuntes que se han sacado de los vídeos de teoría                                                                                   |
 
-## 1. Visión global
+## 1. Normativa de la regulación sobre la privacidad
+Es una regulación "General Data Protection Regulation"(GDPR) de la Unión Europea, o "Reglamento General de Protección de Datos"(RGPD) de datos en España. **Entro en funcionamiento en 2018 y tuvo un gran impacto en el sector tecnológico siendo de obligado cumplimiento, regula la manera en la que tiene que gestionarse la información, privacidad, los derechos de los usuarios respecto a su información.**
 
-__Los acuerdos de clientes son un conjunto de documentos legales que establecen los términos que regulan el uso de los servicios.__
+**Riesgos/Penas por violar esta regulación: puede suponer hasta un 4% de penalización de los beneficios de la empresa** (hasta los 20 millones de euros). Parece poco pero hay empresas que han cerrado por no poder pagar las multas, que pueden llegar a ser recurrentes hasta que no satisfaga los requisitos.
 
-Se definen documentos como los términos generales del uso del servicio, los acuerdos a nivel de servicio, y cualquier otra política necesaria como la política de protección de datos. __Todos estos documentos se escriben con lenguaje natural y se explican las responsabilidades de cada una de las partes involucradas.__
+Hay 5 aspectos a tener en cuenta:
+- **Descripción y definición de los términos de uso de la información y de la privacidad de manera clara** (no puede ser un texto confuso y kilométrico). Tiene que tener los términos y condiciones de uso de la aplicación donde esté los datos que se necesitan del usuario y el por qué se necesitan estos datos, para que el usuario decida si aceptar o no esos términos (de forma explícita).
+- **Proporcionar un sistema de garantía de la privacidad**, para evitar que sea accesible por terceros. Nuestro sistema en producción tiene que tener protocolos seguros, por ejemplo, HTTPS. Toda la información que le proporcionemos al usuario debe ser consistente con los términos que hemos dicho.
+- **Plan de contingencia para los riesgos**(filtraciones, problemas de seguridad, brechas de seguridad,...). El personal de la aplicación debe avisar a todos los usuarios de que ha habido un problema de seguridad y de si sus datos han sido filtrados o no. Debe estar muy bien definido y debe existir un medio de comunicación para transimitir este mensaje, ya sea en la propia aplicación, por correo,...
+- **Derecho al olvido**, es importante que todo el sistema tenga la capacidad para que si un usuario lo desea pueda eliminarse o anonimizar toda la información relativa a él. Debe existir un medio para realizar esta petición, ya sea en la propia aplicación, por correo,...
+- **Derecho a obtener tus datos**.  Debe existir un medio para realizar esta petición, ya sea en la propia aplicación, por correo,... Hay veces que no es posible mandar todos los datos (porque afecten a otros usuarios por ejemplo), pero debe de ser la mayor cantidad posible.
 
-Por ejemplo en la asignatura hemos firmado un __CA__ interno __donde están las responsabilidades de cada miembro y unas cláusulas que cada cierto tiempo vamos monitorizando su cumplimiento, y finalmente se penaliza o premia a los miembros según el cumplimiento de estos objetivos.__ Todo esto para desarrollar un servicio a potenciales clientes (SaaS) y para darle valor añadido a este servicio lo normal es que nos hayamos suscrito o registrado en organizaciones para hacer uso de un servicio, esto significa que hemos firmado un acuerdo de cliente y se podrían tomar acciones legales si el proveedor no cumple con lo ofrecido.
+### 1.1 Implementación de GDPR
+Para las consultas mencionadas anteriormente, *"Debe existir un medio para realizar esta petición, ya sea en la propia aplicación, por correo,..."*:
+- **Debemos hacerlo de forma manual, no automatizarlo**, principalmente por falta de tiempo. Tenemos que tener en la aplicación  un mecanismo descrito que explique como solicitar estos datos por correo electrónico(tener un correo específico para estas consultas sobre la RGPD).
+- **Debemos hacer un uso legítimo de la información, no recolectar todo tipo de información aunque no la necesitemos**. Pedir únicamente la información que vayamos a usar.
+- **Hay que intentar borrar la mayor parte de los datos en la medida de lo posible en caso de que se solicite por el cliente**, pero hay veces que no se puede borrar todo, por ejemplo si tienes una factura, no puedes borrar esa factura porque es necesaria para la contabilidad. En estos casos hay que anonimizar todo lo posible los datos del usuario, por tanto **debemos orientarnos más a anonimizar la información antes que a eliminarla**
+- **Debe de haber un gestor de la GDPR**, es un rol distinto al de un ingeniero del software, se encarga de todo lo mencionado anteriormente relativo a la GDPR, como la gestión de los correos para solicitar o borrar información, etc. Esto se debe contemplar dentro del presupuesto del proyecto estimando el número de horas de trabajo según el número de usarios de la aplicación, se debe  poner quien es el gestor GDPR.
 
-Ya con nuestro prototipo mínimo viable surge la necesidad de __dejar por escrito todas las responsabilidades tanto nuestras como la de los usuarios pilotos__, y para ello hay que definir un nuevo CA que también deberá monitorizarse y tener consecuencias en caso de no cumplir los objetivos.
+## 2. Experiencia de usuario (UX)
 
-Los servicios tienen un CA, el cual __es un contrato legalmente vinculante entre proveedor y cliente, protegiendo a ambas partes según las disputas que surjan, y dejando por escrito los derechos y responsabilidades de cada una de las partes.__ Se presenta a los clientes en el proceso de registro y es esencial que lo firmen para que usen el servicio.
+Consejos para mejorar la experiencia de usario:
 
-## 2.Estructura lógica
-
-Desde un punto de vista lógico lo podemos considerar como una entidad simple con tres elementos:
-    - Los términos de servicio (política de privacidad, propiedad intelectual, ...)
-    - Planes de precio (cada uno con sus funcionalidades)
-    - SLAs (acuerdo a nivel de servicios). Indican ciertas métricas que en caso de incumplimiento de ciertos objetivos, el proveedor tendrá que compensar al cliente de alguna forma.
-
-Desde un punto de vista físico, debemos de tener una página con estos documentos y los planes de precio, debemos añadir una casilla de aceptación de términos y condiciones con un enlace que le lleve a poder leer dichos términos. 
-
-<img src="/img/Theory Pills/TP_terminos_condiciones.png" alt="terminos_condiciones" width="70%" height="70%"/>
-
-## 3. Mínimo contenido a cumplir
-
-Definir servicios que proveeemos, planes de precio y términos legales. Recomendado hacer el SLA.
-
-__Debemos evitar las cláusulas abusivas:__
-- Art. 3 of Directive 93/13: ___Una cláusulas contractual es abusiva si además de no ser negociada por las partes causa un desequilibrio importante entre los derechos y obligaciones de las partes en perjuicio del consumidor___. Para detectar estas cláusulas existen unas herramientas como CLAUDETTE que es capaz de detectar entre otras:
-    - La finalización unilateral del contrato, esto es que el proveedor tenga la disponibilidad de finalizar el contrato sin previo aviso, debería avisar con un tiempo de antelación por ejemplo.
-    - Cambios unilaterales, por ejemplo que el proveedor tenga el derecho de cambiar los servicios cuando quiera.
+- Intentar que todas **las decisiones sobre la interfaz de usuario, navegabilidad,... sean en cosas que podamos validar con usuarios que funcionan**, es decir, ver si lo nuevo funciona mejor que lo que había antes.
+- **No asumir que los usuarios consideran intuitivo lo mismo que nosotros.** Validarlo con los usuarios.
+- **Tener en cuenta el contexto en el que se encuentra la aplicación para la toma decisiones.** Preguntar a los usuarios continuamente que es lo que les gusta y que no.
+- **Las tomas de decisiones debe de ser lo más consistente posible.** Por ejemplo si usamos un tipo de componente, siempre usar ese tipo de componente.
+- **No reinventar la rueda.** Intentar no empezar de cero: usar plantillas, bibliotecas de estilos, referencias de diseño,...
+- **Las interfaces deben de ser accesibles para que conviertan la aplicación en un proyecto inclusivo para todo tipo de usuarios y dispositivos.**
+- **Menos es más**, quitar todo aquello que no aporte valor(botones innecesarios, pantallas innecesarias, cuanto en menos pasos se haga algo mejor,...). Evitar la carga cognitiva con muchos impactos visuales o mucha información a la vez.
+- Hay un libro de Steve Krug titulado "Don’t make them think", que dice que cuanto más simple y natural, mejor es la experiencia de usuario.
