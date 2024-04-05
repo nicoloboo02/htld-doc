@@ -2,12 +2,12 @@
 
 ### Contexto
 
-En este documento se recogen los cambios que ha sufrido la [Planificación Inicial](Planificación Inicial.mdx) a lo largo de los distinos Sprints, 
+En este documento se recogen los cambios que ha sufrido la planificación inicial a lo largo de los distintos Sprints, 
 sirviendo este documento como referencia para saber qué tareas están planificadas finalmente para los Sprints.
 
 ### Sprint 1
 
-El único cambio que hay en las tareas de este Sprint es el traspaso de la *Gestión de alimentos* al Sprint 2 debido sobre todo a la realización de otras tareas más prioritarias en este Sprint.
+El único cambio que hay en las tareas de este Sprint es el traspaso de la **Gestión de alimentos** al Sprint 2 debido sobre todo a la realización de otras tareas más prioritarias en este Sprint.
 
 ### Sprint 2
 
@@ -16,12 +16,12 @@ Estos cambios aparecen en la sección **"Mejora del prototipo"** y a parte de es
 
 - **Transferencia de datos:** Exportación de datos a una hoja de cálculo.
 - **Responsive:** Asegurar el funcionamiento en dispositivos móviles.
-- **Mejora del prototipo:** *Incluye las siguientes tareas:*
-  * *Recuperación de contraseña vía email (ACAT).*
-  * *Funcionalidad de paginación*.
-  * *Buscador interno.*
-  * *Registrar nombre completo y alias (ACAT).*
-  * *Cambiar nombre modelos (ACAT).*
+- **Mejora del prototipo:** Incluye las siguientes tareas:
+  * Recuperación de contraseña vía email (ACAT).
+  * Funcionalidad de paginación.
+  * Buscador interno.
+  * Registrar nombre completo y alias (ACAT).
+  * Cambiar nombre modelos (ACAT).
 - **Gestión de entrega de alimentos:** Creación, listado y consulta de entregas de alimentos. (procedente del Sprint 1)
 - **Gestión de endpoints y unificación de funcionalidades en backend y frontend**: Se llevará a cabo durante varias semanas con tal de tener las aplicaciones funcionando al completo lo antes posible (preferentemente antes de Semana Santa). 
 - **Imprevistos y errores**: durante tres semanas está previsto que los equipos de backend y frontend tengan que afrontar imprevistos que puedan surgir a lo largo del Sprint.
@@ -33,11 +33,24 @@ El sistema de sincronización en local se mueve al Sprint 3 para poder centrarno
 
 Una vez avanzamos en el Sprint 2 durante dos semanas, tuvimos que modificar la planificación para cambiar algunas funcionalidades y hacer de las aplicaciones, un sistema más mantenible económicamente:
 
-- ***Migración de la base de datos a MongoDB.***
-- ***Refactorización en Backend:***
-  * *Refactorización para MongoDB.*
-  * *Refactorización del código para el cumplimiento de los estándares definidos.*
-- ***Refactorización de los tests en Frontend debido a nuevos cambios y al comportamiento responsive del sistema.***
+- **Migración de la base de datos a MongoDB.**
+- **Refactorización en Backend:**
+  * Refactorización para MongoDB.
+  * Refactorización del código para el cumplimiento de los estándares definidos.
+- **Refactorización de los tests en Frontend debido a nuevos cambios y al comportamiento responsive del sistema.**
+
+Además recibimos por parte de los usuarios piloto numerosas peticiones de cambio las cuales llegamos a implementar estas:
+
+- **Recuperación de contraseña.**
+- **Alias por defecto: 2 primeras letras del primer apellido y 2 del segundo. Si el nombre es simple, 2 primeras letras del nombre. Si es compuesto primera letra de cada nombre. A veces los alias son personalizados.**
+- **Fecha de intervención en formato: fecha y hora.**
+- **Incluir todos los campos de una intervención en los Excel.**
+- **Mostrar paciente en intervención.**
+- **Importar opción de importar datos.**
+- **Implementar almacenes como entidades.**
+- **QR para autenticar para cambiar contraseña.**
+
+El Sprint comenzó el 6 de marzo y las funcionalidades deben estar implementadas para el 2 de abril.
 
 ### Sprint 3
 
@@ -54,5 +67,24 @@ La planificación es la siguiente:
 - **Sistema de pago:** Implementación de una plataforma de pago.
 - **Validación de correos:** Uso de APIs externas para validar los correos electrónicos.
 
+En cuanto a las peticiones de cambio por parte de los usuarios piloto, esperamos completar satisfactoriamente las siguientes:
 
-El Sprint está planificado para iniciar el 3 de abril y finalizar el 23 de abril, dejando margen para corregir posibles errores.
+- **Área desplegable que contenga:** Prevención, Atención, Incorporación sociolaboral, Otro (Observaciones).
+- **Selección de persona en las intervenciones por alias.**
+- **Sólo un usuario MAESTRO (que pueda realizar operaciones CRUD sobre los usuarios).**
+- **Añadir un campo observaciones al crear una familia.**
+- **Mejorar la consistencia en la redacción de las funcionalidades de los botones.**
+- **Mostrar mensajes de avisos en la aplicación.**
+- **Notificar cuando queda un tiempo determinado.**
+- **Nombre de columnas en Excel en español.**
+- **Mejorar la consistencia en la redacción de las funcionalidades de los botones.**
+- **Añadir un campo observaciones al crear una familia.**
+- **Mostrar alias en intervenciones.**
+- **Poder filtrar por fechas en las intervenciones.**
+- **Creación de familia, que se puedan añadir miembros.**
+- **Mostrar fecha de caducidad.**
+- **Mostrar entregas.**
+- **Correción de errores ortográficos en el frontend.**
+
+
+El Sprint se inició el 3 de abril y finalizará el 23 de abril, dejando margen para corregir posibles errores.
