@@ -39,52 +39,28 @@ function HomepageHeader() {
 function ImportantDocument() {
   const documents = [
     {
-      name: 'Presentacion.md',
-      url: 'docs/presentaciones/02-04-2024',
+      name: "Casos de uso",
+      url: "docs/Introducci%C3%B3n/1.2.%20Casos%20de%20uso",
     },
     {
-      name: 'Portada.md',
-      url: 'docs/portada/Plantilla de la Portada',
+      name: "Acuerdo de compromiso",
+      url: "docs/Acuerdos%20y%20contratos/2.1.%20Acuerdo%20de%20compromiso",
     },
     {
-      name: 'Report.md',
-      url: 'docs/category/aportación-a-la-bgcc',
+      name: "Coste total de la propiedad (TCO)",
+      url: "docs/Planificaci%C3%B3n/3.8.%20TCO",
     },
     {
-      name: 'Pilots.md',
-      url: 'docs/Gestion%20de%20Usuarios%20Piloto/Pilots',
+      name: "Gráficos burndown",
+      url: "docs/Seguimiento/4.4.%20Burndown",
     },
     {
-      name: 'Time-Effort-report.md',
-      url: 'docs/Seguimiento%20del%20equipo/Time%20Reports/TimeReportS2',
+      name: "Medición del rendimiento",
+      url: "docs/Rendimiento/5.2.%20Medici%C3%B3n%20del%20rendimiento",
     },
     {
-      name: 'commitmentAgreement.md',
-      url: 'docs/Seguimiento%20del%20equipo/Acuerdo%20de%20compromiso',
-    },
-    {
-      name: 'pilotUsersCommitmentAgreement.md',
-      url: 'docs/Gestion%20de%20Usuarios%20Piloto/Acuerdo%20de%20compromiso%20de%20usuarios%20piloto',
-    },
-    {
-      name: 'PerformanceEvaluation.md',
-      url: 'docs/Seguimiento%20del%20equipo/PerformanceEvaluation',
-    },
-    {
-      name: 'PilotUserPerformanceEvaluation.md',
-      url: '/docs/Gestion%20de%20Usuarios%20Piloto/PerformanceEvaluation',
-    },
-    {
-      name: 'Revision.md',
-      url: '/docs/Gestion%20de%20Usuarios%20Piloto/Software%20Reviewer%20Guideline%20-%20Sprint%202',
-    },
-    {
-      name: 'InformationProvidedByPilotUsers.md',
-      url: '/docs/Gestion%20de%20Usuarios%20Piloto/InformationProvidedByPilotUsers',
-    },
-    {
-      name: 'AI-Usage.md',
-      url: 'docs/category/uso-de-ia',
+      name: "Aportación a la BGCC",
+      url: "docs/category/anexo-i-aportaci%C3%B3n-a-la-bgcc",
     },
   ]
   return (
@@ -93,7 +69,7 @@ function ImportantDocument() {
       className={clsx('important-documents', styles.importantDocuments)}
     >
       <div className="container">
-        <h2>Entrega</h2>
+        <h2>Documentos relevantes</h2>
         <div className={clsx('row', styles.row)}>
           {documents.map((document, index) => (
             <article className="col col--3 margin--lg" key={index}>
@@ -114,36 +90,39 @@ function ImportantDocument() {
 function Deployment() {
   const deployments = [
     {
-      name: 'Docusaurus',
-      github: 'https://github.com/ISPP-07/htld-doc.git',
-      url_deploy: 'https://htld-doc.vercel.app/',
+      name: "Documentación como código",
+      github: "https://github.com/ISPP-07/htld-doc",
+      url_deploy: "https://htld-doc.vercel.app/",
     },
     {
-      name: 'Backend',
-      github: 'https://github.com/ISPP-07/backend.git',
+      name: "Backend",
+      github: "https://github.com/ISPP-07/backend",
+      url_deploy: "https://isppbackend.duckdns.org/docs",
     },
     {
-      name: 'Frontend Cirio y Costal',
-      github: 'https://github.com/ISPP-07/frontend-cyc.git',
+      name: "Frontend Cirio y Costal",
+      github: "https://github.com/ISPP-07/frontend-cyc",
+      url_deploy: "https://frontend-cyc-sprint2.vercel.app/",
     },
     {
-      name: 'Frontend ACAT',
-      github: 'https://github.com/ISPP-07/frontend-acat.git',
+      name: "Frontend ACAT",
+      github: "https://github.com/ISPP-07/frontend-acat",
+      url_deploy: "https://frontend-acat-sprint-2.vercel.app/",
     },
   ]
   return (
-    <div id="deploy" className={clsx('deploy', styles.deploy)}>
-      <div className="container">
-        <h2>Despliegues</h2>
-        <div className={clsx('row', styles.row)}>
+    <div id='deploy' className={clsx("deploy", styles.deploy)}>
+      <div className='container'>
+        <h2>Software</h2>
+        <div className={clsx("row", styles.row)}>
           {deployments.map((deploy, index) => (
             <article className="col col--3 margin--lg" key={index}>
               <div className={clsx('card padding--lg cardContainer', styles)}>
                 <h3 className="cardTitle"> {deploy.name}</h3>
                 <div className="">
                   {deploy.github ? (
-                    <a href={deploy.github} className={clsx('tag', styles.tag)}>
-                      GitHub
+                    <a href={deploy.github} className={clsx("tag", styles.tag)}>
+                      Repositorio
                     </a>
                   ) : null}
                   {deploy.url_deploy ? (
@@ -151,7 +130,7 @@ function Deployment() {
                       href={deploy.url_deploy}
                       className={clsx('tag', styles.tag)}
                     >
-                      Desplegado en
+                      Despliegue
                     </a>
                   ) : null}
                 </div>
@@ -270,11 +249,11 @@ function Team() {
     },
   ]
   return (
-    <div id="teams" className={clsx('meet-us', styles.meetUs)}>
-      <div className="container">
-        <h2>Conoce al equipo</h2>
-        <h4>Xtreme</h4>
-        <div className={clsx('card-container', styles.cardContainer)}>
+    <div id='teams' className={clsx("meet-us", styles.meetUs)}>
+      <div className='container'>
+        <h2>Equipo</h2>
+        <h4>Grupo Xtreme</h4>
+        <div className={clsx("card-container", styles.cardContainer)}>
           {teamMembers
             .filter((member) => member.team === 'Xtreme')
             .map((member) => (
@@ -298,8 +277,8 @@ function Team() {
               </div>
             ))}
         </div>
-        <h4>España</h4>
-        <div className={clsx('card-container', styles.cardContainer)}>
+        <h4>Grupo España</h4>
+        <div className={clsx("card-container", styles.cardContainer)}>
           {teamMembers
             .filter((member) => member.team === 'España')
             .map((member) => (
@@ -323,8 +302,8 @@ function Team() {
               </div>
             ))}
         </div>
-        <h4>Beti</h4>
-        <div className={clsx('card-container', styles.cardContainer)}>
+        <h4>Grupo Beti</h4>
+        <div className={clsx("card-container", styles.cardContainer)}>
           {teamMembers
             .filter((member) => member.team === 'Beti')
             .map((member) => (
@@ -357,8 +336,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`${siteConfig.title}`}
+      description='Description will go into a meta tag in <head />'
     >
       <HomepageHeader />
       <main>
