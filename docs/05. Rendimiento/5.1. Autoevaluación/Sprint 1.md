@@ -49,45 +49,5 @@ En este apartado, en caso de que NO sucedan fallos relacionados con el criterio,
 ### Justificación del _Pilot-Users-Performance-Evaluation_
 No se ha entregado debido a que los usuarios piloto no han revisado el servicio debido a que en todo momento nosotros consideramos que esto era algo opcional ya que, el prototipo a revisar no era funcional y no se podía probar. Por lo tanto, no se ha podido realizar la evaluación del rendimiento de los usuarios piloto. El motivo de que nosotros creyeramos de esta forma fue debido al contenido de la presentación de la planificación de la asignatura, que menciona el sprint 1 cómo un sprint orientado a los casos de uso core y al diseño de un plan de gestión de usuarios piloto (Adjunto imagen).
 
-<p align="center">
-<img src="\img\autoevaluation\sprint1pilots.png" alt="Sprint 1 pilots" width="50%" height="50%"/>
-Figura 1. Planificación del Sprint 1 ISPP
-</p>
-
-## Puntuación esperada del Sprint 1
-### Criterio T-10
-Primero, vamos a calcular la puntuación del criterio T-10 usando la siguiente fórmula:
-
-<p align="center">
-<img src="\img\autoevaluation\T10.png" alt="T10" width="90%" height="90%"/>
-Figura 2. Fórmula de cálculo del criterio T-10
-</p>
-
-#### Pesos de los criterios del T-10
-- **Guía del Revisor (RG):**
-    - Mapeo de Casos de Uso: 30%
-    - Datos Necesarios para la Revisión: 40%
-    - Requisitos Potenciales: 30%
-    - Resultado: 9,25
-
-- **Condiciones Suficientes para el Fracaso del Software:**
-    - Error HTTP Percibido por el Usuario: 10%
-    - Pánico Percibido por el Usuario: 10%
-    - Comportamiento No Esperado del Sistema: 15%
-    - Falta de Detección de Datos Incorrectos: 10%
-    - Acceso no Autorizado a Datos: 15%
-    - Disponibilidad del Sistema en la Nube: 20%
-    - Modificación/Actualización Post-Entrega: 20%
-    - Resultado: 4 (Puntuación máxima debido a hay dos criterios que posiblemente no se puedan evaluar)
-
-**Puntuación esperada del criterio T-10:** 4 (Puntuación máxima debido a que en las condiciones suficientes para el fracaso del software no se cumplen todos los criterios)
-
-### Puntuación global del Sprint 1
-Para calcular la puntuación se va a tener en cuenta la siguiente fómula:
-
-<p align="center">
-<img src="\img\autoevaluation\NF.png" alt="NF" width="90%" height="90%"/>
-Figura 3. Fórmula de cálculo de la nota final
-</p>
-
-## Resultado final: 7, 82
+## Resultado final: Fail
+El resultado final indica un fallo. Uno de los requisitos fundamentales, en particular, fue el experimento con un baneo en MockAPI debido a alcanzar el límite máximo de peticiones diarias. Este incidente resultó en un fallo y provocó una respuesta inesperada en el sistema.
