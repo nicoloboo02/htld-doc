@@ -27,6 +27,7 @@ jobs:
         git fetch origin
         git checkout -b update-github-stats-${{ github.run_id }}
         cd /home/runner/work/htld-doc/htld-doc
+        git status
         git add 4.5.\ Estadísticas\ de\ github.mdx
         git commit -a -m "[bot] Update Github Stats with latest info"
         git push origin update-github-stats-${{ github.run_id }}
