@@ -121,34 +121,34 @@ async function getStatsForOrganization(organization, accessToken) {
     const date = new Date();
     date.setDate(date.getDate() - 6);
 
-    for (const repo of repos) {
-        const {pulls, prComments} = await getPRs(organization, repo.name, accessToken);
-        const {issues, issueComments} = await getIssuesInfo(organization, repo.name, accessToken);
-        const releases = await getReleases(organization, repo.name, accessToken);
-        const avgPRComments = pulls !== 0 ? (prComments / pulls).toFixed(2) : 0;
-        const realIssues = issues - pulls;
-        const realIssueComments = issueComments - prComments;
-        const avgIssueComments = issues !== 0 ? (realIssueComments / realIssues).toFixed(2) : 0;
+    // for (const repo of repos) {
+    //     const {pulls, prComments} = await getPRs(organization, repo.name, accessToken);
+    //     const {issues, issueComments} = await getIssuesInfo(organization, repo.name, accessToken);
+    //     const releases = await getReleases(organization, repo.name, accessToken);
+    //     const avgPRComments = pulls !== 0 ? (prComments / pulls).toFixed(2) : 0;
+    //     const realIssues = issues - pulls;
+    //     const realIssueComments = issueComments - prComments;
+    //     const avgIssueComments = issues !== 0 ? (realIssueComments / realIssues).toFixed(2) : 0;
 
-        let commitRanking;
-        if(repo.name === 'htld-doc'){
-            commitRanking = await getRanking(organization, repo.name, accessToken, date, "main");
-        }else{
-            commitRanking = await getRanking(organization, repo.name, accessToken, date,"develop");
-        }
+    //     let commitRanking;
+    //     if(repo.name === 'htld-doc'){
+    //         commitRanking = await getRanking(organization, repo.name, accessToken, date, "main");
+    //     }else{
+    //         commitRanking = await getRanking(organization, repo.name, accessToken, date,"develop");
+    //     }
 
-        stats.push({
-            repo: repo.name,
-            pulls,
-            prComments,
-            avgPRComments,
-            issueComments: realIssueComments,
-            issues: realIssues,
-            avgIssueComments,
-            releases,
-            commitRanking
-        });
-    }
+    //     stats.push({
+    //         repo: repo.name,
+    //         pulls,
+    //         prComments,
+    //         avgPRComments,
+    //         issueComments: realIssueComments,
+    //         issues: realIssues,
+    //         avgIssueComments,
+    //         releases,
+    //         commitRanking
+    //     });
+    // }
     const docStats = await getDocStats(accessToken, date.toISOString());
 
     return { stats, docStats };
@@ -167,31 +167,31 @@ try{
     try{
         statsMDX = await fs.readFile('./docs/04. Seguimiento/4.5. Estadísticas de github.mdx','utf-8');
         statsMDX = statsMDX.replace('<h4 align="center">Esta sección ha sido autogenerada mediante github actions, hecho por Álvaro Bernal Caunedo</h4>', '');
-        statsMDX += `\n### Estadísticas de la semana del ${formattedDate}\n| Repositorio | Nº de PRs |Comentarios en PRs | Nº de comentarios por PR | Nº de Issues | Comentarios en Issues |Nº de comentarios por Issue |Nº de lanzamientos|\n| ----------- |----------- |----------- |----------- |--------------- | ------------------ | --------------------- | --------------- |\n`;
+        // statsMDX += `\n### Estadísticas de la semana del ${formattedDate}\n| Repositorio | Nº de PRs |Comentarios en PRs | Nº de comentarios por PR | Nº de Issues | Comentarios en Issues |Nº de comentarios por Issue |Nº de lanzamientos|\n| ----------- |----------- |----------- |----------- |--------------- | ------------------ | --------------------- | --------------- |\n`;
     }catch(err){
-        statsMDX = `\n### Estadísticas de la semana del ${formattedDate}\n| Repositorio | Nº de PRs |Comentarios en PRs | Nº de comentarios por PR | Nº de Issues | Comentarios en Issues  |Nº de comentarios por Issue |Nº de lanzamientos|\n| ----------- |----------- |----------- |----------- |--------------- | ------------------ | --------------------- | --------------- |\n`;
+        // statsMDX = `\n### Estadísticas de la semana del ${formattedDate}\n| Repositorio | Nº de PRs |Comentarios en PRs | Nº de comentarios por PR | Nº de Issues | Comentarios en Issues  |Nº de comentarios por Issue |Nº de lanzamientos|\n| ----------- |----------- |----------- |----------- |--------------- | ------------------ | --------------------- | --------------- |\n`;
     }
 
-    stats.forEach(repoStats => {
-        statsMDX += `| ${repoStats.repo} | ${repoStats.pulls} |${repoStats.prComments}| ${repoStats.avgPRComments}| ${repoStats.issues}| ${repoStats.issueComments}  |${repoStats.avgIssueComments} |${repoStats.releases} |\n`;
-        console.log('Estadísticas incluidas en el archivo...');
-    });
+    // stats.forEach(repoStats => {
+    //     statsMDX += `| ${repoStats.repo} | ${repoStats.pulls} |${repoStats.prComments}| ${repoStats.avgPRComments}| ${repoStats.issues}| ${repoStats.issueComments}  |${repoStats.avgIssueComments} |${repoStats.releases} |\n`;
+    //     console.log('Estadísticas incluidas en el archivo...');
+    // });
 
-    stats.forEach(repoStats => {
-        statsMDX += `\n\n#### Ranking de commits en el repositorio ${repoStats.repo} esta semana\n| Autor | Nº de commits |\n| ------ | -------------- |\n`;
-        const ranking = Object.entries(repoStats.commitRanking).sort((a, b) => b[1] - a[1]);
-        ranking.forEach(([author, commits]) => {
-            statsMDX += `| ${author} | ${commits} |\n`;
-        });
-        console.log('Ranking de commits incluido en el archivo...');
-    })
+    // stats.forEach(repoStats => {
+    //     statsMDX += `\n\n#### Ranking de commits en el repositorio ${repoStats.repo} esta semana\n| Autor | Nº de commits |\n| ------ | -------------- |\n`;
+    //     const ranking = Object.entries(repoStats.commitRanking).sort((a, b) => b[1] - a[1]);
+    //     ranking.forEach(([author, commits]) => {
+    //         statsMDX += `| ${author} | ${commits} |\n`;
+    //     });
+    //     console.log('Ranking de commits incluido en el archivo...');
+    // })
 
-    statsMDX += `\n\n### Cambios en el docusaurus en la semana del ${formattedDate}\n| Archivo | Nº de Cambios | Estado |\n| ------ | -------------- | ------ |\n`;
-    const changes = Object.entries(docStats);
-    changes.forEach(([file, change]) => {
-        statsMDX += `| ${file} | ${change.changes} | ${change.status} |\n`;
-    });
-    console.log('Cambios en la documentación incluidos en el archivo...');
+    // statsMDX += `\n\n### Cambios en el docusaurus en la semana del ${formattedDate}\n| Archivo | Nº de Cambios | Estado |\n| ------ | -------------- | ------ |\n`;
+    // const changes = Object.entries(docStats);
+    // changes.forEach(([file, change]) => {
+    //     statsMDX += `| ${file} | ${change.changes} | ${change.status} |\n`;
+    // });
+    // console.log('Cambios en la documentación incluidos en el archivo...');
 
     statsMDX += '\n<h4 align="center">Esta sección ha sido autogenerada mediante github actions, hecho por Álvaro Bernal Caunedo</h4>';
     await fs.writeFile('./docs/04. Seguimiento/4.5. Estadísticas de github.mdx', statsMDX, { flag: 'w' });
