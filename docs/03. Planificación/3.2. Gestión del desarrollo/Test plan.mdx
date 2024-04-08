@@ -49,6 +49,7 @@ class WebsiteUser(HttpUser):
     def index(self):
         self.client.get("/")
 ```
+>El código proporcionado es un ejemplo de cómo configurar una prueba de carga utilizando Locust, una herramienta de pruebas de rendimiento de código abierto. Define una clase `WebsiteUser` que hereda de `HttpUser` de Locust. La variable `wait_time` se configura para simular un tiempo de espera aleatorio entre 5 y 15 segundos entre las tareas. La tarea `index` simula una solicitud GET a la página de inicio ("/"). Este tipo de pruebas son útiles para evaluar cómo un sistema maneja múltiples solicitudes simultáneas.
 
 ## Pruebas de frontend
 
