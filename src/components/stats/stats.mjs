@@ -165,7 +165,7 @@ try{
 
     let statsMDX = '';
     try{
-        statsMDX = await fs.readFile('./docs/4. Seguimiento/4.5. Estadísticas de github.mdx','utf-8');
+        statsMDX = await fs.readFile('./docs/04. Seguimiento/4.5. Estadísticas de github.mdx','utf-8');
         statsMDX = statsMDX.replace('<h4 align="center">Esta sección ha sido autogenerada mediante github actions, hecho por Álvaro Bernal Caunedo</h4>', '');
         statsMDX += `\n### Estadísticas de la semana del ${formattedDate}\n| Repositorio | Nº de PRs |Comentarios en PRs | Nº de comentarios por PR | Nº de Issues | Comentarios en Issues |Nº de comentarios por Issue |Nº de lanzamientos|\n| ----------- |----------- |----------- |----------- |--------------- | ------------------ | --------------------- | --------------- |\n`;
     }catch(err){
@@ -194,7 +194,7 @@ try{
     console.log('Cambios en la documentación incluidos en el archivo...');
 
     statsMDX += '\n<h4 align="center">Esta sección ha sido autogenerada mediante github actions, hecho por Álvaro Bernal Caunedo</h4>';
-    await fs.writeFile('./docs/4. Seguimiento/4.5. Estadísticas de github.mdx', statsMDX, { flag: 'w' });
+    await fs.writeFile('./docs/04. Seguimiento/4.5. Estadísticas de github.mdx', statsMDX, { flag: 'w' });
     console.log('Archivo de estadísticas actualizado correctamente.');
 } catch (error) {
     console.error('Error al obtener las estadísticas:', error);
