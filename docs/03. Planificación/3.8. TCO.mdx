@@ -18,7 +18,7 @@
 | 12.0     | 2024-03-26 | Actualización del documento |
 | 13.0     | 2024-04-05 | Actualización del documento |
 | 14.0     | 2024-04-11 | Actualización del documento |
-
+| 15.0     | 2024-04-12 | Actualización del documento |
 
 
 
@@ -103,13 +103,21 @@ Como en la actualidad para los proyectos open source, como el nuestro, este plan
 
 Además, el resto de herramientas que pueden necesitar los desarrolladores externos a nosotros para la operación son de uso gratuito, como pueden ser los entornos de desarrollo integrados gratuitos como VSCode o sistemas de comunicación gratuitos como Discord.
 
-### 2.4 Costes de adquisición total
-| Estimación de costes de desarrollo|
-| --------------------------------------------------------------------------------- |
-|<img src="/img/tco/estimacion-de-coste-de-desarrollo.png" alt="Total desarrollo" width="100%" height="100%"/> |
+### 2.4 Costes de Seguridad Social
+También hay que tener en cuenta los costes de la Seguridad Social, en los que se incluyen, entre otros, los costes de cotingencias comunes, prestaciones por desempleo, contingencias profesionales, formación y el Fondo De Garantía Social (FOGASA).
+Para este cálculo, se ha utilizado una calculadora de costes de la Seguridad Social, donde se ha introducido el salario bruto de los trabajadores, el tipo de contrato y el porcentaje de cotización.
+| Costes de Seguridad Social|
+| ------ |
+|<img src="/img/tco/ss.png" alt="Costes de Seguridad Social" width="100%" height="100%"/>
 
-El coste total de desarrollo del proyecto, teniendo en cuenta los costes de personal y de material para el desarrollo:
-- Coste total de desarrollo = 38790.00€ + 1164.67€ = **39954.67€**
+A continuación, podemos ver el coste de la seguridad social para cada uno de los perfiles que forman parte del proyecto: 
+- Manager: 1204,82€ mensuales. Teniendo en cuenta que nos quedan 5 semanas de proyecto, el coste total de la seguridad social para el manager es de 1204,82€ x 5 / 4 = 1506,03€
+- Coordinador: 1069,02€ mensuales. Teniendo en cuenta que nos quedan 5 semanas de proyecto, el coste total de la seguridad social para el coordinador es de 1069,02€ x 5 / 4 = 1336,28€. Y contando que tenemos 3 coordinadores el coste total de la seguridad social para los coordinadores es de 1336,28€ x 3 = 4008,84€. Menos 213,8€ de las horas que uno de nuestros coordinadores dedica a GDPR. Total = 4008,84€ - 213,8€ = 3795,04€
+- Desarrollador: 650,08€ mensuales. Teniendo en cuenta que nos quedan 5 semanas de proyecto, el coste total de la seguridad social para el desarrollador es de 650,08€ x 5 / 4 = 812,60€. Y contando que tenemos 13 desarrolladores el coste total de la seguridad social para los desarrolladores es de 812,60€ x 13 = 10541,80€. Menos 130,73€ de las horas que unode nuestros desarrolladores dedica al Marketing. Total = 10541,80€ - 130,73€ = 10411,07€
+- GDPR Officer: 390,05€ mensuales. Teniendo en cuenta que nos quedan 5 semanas de proyecto, el coste total de la seguridad social para el GDPR Officer es de 390,05€ x 5 / 4 = 487,56€
+- Community Manager: 234,03€ mensuales. Teniendo en cuenta que nos quedan 5 semanas de proyecto, el coste total de la seguridad social para el Community Manager es de 234,03€ x 5 / 4 = 292,54€
+
+El coste total de la seguridad social es de 1506,03€ + 3795,04€ + 10411,07€ + 487,56€ + 292,54€ = **16292,24€**
 
 ## 3. Costes de operación mensual (Opex)
 En esta sección, se muestran los distintos costes relacionados con el mantenimiento del sistema, una vez está finalizado y completado, o también llamado OpEx (Operating Expenditure).
@@ -252,9 +260,9 @@ Por lo tanto, el coste total mensual del SLA sería:
 Este sería el costo mensual total de cumplir con el SLA para nuestro proyecto de software.
 
 ## 4. Costes de contingencia
-Hay que tener en cuenta que a la hora de analizar y prever los riesgos, también es necesario desarrollar un plan de contingencia para cada uno de ellos. Esto conlleva a que se tengan que dedicar una serie de costes para estos planes.  Para este sistema, suponemos un 15% de los costes totales a dedicar a los planes de contingencia, ya que se suele recomendar una cifra entre un 10% y un 20% de manera general.
+Hay que tener en cuenta que a la hora de analizar y prever los riesgos, también es necesario desarrollar un plan de contingencia para cada uno de ellos. Esto conlleva a que se tengan que dedicar una serie de costes para estos planes. Para este sistema, suponemos un 15% de los costes totales a dedicar a los planes de contingencia, ya que se suele recomendar una cifra entre un 10% y un 20% de manera general.
 
-Teniendo en cuenta todos los costes incluyendo capex y opex, se obtiene un coste total de 63778.27€. Por lo que el coste de contingencia sería: 0,15 x 63778.27 = 9566.75€.
+Teniendo en cuenta todos los costes, se obtiene un coste de contingencia de 9566.75€.
 
 ## 5. Coste total de la propiedad
 Teniendo en cuenta la estimación de costes de desarrollo del proyecto, y la estimación respectiva a la operación del sistema, a los costes de GDPR y a los costes de contingencia, nos queda el siguiente Coste Total de la Propiedad (TCO) para 2 años, diferenciando entre los 4 meses de desarrollo y el resto de los 20 meses para completar los 2 años:
@@ -267,7 +275,7 @@ Teniendo en cuenta la estimación de costes de desarrollo del proyecto, y la est
 </iframe>
 
 
-El coste total de la propiedad para 24 meses es de **79.8K**.
+El coste total de la propiedad para 24 meses es de **100,4K**.
 
 ## 6. Estado actual del TCO
 
