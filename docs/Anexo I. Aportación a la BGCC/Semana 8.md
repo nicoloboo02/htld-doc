@@ -5,14 +5,6 @@
 
 - Descripción clara antes de la demostración Es esencial proporcionar una explicación precisa de lo que se mostrará durante la demo.
 
-- Usabilidad de la demo Se recomienda evitar un exceso de marketing al inicio y utilizar el zoom de manera moderada para no marear al espectador.
-
-- Feedback recibido y gestión del mismo\*\*: Se debe incluir una sección que detalle el feedback recibido y cómo se está gestionando, así como una lista priorizada por relevancia.
-
-- Inclusión de usuarios piloto y planificación Falta mostrar la parte de usuarios piloto en la presentación, así como la planificación del proyecto.
-
-- Storytelling en el storyboard Se sugiere que el storyboard cuente una historia coherente para mejorar la comprensión del producto.
-
 - Icono representativo del usuario en la demo Agregar un icono sobre el vídeo de la demo que simbolice al usuario que está utilizando el sistema puede mejorar la identificación.
 
 ### TCO/Costes:
