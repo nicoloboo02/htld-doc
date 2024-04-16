@@ -17,7 +17,9 @@
 | 11.0     | 2024-03-19 | Actualización del documento |
 | 12.0     | 2024-03-26 | Actualización del documento |
 | 13.0     | 2024-04-05 | Actualización del documento |
-
+| 14.0     | 2024-04-11 | Actualización del documento |
+| 15.0     | 2024-04-12 | Actualización del documento |
+| 16.0     | 2024-04-15 | Actualización del documento |
 
 
 
@@ -28,6 +30,7 @@ En este documento, se establece el coste total de la propiedad respectivo al pro
 ## 2. Costes de capital (Capex)
 
 ### 2.1 Costes de personal
+#### 2.1.1 Desarrollo
 
 El equipo encargado del proyecto, está formado por 17 integrantes. Cada uno de ellos, tiene la obligación de dedicar al menos 10 horas semanales a dicho proyecto, como se establece en el proyecto docente de la asignatura de Ingeniería del Software Y Práctica Profesional (ISPP). 
 Teniendo en cuenta esto y los sueldos por hora de los siguientes perfiles:
@@ -41,12 +44,31 @@ Hay que tener en cuenta que a grandes rasgos, en este proyecto hay 1 jefe de pro
 - 13 desarrolladores: 13 x 15 x 10 x 11.25 = 21937.50€
 Coste total de personal de desarrollo= 33390.00€
 
+A esto, habría que restarle las horas dedicadas por el GDPR Officer y el Community Manager en sus respectivas horas de coordinador y de desarrollador.
+Sería para las 5 semanas restantes del proyecto:
+- Coordinador: 5 x 3 x 18.50 = 277.50€
+- Desarrollador: 5 x 3 x 11.25 = 168.75€
 
-En nuestro caso, dado que tenemos una carga de usuarios mínima, ya que solo los administradores de las ONG utilizan el sistema, consideramos adecuado contratar a 2 desarrolladores para asegurar el funcionamiento continuo del sistema una vez esté completamente operativo.
+Entonces, el coste sería 33390.00€ - 277.50€ - 168.75€ = 32943.75€
 
-Como mencionamos anteriormente, suponemos un salario para los desarrolladores de 11.25 €/h. También estimamos que cada desarrollador dedicará 5 horas semanales a mantener el sistema. Por lo tanto, el costo mensual de asegurar el funcionamiento del sistema es de: 11.25 x 5 x 2 x 4 = 450.00€. 
-El costo total del personal para asegurar el funcionamiento del sistema durante un año es de 450.00€ x 12 = 5400.00€.
-Coste total = 33390.00€ + 5400.00€ = **38790.00€**
+Coste total personal desarrollo = 32943.75€ 
+#### 2.1.2 GDPR
+En este sistema, se tratan datos sensibles y personales sobre familiares o personas. Esto hace necesario la introducción de una serie de roles y responsabilidades para garantizar el cumplimiento de las normativas de protección de datos, Reglamento General de Protección de Datos (GDPR por sus siglas en inglés).
+
+En nuestro caso, donde el sistema solamente va a ser utilizado por los administradores, y donde no va a haber una gran cantidad de usuarios, suponemos que es suficiente con la introducción de un GDPR Officer. Suponemos también un sueldo medio de 22.50€ por hora, y una dedicación semanal de 3 horas. Por lo tanto, el coste de GDPR para las 5 semanas restantes de desarrollo del proyecto es de 22.50 x 3 x 5 = 337.50€.
+
+#### 2.1.3 Marketing
+En este sistema, se ha decidido realizar una campaña de marketing para dar a conocer la aplicación a las organizaciones que la van a utilizar. 
+Para ello, suponemos un Community Manager (CM) con un sueldo de 13,50€ por hora, y una dedicación semanal de 3 horas, para que se encargue de todo este tipo de tareas. Por lo tanto, el coste de marketing para las 5 semanas restantes de desarrollo del proyecto es de 13.50 x 3 x 5 = 202.50€.
+
+#### 2.1.4 Coste total de personal
+El coste total de personal, teniendo en cuenta los costes de desarrollo, GDPR y marketing, es el siguiente:
+- Coste total personal desarrollo = 32943.75€ 
+- Coste total personal GDPR = 337.50€
+- Coste total personal marketing = 202.50€
+
+Coste total de personal = 32943.75€ + 337.50€ + 202.50€ = 33483.75€
+
 
 ### 2.2 Costes de material
 
@@ -73,13 +95,21 @@ Como en la actualidad para los proyectos open source, como el nuestro, este plan
 
 Además, el resto de herramientas que pueden necesitar los desarrolladores externos a nosotros para la operación son de uso gratuito, como pueden ser los entornos de desarrollo integrados gratuitos como VSCode o sistemas de comunicación gratuitos como Discord.
 
-### 2.4 Costes de adquisición total
-| Estimación de costes de desarrollo|
-| --------------------------------------------------------------------------------- |
-|<img src="/img/tco/estimacion-de-coste-de-desarrollo.png" alt="Total desarrollo" width="100%" height="100%"/> |
+### 2.4 Costes de Seguridad Social
+También hay que tener en cuenta los costes de la Seguridad Social, en los que se incluyen, entre otros, los costes de cotingencias comunes, prestaciones por desempleo, contingencias profesionales, formación y el Fondo De Garantía Social (FOGASA).
+Para este cálculo, se ha utilizado una calculadora de costes de la Seguridad Social, donde se ha introducido el salario bruto de los trabajadores, el tipo de contrato y el porcentaje de cotización.
+| Costes de Seguridad Social|
+| ------ |
+|<img src="/img/tco/ss.png" alt="Costes de Seguridad Social" width="100%" height="100%"/>
 
-El coste total de desarrollo del proyecto, teniendo en cuenta los costes de personal y de material para el desarrollo:
-- Coste total de desarrollo = 38790.00€ + 1164.67€ = **39954.67€**
+A continuación, podemos ver el coste de la seguridad social para cada uno de los perfiles que forman parte del proyecto: 
+- Manager: 1204,82€ mensuales. Teniendo en cuenta que nos quedan 5 semanas de proyecto, el coste total de la seguridad social para el manager es de 1204,82€ x 5 / 4 = 1506,03€
+- Coordinador: 1069,02€ mensuales. Teniendo en cuenta que nos quedan 5 semanas de proyecto, el coste total de la seguridad social para el coordinador es de 1069,02€ x 5 / 4 = 1336,28€. Y contando que tenemos 3 coordinadores el coste total de la seguridad social para los coordinadores es de 1336,28€ x 3 = 4008,84€. Menos 213,8€ de las horas que uno de nuestros coordinadores dedica a GDPR. Total = 4008,84€ - 213,8€ = 3795,04€
+- Desarrollador: 650,08€ mensuales. Teniendo en cuenta que nos quedan 5 semanas de proyecto, el coste total de la seguridad social para el desarrollador es de 650,08€ x 5 / 4 = 812,60€. Y contando que tenemos 13 desarrolladores el coste total de la seguridad social para los desarrolladores es de 812,60€ x 13 = 10541,80€. Menos 130,73€ de las horas que unode nuestros desarrolladores dedica al Marketing. Total = 10541,80€ - 130,73€ = 10411,07€
+- GDPR Officer: 390,05€ mensuales. Teniendo en cuenta que nos quedan 5 semanas de proyecto, el coste total de la seguridad social para el GDPR Officer es de 390,05€ x 5 / 4 = 487,56€
+- Community Manager: 234,03€ mensuales. Teniendo en cuenta que nos quedan 5 semanas de proyecto, el coste total de la seguridad social para el Community Manager es de 234,03€ x 5 / 4 = 292,54€
+
+El coste total de la seguridad social es de 1506,03€ + 3795,04€ + 10411,07€ + 487,56€ + 292,54€ = **16292,24€**
 
 ## 3. Costes de operación mensual (Opex)
 En esta sección, se muestran los distintos costes relacionados con el mantenimiento del sistema, una vez está finalizado y completado, o también llamado OpEx (Operating Expenditure).
@@ -189,12 +219,7 @@ En nuestro caso, como se comentó previamente, con la poca carga de usuarios que
 
 En caso de que cambiasen las políticas de uso de la API de SendGrid o se superasen estos límites y se tuviese que cambiar, optaríamos por el plan Essential que ofrece hasta 50.000 correos mensuales por 19.95€ al mes.
 
-### 3.3 Costes de GDPR
-En este sistema, se tratan datos sensibles y personales sobre familiares o personas. Esto hace necesario la introducción de una serie de roles y responsabilidades para garantizar el cumplimiento de las normativas de protección de datos, Reglamento General de Protección de Datos (GDPR por sus siglas en inglés). 
-
-En nuestro caso, donde el sistema solamente va a ser utilizado por los administradores, y donde no va a haber una gran cantidad de usuarios, suponemos que es suficiente con la introducción de un GDPR Officer. Suponemos también un sueldo medio de 22.50€ por hora, y una dedicación semanal de 10 horas. Por lo tanto, el coste mensual de GDPR es de: 22.50 x 10 x 4 = 900.00€
-
-### 3.4 Costes de SLA
+### 3.3 Costes de SLA
 En nuestro caso, establecemos un SLA (Service Level Agreement) para el soporte al cliente que comprende la resolución de incidencias, solicitudes de usuarios y RFC (Request for Change) con los siguientes tiempos de respuesta (TTR):
 
 - **Resolución de Incidencias**: 30 minutos
@@ -226,10 +251,23 @@ Por lo tanto, el coste total mensual del SLA sería:
 
 Este sería el costo mensual total de cumplir con el SLA para nuestro proyecto de software.
 
-## 4. Costes de contingencia
-Hay que tener en cuenta que a la hora de analizar y prever los riesgos, también es necesario desarrollar un plan de contingencia para cada uno de ellos. Esto conlleva a que se tengan que dedicar una serie de costes para estos planes.  Para este sistema, suponemos un 15% de los costes totales a dedicar a los planes de contingencia, ya que se suele recomendar una cifra entre un 10% y un 20% de manera general.
+### 3.4 Costes de personal
+En nuestro caso, dado que tenemos una carga de usuarios mínima, ya que solo los administradores de las ONG utilizan el sistema, consideramos adecuado contratar a 2 desarrolladores para asegurar el funcionamiento continuo del sistema una vez esté completamente operativo.
 
-Teniendo en cuenta todos los costes incluyendo capex y opex, se obtiene un coste total de 63778.27€. Por lo que el coste de contingencia sería: 0,15 x 63778.27 = 9566.75€.
+Como mencionamos anteriormente, suponemos un salario para los desarrolladores de 11.25 €/h. También estimamos que cada desarrollador dedicará 5 horas semanales a mantener el sistema. Por lo tanto, el costo mensual de asegurar el funcionamiento del sistema es de: 11.25 x 5 x 2 x 4 = 450.00€. 
+El costo total del personal para asegurar el funcionamiento del sistema durante 20 meses es de 450.00€ x 20 = 9000.00€.
+
+También, consideramos adecuado contratar a un GDPR Officer para asegurar el cumplimiento de las normativas de protección de datos una vez finalizado el proyecto.
+Para ello, estimamos un sueldo medio de 22.50€ por hora, y una dedicación semanal de 2 horas. Por lo tanto, el coste de GDPR para 20 meses es de 22.50 x 2 x 4 x 20 = 3600.00€.
+
+Por último, consideramos adecuado contratar a un CM una vez finalizado el proyecto.
+Para ello, estimamos un sueldo medio de 13.50€ por hora, y una dedicación semanal de 1 hora. Por lo tanto, el coste de marketing para 20 meses es de 13.50 x 1 x 4 x 20 = 1080.00€.
+
+Coste total de personal = 9000.00€ + 3600.00€ + 1080.00€ = 13680.00€
+## 4. Costes de contingencia
+Hay que tener en cuenta que a la hora de analizar y prever los riesgos, también es necesario desarrollar un plan de contingencia para cada uno de ellos. Esto conlleva a que se tengan que dedicar una serie de costes para estos planes. Para este sistema, suponemos un 15% de los costes totales a dedicar a los planes de contingencia, ya que se suele recomendar una cifra entre un 10% y un 20% de manera general.
+
+Teniendo en cuenta todos los costes, se obtiene un coste de contingencia de 9566.75€.
 
 ## 5. Coste total de la propiedad
 Teniendo en cuenta la estimación de costes de desarrollo del proyecto, y la estimación respectiva a la operación del sistema, a los costes de GDPR y a los costes de contingencia, nos queda el siguiente Coste Total de la Propiedad (TCO) para 2 años, diferenciando entre los 4 meses de desarrollo y el resto de los 20 meses para completar los 2 años:
@@ -242,7 +280,7 @@ Teniendo en cuenta la estimación de costes de desarrollo del proyecto, y la est
 </iframe>
 
 
-El coste total de la propiedad para 24 meses es de **90.9K**.
+El coste total de la propiedad para 24 meses es de **97,6K**.
 
 ## 6. Estado actual del TCO
 
