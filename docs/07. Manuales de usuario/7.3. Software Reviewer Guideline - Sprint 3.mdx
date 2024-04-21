@@ -14,12 +14,13 @@ Existen actualmente dos despliegues de nuestro sistema, uno para ONG que se bene
 Actualmente solo navegadores basados en la tecnología Chromium tienen soporte. En un futuro se pretende dar soporte para otros navegadores pero actualmente no se puede asegurar el correcto funcionamiento del sistema en navegadores basados en webkit como Safari, o independientes como Firefox.
 
 ## Permisos
-En el sistema desarrollado se espera que todos los usuarios sean administradores, por lo que tanto en esta iteración como iteraciones posteriores se espera que cualquier persona con acceso al sistema pueda hacer cualquier operación permitida.
+En el sistema desarrollado para la ong ACAT se espera que todos los usuarios sean administradores, por lo que tanto en esta iteración como iteraciones posteriores se espera que cualquier persona con acceso al sistema pueda hacer cualquier operación permitida.
+En el sistema desarrollado para la ong Cirio y Costal sólo los usuarios maestros son administradores y son los únicos con permisos para realizar todas las operaciones disponibles en el sistema. Los demás usuarios sólo tendran acceso a las operaciones permitidas para usuarios que no son administradores.
 
 ## Información de Contacto
 Si en algún momento durante las pruebas necesita informar de alguna duda o problema, existen las siguientes vías:
 - Correo Electrónico: harmonyltd@outlook.es
-- Formulario: Podrás dejar cualquier tipo de feedback para reportar errores, recomendar cambios o proponer mejoras en el siguiente formulario: [enlace]
+- Formulario: Podrás dejar cualquier tipo de feedback para reportar errores, recomendar cambios o proponer mejoras en el siguiente formulario: [enlace](https://docs.google.com/forms/d/e/1FAIpQLSda1exsoZI3jOJIednAizC8H4gx9w8Q2LoRb0lMl1Rdzw3wtA/viewform?usp=sf_link)
 
 ## iTop
 Hemos facilitado una instancia de iTop para aquellos usuarios piloto que sean estudiantes de la Universidad de Sevilla, así como unas instrucciones en formato audiovisual, accesibles a través del siguiente enlace: [iTop.mp4](/docs/07.%20Manuales%20de%20usuario/7.1.%20iTop.mdx).
@@ -66,7 +67,7 @@ Por otro lado, como parte de nuestra investigación sobre alternativas de despli
 # ACAT
 A lo largo de la prueba del sistema se podrá navegar a través de la aplicación mediante la barra lateral disponible. Toda la aplicación es responsive por lo que podrá ser usada en móvil u ordenador.
 
-<img src="/img/usermanual/sprint2/acat-sidebar.png" height="50%"/>
+<img src="/img/usermanual/sprint3/acat-sidebar.png" height="50%"/>
 
 ## Login
 Para usar la aplicación es necesario iniciar sesión, por tanto esta página será la primera con la que te encuentres en el sistema. No existe desde este punto ningún enlace a un registro ya que en nuestro sistema un usuario solo puede ser creado por otro, y por tanto alguien externo al sistema no podrá acceder de ninguna manera.
@@ -78,6 +79,7 @@ Para iniciar sesión puede rellenar el siguiente formulario con sus credenciales
 ## Listado de Beneficiarios
 
 Los beneficiarios de ACAT son las personas que reciben los servicios de esta ONG. Desde este listado podemos ver sus nombres, número de citas totales, edad y si el servicio que tenían que proporcionarles está finalizado.
+Además, se pueden buscar los beneficiarios mostrados en el listado así como filtrarlos por género.
 
 <img src="/img/usermanual/sprint2/acat-beneficiarios.png" height="50%"/>
 
@@ -119,6 +121,7 @@ A través de este formulario podemos añadir la información de un beneficiario 
 ## Listado de Intervenciones
 
 Las intervenciones de ACAT son las los servicios que provee ACAT a sus beneficiarios, y registran el quién, cuándo y qué de una intervención.
+Ademas, se pueden realizar búsquedas de las intervenciones mostradas en el listado por alias, técnico  o tipología. También, se pueden filtrar por fecha.
 
 <img src="/img/usermanual/sprint2/acat-intervenciones.png" height="50%"/>
 
@@ -201,6 +204,7 @@ Para iniciar sesión puede rellenar el siguiente formulario con sus credenciales
 ## Listado de Familias
 
 Las familias de Cirio y Costal son las personas que reciben los servicios de esta ONG. Desde este listado podemos ver su primer apellido, el número de entregas pendientes y si han sido contactados para recogerlas.
+Además, se pueden realizar búsquedas entre las familias mostradas en el listado. 
 
 <img src="/img/usermanual/sprint2/cyc-familias.png" height="50%"/>
 
@@ -240,6 +244,7 @@ A través de este formulario podemos añadir la información de una familia, as�
 ## Listado de Inventario
 
 El inventario de Cirio y Costal corresponde a los alimentos que residen en sus almacenes, tanto alimentos como la cantidad en cada uno de los almacenes. Si un producto está a punto de caducar se verá con un outline rojo.
+Los alimentos del inevntario se pueden buscar por nombre y almacen y se pueden realizar filtrados según las fecha de caducidad del alimento.
 
 <img src="/img/usermanual/sprint2/cyc-inventario.png" height="50%"/>
 
@@ -279,6 +284,7 @@ A través del botón “Añadir Almacén” podemos acceder al siguiente formula
 ## Listado de Entregas
 
 En esta vista podremos ver todas las entregas registradas en el sistema, incluyendo la familia, el estado, la fecha de entrega, así como los alimentos que la componen.
+En las entregas mostradas en el listado se pueden realizar búsquedas por familia y los alimentos que contenga cada entrega.
 
 <img src="/img/usermanual/sprint2/cyc-entregas.png" height="50%"/>
 
