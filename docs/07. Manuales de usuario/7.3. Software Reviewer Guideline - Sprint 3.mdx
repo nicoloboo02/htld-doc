@@ -159,6 +159,9 @@ En nuestro sistema un usuario existente podrá añadir nuevos usuarios al sistem
 
 <img src="/img/usermanual/sprint2/usuarioform.png" height="50%"/>
 
+**Disclaimers**
+- <span style={{ color: 'red' }}>Hemos notado que, a veces, la API de verificación de email, falla en el sistema desplegado, dando un error de timeout. Sospechamos que tiene que ver con el plan de precio gratuito de la API y el momento en que se haga. Si continua falla repetidamente durante el tiempo por favor contactenos. Para evitar bloquear la creacion de usuarios, preguntaremos por confirmacion para continuar</span>
+
 ## Cambiar/Restaurar Contraseña
 
 Nuestro sistema permite a un usuario cambiar su contraseña a través de lo que se conoce como un código de 2FA. Si uno navega al apartado “Cambiar Contraseña” del menú lateral verá un botón para generar un código QR. Si se ha generado un código con anterioridad, este se sobreescribirá con el nuevo, de modo que sólo exista a la vez un código de doble factor.
@@ -225,7 +228,7 @@ En los distintos listados veremos estos botones de importar y exportar datos en 
 
 ## Detalles de Familia
 
-Desde los detalles de una familia podremos ver los detalles de una familia y sus miembros. De la misma manera podemos editarla o eliminarla con los controles superiores, así como eliminar miembros de la familia que no sean cabeza de familia.
+Desde los detalles de una familia podremos ver los detalles de una familia y sus miembros. De la misma manera podemos editarla, darla de baja y posteriormente eliminarla con los controles superiores, así como eliminar miembros de la familia que no sean cabeza de familia.
 
 También se podrán ver los detalles de una entrega, editar su estado y eliminar ciertos productos si no se entregarán finalmente. También se podrán editar los productos de una entrega.
 
@@ -268,12 +271,9 @@ A través de este formulario podemos añadir la información de un nuevo element
 
 En esta vista podremos ver todas los almacenes registrados en el sistema. La información que se guarda de cada almacén es únicamente su nombre.
 
-<img src="/img/usermanual/sprint2/cyc-almacenes.png" height="50%"/>
+<img src="/img/usermanual/sprint3/cyc-almacenes.png" height="50%"/>
 
 Desde esta vista podremos eliminar o crear almacenes mediante los botones correspondientes **(Se solicita que no se borren almacenes ya existentes con alimentos en ellos. Borrarlos significa que los alimentos asociados se borren también del sistema).**
-
-**Disclaimers:**
-- <span style={{ color: 'red' }}>La función de edición no se encuentra disponible en estos momentos. Tratar de editar un almacén debería resultar en un error.</span>
 
 ## Crear Almacén
 
@@ -318,6 +318,9 @@ En nuestro sistema sólo el usuario maestro existente podrá añadir nuevos usua
 <img src="/img/usermanual/sprint3/usuarioform.png" height="50%"/>
 
 Este usuario podrá marcar al usuario como usuario maestro usando el checkbox disponible en el formulario.
+
+**Disclaimers**
+- <span style={{ color: 'red' }}>Hemos notado que, a veces, la API de verificación de email, falla en el sistema desplegado, dando un error de timeout. Sospechamos que tiene que ver con el plan de precio gratuito de la API y el momento en que se haga. Si continua falla repetidamente durante el tiempo por favor contactenos. Para evitar bloquear la creacion de usuarios, preguntaremos por confirmacion para continuar</span>
 
 ## Cambiar/Restaurar Contraseña
 
