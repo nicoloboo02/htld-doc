@@ -9,7 +9,7 @@ A continuación, se recopilan los enlaces a los diferentes documentos que son re
 | Nombre del documento | Enlace                                |
 |----------------------|---------------------------------------|
 | portada.md           | [<u>Ir</u>](/docs/Recursos/6.5.%20Plantilla%20de%20la%20Portada) |
-| presentacion.md      | [<u>Ir</u>](/docs/category/presentaciones) |
+| presentacion.md      | [<u>Ir</u>](/docs/06.%20Recursos/6.1.%20Presentaciones/6.1.6.%2023-04-2024.md) |
 | report.md            | [<u>Ir</u>](/docs/category/anexo-i-aportaci%C3%B3n-a-la-bgcc) |
 | pilots.md            | [<u>Ir</u>](/docs/Planificación/3.3.%20Pilots) |
 | PerformanceEvaluation.md | [<u>Ir</u>](/docs/Rendimiento/5.3.%20PerformanceEvaluation) |
@@ -19,4 +19,9 @@ A continuación, se recopilan los enlaces a los diferentes documentos que son re
 | pilotUsersCommitmentAgreement.md  | [<u>Ir</u>](/docs/Acuerdos%20y%20contratos/2.3.%20Acuerdo%20de%20compromiso%20de%20usuarios%20piloto) |
 | PilotUsersPerformanceEvaluation.md  | [<u>Ir</u>](/docs/Rendimiento/5.4.%20PilotUsersPerformanceEvaluation) |
 | InformationProvidedByPilotUsers.md  | [<u>Ir</u>](/docs/Seguimiento/4.7.%20InformationProvidedByPilotUsers) |
-| revision.md  | [<u>Ir</u>](/docs/Manuales%20de%20usuario/7.2.%20Software%20Reviewer%20Guideline%20-%20Sprint%202) |
+| revision.md  | [<u>Ir</u>](/docs/Manuales%20de%20usuario/7.3.%20Software%20Reviewer%20Guideline%20-%20Sprint%203) |
+
+
+## Documento de autoevaulación
+
+[Pulse aquí para acceder al documento de autoevaluación](/docs/Rendimiento/5.1.%20Autoevaluación/Sprint%203)
