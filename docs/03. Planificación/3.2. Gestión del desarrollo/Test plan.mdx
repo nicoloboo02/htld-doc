@@ -51,6 +51,12 @@ class WebsiteUser(HttpUser):
 ```
 >El código proporcionado es un ejemplo de cómo configurar una prueba de carga utilizando Locust, una herramienta de pruebas de rendimiento de código abierto. Define una clase `WebsiteUser` que hereda de `HttpUser` de Locust. La variable `wait_time` se configura para simular un tiempo de espera aleatorio entre 5 y 15 segundos entre las tareas. La tarea `index` simula una solicitud GET a la página de inicio ("/"). Este tipo de pruebas son útiles para evaluar cómo un sistema maneja múltiples solicitudes simultáneas.
 
+Estos son algunos ejemplos de test de cargas realizados sobre los endpoints mas "exigentes" del sistema siendo los que mas recursos consumen:
+<img src="\img\testplan\pCargas.png" alt="Request stats" width="100%" height="100%"/>
+<img src="\img\testplan\pCargasGraphs.png" alt="Resquest per second" width="100%" height="100%"/>
+
+Esto indica que nuestra aplicación va a ser perfectamente capaz de mantener una usabilidad excelente para un número menor a 10 usuarios concurrentes.
+
 ## Pruebas de frontend
 
 El plan de pruebas para el desarrollo frontend se basa en Jest, una biblioteca de pruebas de JavaScript.
