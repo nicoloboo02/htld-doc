@@ -3,21 +3,33 @@
 | Versión | Fecha      | Diferencia entre versiones                                                                                                                                                                                 |
 | ------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1.0     | 2024-04-27 | Elaboración inicial del documento para especificar nuestro modelo de negocio                                                                                 |
+| 1.1     | 2024-04-30 | Reestructuración del documento y cálculo del ROI                                                                                  |
 
 ## 1. Nuestro modelo de negocio
 
-El plan de negocio se centrará en desarrollar una PWA eficiente y fácil de usar que facilite la gestión de las operaciones de la ONG y las donaciones. Los ingresos para cubrir los costos de desarrollo y mantenimiento de la PWA provendrán de un 5% de cada donación realizada a través de la aplicación. Este modelo nos asegura que el beneficio que obtengamos será acorde a las donaciones recibidadas por las ONG, sin suponer un inconveniente, como podría ser el caso de establecer una tarifa fija por cada donación, que puede ser injusto para las donaciones más pequeñas. Con esto buscamos que las donaciones de una cantidad menor, que estimamos serán la mayoría, sean rentables. Para maximizar la eficiencia de costos, se ha llegado a la conclusión de que hay minimizar los costos de transacción con los procesadores de pagos, por lo que haremos uso de una pasarela de pago con Stripe.
+El plan de negocio se centrará en desarrollar una PWA eficiente y fácil de usar que facilite la gestión de las operaciones de la ONG y las donaciones. Los ingresos para cubrir los costos de desarrollo y mantenimiento de la PWA provendrán de un crecimiento lineal del número de ONGs clientes, lo que significa que los ingresos aumentarán de manera constante con el tiempo. En el primer año, se espera vender la aplicación a 5 ONGs, generando ingresos de 13.750 €. En los años siguientes, se espera que este número aumente de forma lineal, llegando a 20 ONGs en el cuarto año y generando un total de 143.500 € en ingresos durante este período. Para maximizar la eficiencia de costos, se ha llegado a la conclusión de que hay minimizar los costos de transacción con los procesadores de pagos, por lo que haremos uso de una pasarela de pago con Stripe.
 
-Es importante destacar que este trabajo se realiza sin ánimo de lucro, y cualquier excedente de ingresos después de cubrir los costos será reinvertido en la misión de la ONG.
+Además, es interesante observar que en este caso, atraer inversores sin ánimo de lucro puede beneficiarnos para ayudar mejor a estas ONG. Esto es especialmente importante debido a la contribución significativa que las ONG hacen a la sociedad. Al trabajar con inversores que comparten nuestra visión de apoyar a las ONG, podemos fortalecer nuestro impacto y ayudar a más organizaciones a alcanzar sus objetivos.
 
 ### 1.1 Aspectos clave del modelo de negocio
 
-- Fuente de ingresos: Un 5% de cada donación realizada.
-
 - Propuesta de valor: Proporcionar una plataforma para facilitar la gestión de las operaciones de la ONG y las donaciones.
 
-- Actividades clave: Desarrollo y mantenimiento de la PWA, gestión de las donaciones, soporte al cliente.
+- Actividades clave: Desarrollo y mantenimiento de la PWA, y soporte al cliente.
 
 - Socios clave: Procesadores de pagos para gestionar las donaciones (Stripe).
 
 - Costos de transacción: Estos son los costos asociados con el procesamiento de las donaciones. En Stripe es un 1.5% + 0.25€ por donación, no teniendo tarifas ni comisiones mensuales.
+
+### 1.2 Retorno de Inversión
+El costo total de propiedad (TCO) para los primeros 24 meses es de 97,6K. Con el retorno de inversión (ROI) podemos calcular la rentabilidad anual o el tiempo que se tarda en recuperar la inversión inicial. Dado el modelo de negocio y la proyección de ingresos, a medida que el número de ONGs clientes aumente, también lo harán los ingresos, lo que permitirá un rápido retorno de la inversión.
+
+El ROI se calcula utilizando la siguiente fórmula:
+
+**ROI=(Ganancia − CostoDeInversión)​/ CostoDeInversión**
+
+Para el cuarto año, los ingresos acumulados son de 143.500 €. Si restamos el TCO de 97,6K, obtenemos una ganancia de 45.900€. Por lo tanto, el ROI en el cuarto año sería:
+
+ROI año4​=(143.500€ − 97.600€)/97.600€ ​= 0,47 = **47%**
+
+Esto significa que para el caurto año, no solo se ha recuperado la inversión inicial, sino que también se ha obtenido un 47% de retorno sobre la inversión.
