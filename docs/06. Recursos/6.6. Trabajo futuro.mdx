@@ -1,0 +1,57 @@
+# Trabajo futuro
+
+## Historial de versiones
+
+| Versión | Fecha      | Descripción                   | Elaborado por             |
+| ------- | ---------- | ------------------------------|---------------------------|
+| 1.0     | 02/05/2024 | Versión inicial del documento | Alejandro Gallardo Pelayo |
+
+
+## 1. Resumen ejecutivo
+Este documento presenta una visión detallada de posibles trabajos futuros destinados a mejorar nuestro proyecto, enfocándose en satisfacer las necesidades de las ONGs. 
+Proporciona sugerencias específicas, como la implementación de notificaciones push, mejoras en el dashboard de estadísticas y la garantía de la legalidad de los datos almacenados. Su objetivo es 
+guiar a futuros alumnos en la asignatura para mantener y mejorar el proyecto, asegurando así su relevancia y utilidad continua para las organizaciones.
+
+
+## 2. Introducción
+Este documento se centra en describir posibles trabajos futuros que se pueden realizar para seguir avanzando y mejorando nuestro proyecto. El objetivo es informar 
+a futuros alumnos de la asignatura de posibles cambios y mejoras que se pueden realizar en nuestro proyecto para favorecer a las peticiones de las ONGs, ya que en este curso
+no ha sido posible implementar algunos de los cambios requeridos por parte de las mismas. Este documento servirá como guía para implementar dichos cambios en caso de que 
+futuros alumnos de la asignatura decidan escoger nuestro proyecto para mantenerlo y mejorarlo. 
+
+## 3. Cambios futuros
+A continuación, se exponen los posibles cambios futuros que se pueden implementar para mejorar nuestro proyecto:
+
+    - **Notificaciones push:** implementación de notificaciones push en la aplicación de Cirio y Costal con el objetivo de recibir avisos sobre límites de tiempo.
+        - La ONG Cirio y Costal propuso introducir en la aplicación un sistema para recibir avisos sobre límites de tiempo. En concreto, 
+          se requería un aviso cuando una familia estaba a poco tiempo de finalizar su suscripción, cuando un alimento del almacén esté apunto de caducar, etc. 
+        - Para ello nuestro equipo pensó en la opción de implementar notificaciones push en la aplicación para informar de dichos avisos a los usuarios, sin embargo esto 
+          no pudo implementarse por falta de tiempo, ya que nos vimos obligados a reducir el alcance del proyecto. Como sustitución a las notificaciones, se implementaron 
+          filtros para obtener las familias a punto de finalizar o los alimentos a punto de caducar.
+        - Como propuesta de mejora, sería una buena opción sustituir los filtros atualmente implementados para localizar familias a punto de finalizar la suscripción o alimentos
+          apunto de caducar por la implementación de notificaciones push en la aplicación. De esta manera, los usuarios podrían recibir avisos una vez se alcancen los 
+          límites de tiempo establecidos.
+    
+
+    - **Mejora en las estadísticas:** implementación de mejoras en el dashboard de estadisticas de la aplicación de Cirio y Costal.  
+        - La ONG Cirio y Costal propuso introducir en la aplicación un dashboard de estadísticas sobre los datos que se manejan en la aplicacón, con el objetivo de 
+          obtener estadísticas concretas que les fueron requeridas por parte del banco de alimentos, ya que ellos se encargan de administrar alimentos para familias necesitadas.
+        - Para ello nuestro equipo implementó un dashboard que permite mostrar al usuario un sistema de estadísticas relacionados con diferentes aspectos de la aplicación, como 
+          por ejemplo aspectos relacionados con las personas y las familias. Para ello, se pueden establecer filtros como los que podemos ver en la siguiente imagen que muestra 
+          el número de familias dadas de alta en las que hay hombres en un rango de edad determinado.
+
+          <img src="/img/usermanual/sprint3/cyc-estadisticasnormal.png" height="50%"/>
+
+        - Como propuesta de mejora sería conveniente introducir más filtros y funcionalidad para ofrecer más estadísitcas a los usuarios. Para ello, sería necesario preguntar a la ONG 
+          estadísticas adicionales que necesiten. Otra posible mejora puede ser la personalización de los filtros que se pueden aplicar para modificar los resultados obtenidos, como 
+          por ejemplo, poder introducir un rango de edad personalizado en vez de uno ya predeterminado. También, se pueden incluir otros tipos de gráficas para ampliar la información que se le muestra al usuario.
+    
+
+    - **Legalidad de datos:** protección de los datos almacenados de las personas.
+        - La ONG Cirio y Costal recibió como propuesta por parte del banco de alimentos que deben de establecer una protección de todos los datos de las personas que se tienen almacenados. Además, se estableció también
+          por parte del banco de alimentos que las personas deben otorgar su permiso a la organización para almacenar sus datos y que la organización debe de disponer de los conocimientos y accesos necesarios para acceder 
+          al dispositivo dónde se encuentra almacenada la base de datos. 
+        - Nuestro equipo no está del todo seguro de si se cumple la legalidad de los datos establecida por parte del banco de alimentos a las organizaciones, ya que en el caso de nuestra aplicación la base de datos se ecuentra desplegada
+          y no se tendría acceso al dispositivo de almacenamiento como tal, pero sí a los datos almacenados.
+        - Como propuesta de mejora se debe revisar la legalidad de los datos para determinar si se cumplen los aspectos establecidos o no.
+    
