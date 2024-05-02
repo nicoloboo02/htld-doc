@@ -19,6 +19,7 @@ A continuación, se recopilan los enlaces a los diferentes documentos que son re
 | pilotUsersCommitmentAgreement.md  | [<u>Ir</u>](/docs/Acuerdos%20y%20contratos/2.3.%20Acuerdo%20de%20compromiso%20de%20usuarios%20piloto) |
 | PilotUsersPerformanceEvaluation.md  | [<u>Ir</u>](/docs/Rendimiento/5.4.%20PilotUsersPerformanceEvaluation) |
 | InformationProvidedByPilotUsers.md  | [<u>Ir</u>](/docs/Seguimiento/4.7.%20InformationProvidedByPilotUsers) |
+| MinimumInformationFromPilotUsers_GatheredByForm.md  | [<u>Ir</u>](/docs/Seguimiento/4.8.%20MinimumInformationFromPilotUsers_GatheredByForm) |
 | revision.md  | [<u>Ir</u>](/docs/Manuales%20de%20usuario/7.3.%20Software%20Reviewer%20Guideline%20-%20Sprint%203) |
 
 
