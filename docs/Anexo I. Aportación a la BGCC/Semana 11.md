@@ -12,7 +12,7 @@ Se va a marcar con una **F** las secciones que se hayan tomado como feedback en 
 ### Feedback sobre Estudio de Costes y ROI
 
 - En el estudio de costes, se ha sugerido incluir los costos sociales que la empresa tendría que pagar. **F**
-- Se recomienda distinguir claramente entre salario bruto y costos sociales en los cálculos financieros.
+- Se recomienda distinguir claramente entre salario bruto y costos sociales en los cálculos financieros. **F**
 - Se ha planteado la necesidad de tener en cuenta el número esperado de clientes para calcular adecuadamente el ROI. **F**
 
 ### Feedback sobre Demostraciones
@@ -23,7 +23,7 @@ Se va a marcar con una **F** las secciones que se hayan tomado como feedback en 
 
 ### Feedback sobre Seguimiento y Resolución de Problemas
 
-- Se ha mencionado la importancia de establecer un seguimiento sistemático de problemas y su resolución, así como definir indicadores de éxito para evaluar la efectividad de las soluciones.
+- Se ha mencionado la importancia de establecer un seguimiento sistemático de problemas y su resolución, así como definir indicadores de éxito para evaluar la efectividad de las soluciones. **F**
 - Se sugiere incluir lecciones aprendidas y problemas encontrados durante el seguimiento para mejorar el proceso de resolución de problemas. **F**
 
 ### Feedback sobre Planificación y Replanificación

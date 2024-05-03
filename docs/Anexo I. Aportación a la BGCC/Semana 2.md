@@ -176,7 +176,7 @@ Se va a marcar con una **F** las secciones que se hayan tomado como feedback en 
 
 - Porcentaje de cumplimiento del commitment agreement. Dentro del doc. (Conjunto de docs / carpeta ?). **F**
 
-- Service credits, oportunidad de recuperar puntos o de acumular.
+- Service credits, oportunidad de recuperar puntos o de acumular. **F**
 
   
 

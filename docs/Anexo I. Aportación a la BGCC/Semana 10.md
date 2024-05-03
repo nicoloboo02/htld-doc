@@ -42,7 +42,7 @@ Se va a marcar con una **F** las secciones que se hayan tomado como feedback en 
 
 ### Seguimiento
 
-- Establecer un seguimiento sistemático de problemas y su resolución.
+- Establecer un seguimiento sistemático de problemas y su resolución. **F**
 - Definir indicadores de éxito y metas claras para evaluar la efectividad de las soluciones.
 
 ### Pilotos / Customer Agreement
@@ -62,5 +62,5 @@ Se va a marcar con una **F** las secciones que se hayan tomado como feedback en 
 
 ### Testing
 
-- Ampliar el alcance de las pruebas para incluir pruebas de rendimiento y responsividad.
+- Ampliar el alcance de las pruebas para incluir pruebas de rendimiento y responsividad. **F**
 - Utilizar herramientas y métricas adecuadas para evaluar la efectividad de las pruebas y los errores encontrados.

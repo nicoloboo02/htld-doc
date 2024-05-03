@@ -44,7 +44,7 @@ Se va a marcar con una **F** las secciones que se hayan tomado como feedback en 
 
   
 
-- Incorporar número de horas de GitHub Actions utilizando la calculadora de GitHub.
+- Incorporar número de horas de GitHub Actions utilizando la calculadora de GitHub. **F**
 
   
 
@@ -60,7 +60,7 @@ Se va a marcar con una **F** las secciones que se hayan tomado como feedback en 
 
   
 
-- Utilizar alguna metodología para la gestión de la documentación como código.
+- Utilizar alguna metodología para la gestión de la documentación como código. **F**
 
   
 
@@ -84,7 +84,7 @@ Se va a marcar con una **F** las secciones que se hayan tomado como feedback en 
 
   
 
-- Realizar una autodefensa de las tareas realizadas al final de la presentación.
+- Realizar una autodefensa de las tareas realizadas al final de la presentación. **F**
 
   
 
@@ -108,4 +108,4 @@ Se va a marcar con una **F** las secciones que se hayan tomado como feedback en 
 
   
 
-- En el primer sprint ya hay usuarios pilotos, contactar con los usuarios disponibles para comunicarles cuando va a estar disponible el sistema.
+- En el primer sprint ya hay usuarios pilotos, contactar con los usuarios disponibles para comunicarles cuando va a estar disponible el sistema. **F**
