@@ -11,7 +11,7 @@ A continuación, se recopilan los enlaces a los diferentes documentos que son re
 | portada.md           | [<u>Ir</u>](/docs/Recursos/6.5.%20Plantilla%20de%20la%20Portada) |
 | presentacion.md      | [<u>Ir</u>](/docs/06.%20Recursos/6.1.%20Presentaciones/6.1.6.%2023-04-2024.md) |
 | report.md            | [<u>Ir</u>](/docs/category/anexo-i-aportaci%C3%B3n-a-la-bgcc) |
-| pilots.md            | [<u>Ir</u>](/docs/Planificación/3.3.%20Pilots) |
+| pilots.md            | [<u>Ir</u>](/docs/Planificación/3.4.%20Pilots) |
 | PerformanceEvaluation.md | [<u>Ir</u>](/docs/Rendimiento/5.3.%20PerformanceEvaluation) |
 | Time-Effort-report.md    | [<u>Ir</u>](/docs/category/time-reports) |
 | AI-usage.md          | [<u>Ir</u>](/docs/category/anexo-ii-uso-de-la-ia) |
