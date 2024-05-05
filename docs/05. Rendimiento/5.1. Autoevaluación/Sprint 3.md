@@ -1,6 +1,6 @@
-## Autoevaluación de la entrega del Sprint 2
+## Autoevaluación de la entrega del Sprint 3
 
-Al hacer esta autoevaluación previamente a la entrega del Sprint 2, no se van a considerar todas las condiciones de suspenso, excluyendo aquellas que no se pueden saber hasta el día después de la entrega (Condiciones de fallo de la presentación).
+Al hacer esta autoevaluación previamente a la entrega del Sprint 3, no se van a considerar todas las condiciones de suspenso, excluyendo aquellas que no se pueden saber hasta el día después de la entrega (Condiciones de fallo de la presentación).
 
 > **En caso de que una condición no se cumpla, supondremos una nota máxima de 4 en ese criterio**
 
