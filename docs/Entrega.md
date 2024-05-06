@@ -25,4 +25,4 @@ A continuación, se recopilan los enlaces a los diferentes documentos que son re
 
 ## Documento de autoevaulación
 
-[Pulse aquí para acceder al documento de autoevaluación](/docs/Rendimiento/5.1.%20Autoevaluación/Sprint%203)
+[Pulse aquí para acceder al documento de autoevaluación](/docs/Rendimiento/5.1.%20Autoevaluación/PPL)
