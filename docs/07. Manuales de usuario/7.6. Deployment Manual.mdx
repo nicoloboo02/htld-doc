@@ -1,0 +1,71 @@
+# Deployment Manual
+
+# Introduccion
+En el documento vigente se detallará el procedimiento para desplegar el proyecto. Este manual está definido para aquella persona encargada del mantenimiento del sistema.
+
+# Información Importante
+El provisionamiento y configuración del sistema está definido en Terraform; Una herramienta Open Source de infraestructura como código (IAC) que se utiliza para crear, modificar y versionar infraestructuras de forma eficiente. Terraform ofrece integración con proveedores de servicios como AWS, Microsoft Azure y Google Cloud Platform. Para este caso, se hará uso de AWS.
+
+## Configuración de la cuenta de AWS
+Antes de empezar, necesitará una cuenta de AWS. Si no tiene una, diríjase al sitio web de AWS y cree una cuenta: [enlace](https://portal.aws.amazon.com/billing/signup#/start/email)
+
+## Instalar AWS CLI
+Para instalar AWS CLI, siga los pasos que se indican en el siguiente video: [enlace](https://youtu.be/NlOFJs_8R0g?si=ghUOQRT_-fwNJ8na)
+
+## Instalar Terraform
+Para instalar Terraform, siga los pasos que se indican en el siguiente vídeo: [enlace](https://youtu.be/a6-G9rbF8yE?si=cFXtDmEcpStz7L6k)
+
+## Configuración de las credenciales AWS
+Creada la cuenta de AWS e instalado AWS CLI y Terraform, es necesario obtener claves de acceso asociadas al usuario. Para obtenerlas, inicie sesión en el panel de AWS desde el siguiente enlace: [enlace](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26refid%3Dft_card%26state%3DhashArgsFromTB_eu-north-1_f563e1c2a8a76412&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=_JiMKg9Ya4fHcW8hmhw94yU6uxABY3L0rrtIQFRzfbs&code_challenge_method=SHA-256)
+
+Ahora, en la barra de búsqueda situada en la parte superior de la página, introduzca "iam" y haga clic en la primera opción:
+
+<img src="/img/usermanual/deploy/search-iam.png" height="50%"/>
+
+En la barra de la izquierda, haga click en la opción Users:
+
+<img src="/img/usermanual/deploy/iam-user.png" height="50%"/>
+
+Ahora, debe crear un nuevo usuario:
+
+<img src="/img/usermanual/deploy/create-iam-user.png" height="50%"/>
+
+Especifique un nombre de usuario:
+
+<img src="/img/usermanual/deploy/iam_username.png" height="50%"/>
+
+Marque las siguientes opciones:
+
+<img src="/img/usermanual/deploy/user_set_permission.png" height="50%"/>
+
+Finalice la creación de usuario:
+
+<img src="/img/usermanual/deploy/finish-create-iam-user.png" height="50%"/>
+
+Acceda al usuario creado:
+
+<img src="/img/usermanual/deploy/access_user.png" height="50%"/>
+
+Cree nuevas claves de acceso:
+
+<img src="/img/usermanual/deploy/create_access_key.png" height="50%"/>
+
+Marque la opción resaltada:
+
+<img src="/img/usermanual/deploy/use_access_key.png" height="50%"/>
+
+Termine la creación de las claves de acceso:
+
+<img src="/img/usermanual/deploy/access_keys.png" height="50%"/>
+
+Realizado el proceso anterior, abra una terminal, escriba "aws configure" y pulse `Enter`. Introduzca sus credenciales cuando el programa se lo indique.
+
+## Descargue los archivos de despliegue
+Descargue el archivo comprimido con los archivos de despliegue a través de este enlace: [enlace](https://github.com/ISPP-07/infrastructure/archive/refs/heads/main.zip)
+
+Descomprima los archivos en una ubicación accesible y acceda a la carpeta.
+
+## Despligue el sistema
+Pulse `Ctrl+l`, en el diálogo escriba "cmd" y pulse `Enter`. Se abrirá una terminal en la ubicación de los archivos descargados. Ahora debe introducir `terraform init` y, posteriormente `terraform apply`. Cuando el programa se lo pida introduzca "yes" y pulse `Enter`.
+
+Una vez provisionada la instancia, el sistema le devolverá la dirección del servidor para que pueda acceder al servicio desde el navegador.
