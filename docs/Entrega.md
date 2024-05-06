@@ -20,7 +20,7 @@ A continuación, se recopilan los enlaces a los diferentes documentos que son re
 | PilotUsersPerformanceEvaluation.md  | [<u>Ir</u>](/docs/Rendimiento/5.4.%20PilotUsersPerformanceEvaluation) |
 | InformationProvidedByPilotUsers.md  | [<u>Ir</u>](/docs/Seguimiento/4.7.%20InformationProvidedByPilotUsers) |
 | MinimumInformationFromPilotUsers_GatheredByForm.md  | [<u>Ir</u>](/docs/Seguimiento/4.8.%20MinimumInformationFromPilotUsers_GatheredByForm) |
-| revision.md  | [<u>Ir</u>](/docs/Manuales%20de%20usuario/7.4.%20Software%20Reviewer%20Guideline%20-%20PPL%203) |
+| revision.md  | [<u>Ir</u>](/docs/Manuales%20de%20usuario/7.4.%20Software%20Reviewer%20Guideline%20-%20PPL) |
 
 
 ## Documento de autoevaulación
