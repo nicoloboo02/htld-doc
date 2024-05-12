@@ -1,0 +1,64 @@
+## Autoevaluación de la entrega del WPL
+
+Al hacer esta autoevaluación previamente a la entrega del WPL, no se van a considerar todas las condiciones de suspenso, excluyendo aquellas que no se pueden saber hasta el día después de la entrega (Condiciones de fallo de la presentación).
+
+> **En caso de que una condición no se cumpla, supondremos una nota máxima de 4 en ese criterio**
+
+### Condiciones de Suspensión del Equipo:
+
+En este apartado, en caso de que NO se cumpla la condición de fallo se marcará la columna de Sí.
+
+| Criterio | Descripción | Cumplimiento | Pass / Fail | Justificación |
+|----------|-------------|--------------|-------------|---------------|
+| T-1) Falta de Notificación de Ausencia | No dar aviso (al inicio de una clase de evaluación) de la ausencia de un miembro. | [ ] Sí [] No | No aplica | No aplica |
+| T-2) Exceder el Tiempo de Presentación | Tomar más tiempo del estipulado para la presentación, aunque sea por unos segundos. | [ ] Sí [] No | No aplica | No aplica |
+| T-3) Concluir la Presentación Antes de Tiempo | Finalizar la presentación antes de que termine el último minuto designado. | [ ] Sí [] No | No aplica | No aplica |
+| T-4) Usar un Archivo de Presentación Distinto | Utilizar un archivo de presentación diferente al incluido en el entregable. | [ ] Sí [] No | No aplica | No aplica |
+| T-5) No Responder o No Reaccionar a la Retroalimentación | No respetar o no reaccionar a la retroalimentación dada en clase sin una justificación explícita. | [ ] Sí [] No | No aplica | Se ha tenido en cuenta todo el feedback mencionado en clase para realizar la presentación |
+| T-6) No Incluir Aspectos Esperados en el Documento de Presentación | No incluir explícitamente alguno de los aspectos esperados en el documento de presentación tal como se explicaron en la discusión de clases previas. | [x] Sí [] No | Pass | Se incluyen todos los apartados además de incluir algún apartado extra |
+| T-7) Incluir un Documento sin Portada Adecuada | Incluir un documento en el repositorio como parte de un entregable sin una portada adecuada que incluya al menos el número del grupo EV, nombre del grupo, nombre del entregable, título descriptivo del documento y nombres de los miembros del equipo. | [x] Sí [] No | Pass | Hay una sección llamada "Portada" que la incluye |
+| T-8) No Incluir Asuntos en la Planificación de Trabajo | No incluir asuntos en la planificación de trabajo que representen una revisión realizada por algún miembro del grupo. | [x] Sí [] No | Pass | Se está haciendo en esta sección |
+| T-9) Fallo en la Entrega Correcta | No seguir las instrucciones de entrega en el repositorio GitHub o cometer errores en el formato o nombre de los archivos incluidos en el entregable. | [x] Sí [] No | Pass | No aplica |
+| T-10.1) Fallo al proporcionar la URL del repositorio de GitHub | No proporcionar la URL del repositorio de GitHub. | [x] Sí [] No | Pass | Se ha proporcionado la URL del repositorio de GitHub. |
+| T-10.2) Fallo al cometer un error en el formato o nombre de archivo en la presentación | No cometer errores en el formato o nombre de archivo en ninguno de los archivos que conforman el entregable que debe incluirse en una carpeta "docs" del repositorio de GitHub: Presentación (presentacion.md) | [x] Sí [] No | Pass | Se ha comprobado que no hay errores en el formato o nombre de archivo en la presentación. |
+| T-10.3) Fallo al cometer un error en el formato o nombre de archivo en el informe de contribuciones al KB común | No cometer errores en el formato o nombre de archivo en ninguno de los archivos que conforman el entregable que debe incluirse en una carpeta "docs" del repositorio de GitHub: Informe de contribuciones al KB común (report.md) | [x] Sí [] No | Pass | Se ha comprobado que no hay errores en el formato o nombre de archivo en el informe de contribuciones al KB común. |
+| T-10.4) Fallo al cometer un error en el formato o nombre de archivo en el informe de pilotos de usuario | No cometer errores en el formato o nombre de archivo en ninguno de los archivos que conforman el entregable que debe incluirse en una carpeta "docs" del repositorio de GitHub: Informe de pilotos de usuario (pilots.md) | [x] Sí [] No | Pass | Se ha comprobado que no hay errores en el formato o nombre de archivo en el informe de pilotos de usuario. |
+| T-10.5) Fallo al cometer un error en el formato o nombre de archivo en la evaluación del rendimiento individual | No cometer errores en el formato o nombre de archivo en ninguno de los archivos que conforman el entregable que debe incluirse en una carpeta "docs" del repositorio de GitHub: Evaluación del rendimiento individual (PerformanceEvaluation.md) | [x] Sí [] No | Pass | Se ha comprobado que no hay errores en el formato o nombre de archivo en la evaluación del rendimiento individual. |
+| T-10.6) Fallo al cometer un error en el formato o nombre de archivo en el informe de tiempo y esfuerzo | No cometer errores en el formato o nombre de archivo en ninguno de los archivos que conforman el entregable que debe incluirse en una carpeta "docs" del repositorio de GitHub: Informe de tiempo y esfuerzo para cada miembro y para el grupo (Time-Effort-report.md) | [x] Sí [] No | Pass | Se ha comprobado que no hay errores en el formato o nombre de archivo en el informe de tiempo y esfuerzo. |
+| T-10.7) Fallo al cometer un error en el formato o nombre de archivo en el informe detallado del uso de la IA | No cometer errores en el formato o nombre de archivo en ninguno de los archivos que conforman el entregable que debe incluirse en una carpeta "docs" del repositorio de GitHub: Informe detallado del uso de la IA (AI-usage.md) | [x] Sí [] No | Pass | Se ha comprobado que no hay errores en el formato o nombre de archivo en el informe detallado del uso de la IA. |
+| T-10.8) Fallo al cometer un error en el formato o nombre de archivo en el acuerdo de compromiso | No cometer errores en el formato o nombre de archivo en ninguno de los archivos que conforman el entregable que debe incluirse en una carpeta "docs" del repositorio de GitHub: Acuerdo de compromiso (commitmentAgreement.md) | [x] Sí [] No | Pass | Se ha comprobado que no hay errores en el formato o nombre de archivo en el acuerdo de compromiso. |
+| T-10.9) Fallo al cometer un error en el formato o nombre de archivo en el acuerdo o acuerdos de compromiso de usuarios piloto | No cometer errores en el formato o nombre de archivo en ninguno de los archivos que conforman el entregable que debe incluirse en una carpeta "docs" del repositorio de GitHub: Acuerdo o acuerdos de compromiso de usuarios piloto (pilotUsersCommitmentAgreement.md) | [x] Sí [] No | Pass | Se ha comprobado que no hay errores en el formato o nombre de archivo en el acuerdo o acuerdos de compromiso de usuarios piloto.|
+| T-10.10) Fallo al cometer un error en el formato o nombre de archivo en cualquier otro documento o video considerado | No cometer errores en el formato o nombre de archivo en ninguno de los archivos que conforman el entregable que debe incluirse en una carpeta "docs" del repositorio de GitHub: Cualquier otro documento o video que considere debe estar en formato md, pdf, ppt, pptx o mp4 | [x] Sí [] No | Pass | Se ha comprobado que no hay errores en el formato o nombre de archivo en cualquier otro documento o video considerado. |
+| T-10.11) Fallo al incluir una etiqueta adecuada para la versión entregada del código y la documentación | No incluir una etiqueta adecuada para la versión entregada del código y la documentación (por ejemplo, 0.1 para el entregable #DP, 1.0 para el entregable #S1, …). | [x] Sí [] No | Pass | Se ha incluido una etiqueta adecuada para la versión entregada del código y la documentación. |
+| T-10.12) Fallo al realizar un lanzamiento de GitHub enlazando la etiqueta adecuada | No realizar un lanzamiento de GitHub enlazando la etiqueta adecuada, que debe incluir un archivo zip con todo el contenido del repositorio. | [x] Sí [] No | Pass | Se ha realizado un lanzamiento de GitHub enlazando la etiqueta adecuada, que incluye un archivo zip con todo el contenido del repositorio. |
+| T-11) No seguir las instrucciones de las pautas del revisor de software; o incurrir en cualquiera de las condiciones de fallo presentadas en esas pautas. |  | [x] Sí [ ] No | Pass | No aplica |
+| T-12) No incluir en la carpeta del repositorio de documentos la evaluación del rendimiento de los usuarios piloto | "PilotUsersPerformanceEvaluation.md" siguiendo la plantilla de evaluación del rendimiento de los usuarios piloto proporcionada en EV. | [x] Sí [ ] No | Pass | No aplica |
+T-13) No incluir en la carpeta del repositorio de documentos toda la información recibida de los usuarios piloto | "InformationProvidedByPilotUsers.md" considerando el documento "MinimumInformationFromPilotUsers_GatheredByForm." | [x] Sí [ ] No | Pass | No aplica |
+T-14) No incluir los siguientes problemas en su planificación de trabajo que represente una revisión realizada por cualquier miembro del grupo. | Todos ellos deben ser rastreados con Clockify y el nombre debe ser el siguiente: Revisión del software implementado. | [x] Sí [ ] No | Pass | No aplica |
+T-15) Tener texto en las diapositivas que no sea legible desde el fondo del aula.| | [x] Sí [ ] No | Pass | No aplica |
+T-16) Demostración del Software con Datos no Realistas | | [x] Sí [ ] No | Pass | No aplica |
+
+### Justificación de la Software-Reviewer-Guidelines Guía del Revisor (RG) 
+
+| Criterio | Descripción | Cumplimiento | Pass / Fail | Justificación |
+|----------|-------------|--------------|-------------|---------------|
+| Mapeo de Casos de Uso | Incluir un mapeo explícito desde los casos de uso hasta las interacciones en el software, detallando cómo realizar los casos de uso principales. | [x] Sí [ ] No | Pass | Se ha incluido la funcionalidad implementada durante este sprint que engloba el core además de otras funcionalidades cómo hacer la aplicación "responsive" |
+| Datos Necesarios para la Revisión | Proporcionar datos necesarios para realizar la revisión, como URL de la página de inicio, credenciales de usuarios, URL del repositorio de GitHub, URL y credenciales de la plataforma de implementación, URL y credenciales de la herramienta de seguimiento, y enlaces a demostraciones mostradas en clases de evaluación. | [x] Sí [ ] No | Pass | Se añade todo lo solicitado |
+| Requisitos Potenciales | Indicar requisitos potenciales para utilizar el sistema, como activación de ubicación u otros. | [x] Sí [ ] No | Pass | Todos los requisitos se incluyen en esta guía |
+
+## Resultado final: Pass
+
+## Justificación para obtener una buena calificación
+
+Dado que se trata de la entrega final de este proyecto, se ha decidido incluir en este apartado las razones que nosotros como equipo consideramos que se deben de tener en cuenta para obtener una buena calificación en nuestro proyecto. Las razones que consideramos relevantes son las siguientes:
+
+- Hemos implementado un workflow en GitHub Actions que está integrado con Telegram, con el objetivo de comunicar todas las actualizaciones que se incluyan en el repositorio a través de un canal de dicha aplicación. Consideramos que con la implementación de este workflow se permite una comunicación más eficiente entre los miembros del equipo, ya que todos pueden estar al tanto de los cambios y actualizaciones a través de Telegram.
+
+- Hemos implementado un workflow que genera automáticamente en GitHub Pages la documentación de la API usando Swagger. Consideramos que esto proprociona información relevante al equipo de desarrollo y a los usuarios finales, ya que se puede acceder de forma sencilla a la documentación de nuestra API y así poder usarla fácilmente y reducir el tiempo de comprensión, mejorando así el rendimiento de los desarrolladores y la satisfacción de los usuarios.
+
+- Hemos utilizado una configuración a partir un entorno WSL automático, lo que nos permite configurar rápidamente nuestro entorno de desarrollo y ejecutar procesos de compilación, pruebas y despliegue de manera más eficiente. Consideramos que esto reduce el tiempo dedicado a configurar manualmente el entorno lo que permitirá en un futuro una buena mantenibilidad de la aplicación.
+
+- Nuestros usuarios finales están plenamente satisfechos con las nuevas herramientas y tecnologías que se han incorporado en nuestro proyecto, por tanto hemos obtenido de esta forma la aprobación de los usuarios finales de nuestra aplicación, lo que consideramos un aspecto muy importante a cumplir en nuestro proyecto.
+
+- También destacar que fuimos nosotros los que ofrecimos la propuesta de usar Docusaurus para almacenar la documentación del proyecto, lo que permite satisfacer el principio de la documentación como código. Además, consideramos que de esta forma se encuentra mucho más accesible y organizada, lo que aumenta la facilidad de consulta y lectura de la documentación.
+
