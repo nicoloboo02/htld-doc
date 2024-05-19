@@ -1,0 +1,372 @@
+# Software Reviewer Guidelines - PPL
+
+# Introduccion
+
+En el documento vigente se definirán las guías necesarias para probar cada una de las funcionalidades que las aplicaciones Web de Cirio y Costal y ACAT proporcionas. La guía estará definida para usuarios candidatos de la aplicación, cuyas actividades difieren en la aplicación de aquellas que realizan los usuarios representantes.
+
+# Información Importante
+
+Existen actualmente dos despliegues de nuestro sistema, uno para ONG que se beneficiará del mismo, debido a las diferencias entre sus necesidades. Se puede acceder a estas a través de los siguientes enlaces:
+- [ACAT](https://frontend-acat-wpl.vercel.app/)
+- [CyC](https://frontend-cyc-wpl.vercel.app/)
+
+## Navegadores compatibles
+Actualmente solo navegadores basados en la tecnología Chromium tienen soporte. En un futuro se pretende dar soporte para otros navegadores pero actualmente no se puede asegurar el correcto funcionamiento del sistema en navegadores basados en webkit como Safari, o independientes como Firefox.
+
+## Permisos
+En el sistema desarrollado para la ong ACAT se espera que todos los usuarios sean administradores, por lo que tanto en esta iteración como iteraciones posteriores se espera que cualquier persona con acceso al sistema pueda hacer cualquier operación permitida.
+En el sistema desarrollado para la ong Cirio y Costal sólo los usuarios maestros son administradores y son los únicos con permisos para realizar todas las operaciones disponibles en el sistema. Los demás usuarios sólo tendran acceso a las operaciones permitidas para usuarios que no son administradores.
+
+## Información de Contacto
+Si en algún momento durante las pruebas necesita informar de alguna duda o problema, existen las siguientes vías:
+- Correo Electrónico: harmonyltd@outlook.es
+- Formulario: Podrás dejar cualquier tipo de feedback para reportar errores, recomendar cambios o proponer mejoras en el siguiente formulario: [enlace](https://docs.google.com/forms/d/e/1FAIpQLSda1exsoZI3jOJIednAizC8H4gx9w8Q2LoRb0lMl1Rdzw3wtA/viewform?usp=sf_link)
+
+## ACAT
+A lo largo de la prueba del sistema se podrá navegar a través de la aplicación mediante la barra lateral disponible. Toda la aplicación es responsive por lo que podrá ser usada en móvil u ordenador.
+
+<img src="/img/usermanual/sprint3/acat-sidebar.png" height="50%"/>
+
+### Login
+Para usar la aplicación es necesario iniciar sesión, por tanto esta página será la primera con la que te encuentres en el sistema. No existe desde este punto ningún enlace a un registro ya que en nuestro sistema un usuario solo puede ser creado por otro, y por tanto alguien externo al sistema no podrá acceder de ninguna manera.
+
+<img src="/img/usermanual/sprint3/acat-home.png" height="50%"/>
+
+Si no tiene credenciales de acceso y las necesita para revisar o probar el software, por favor contacte con nosotros.
+
+### Exportar
+
+En los distintos listados veremos estos botones de importar y exportar datos en relación a los listados que se muestran en pantalla. A través de estos podremos descargar o subir* los datos correspondientes al tipo de entidad que se muestra.
+
+<img src="/img/usermanual/sprint2/acat-export.png" height="50%"/>
+
+De igual forma se podrá hacer uso de la función de importar que facilitara la adición de datos en un momento inicial. Para facilitar su uso se adjuntarán en los respectivos listados excel de ejemplos con instrucciones para rellenar los datos.
+
+El sistema sin embargo es sensible a la precisión del formato por lo que no seguirlo correctamente resultará en una importación fallida.
+
+### Listado de Beneficiarios
+
+Los beneficiarios de ACAT son las personas que reciben los servicios de esta ONG. Desde este listado podemos ver sus nombres, número de citas totales, edad y si el servicio que tenían que proporcionarles está finalizado.
+Además, se pueden buscar los beneficiarios mostrados en el listado así como filtrarlos por género.
+
+<img src="/img/usermanual/ppl/acat-beneficiarios.png" height="50%"/>
+
+También podemos ver un listado de los beneficiarios finalizados.
+
+<img src="/img/usermanual/sprint3/acat-finalizados.png" height="50%"/>
+
+Haciendo click en uno de estos beneficiarios nos llevaŕa a los detalles del mismo.
+
+#### Importar y exportar beneficiarios
+
+Se podrá exportar e importar (en formato .xlsx) los datos de los beneficiarios en el formato de aplicación, el cual es el siguiente:
+
+<iframe src="https://docs.google.com/spreadsheets/d/1QYCDnmmpAb-TvDlE3jquVoWzD7HXZdpIb4Oj9bkJ3yg/edit?usp=sharing" width="100%"
+  height="700px">Cargando…</iframe>
+
+El el excel se encuentran notas en cada columna con la información necesaria para rellenar los datos.
+
+### Detalles de Beneficiario
+
+<img src="/img/usermanual/sprint3/acat-beneficiariodetalle.png" height="50%"/>
+
+Desde esta vista podremos editar, finalizar o eliminar un beneficiario con los controles arriba a la derecha.
+
+<img src="/img/usermanual/sprint3/acat-beneficiarioedit.png" height="50%"/>
+<img src="/img/usermanual/sprint2/acat-beneficiariodelete.png" height="50%"/>
+
+### Dar de Alta
+
+De vuelta al listado de beneficiarios, podemos hacer click en el botón de Dar de alta en la esquina superior derecha para acceder al formulario de alta de un beneficiario.
+
+<img src="/img/usermanual/sprint3/acat-beneficiarioform.png" height="50%"/>
+
+A través de este formulario podemos añadir la información de un beneficiario y registrarlo en el sistema.
+
+**Disclaimers:**
+- <span style={{ color: 'red' }}>El número de teléfono puede ser cualquier número entre 1 y 15 caracteres o nulo.</span>
+
+### Listado de Intervenciones
+
+Las intervenciones de ACAT son las los servicios que provee ACAT a sus beneficiarios, y registran el quién, cuándo y qué de una intervención.
+Ademas, se pueden realizar búsquedas de las intervenciones mostradas en el listado por alias, técnico  o tipología. También, se pueden filtrar por fecha.
+
+<img src="/img/usermanual/ppl/acat-intervenciones.png" height="50%"/>
+
+Haciendo click en uno de estos beneficiarios nos llevaŕa a los detalles del mismo.
+
+<img src="/img/usermanual/sprint3/acat-intervenciondetalle.png" height="50%"/>
+
+Haciendo click en una de estas tarjetas nos mostrará un modal con los detalles de esta intervención.
+
+Con los controles de la esquina superior derecha de la carta, podemos editar y eliminar una intervención.
+
+#### Importar y exportar intervenciones
+
+Se podrá exportar e importar (en formato .xlsx) los datos de las intervenciones en el formato de aplicación, el cual es el siguiente:
+
+<iframe src="https://docs.google.com/spreadsheets/d/1VkS6iTzaEKuw_8Xy4a4CwtOVQIYIG8Xl2hqdAQCDy9Y/edit?usp=sharing" width="100%"
+  height="700px">Cargando…</iframe>
+
+El el excel se encuentran notas en cada columna con la información necesaria para rellenar los datos.
+
+### Crear Intervención
+
+A través del botón “Crear Intervención” podemos acceder al siguiente formulario y rellenarlo con los datos del beneficiario, tipo de atención, fecha, técnico, motivo y observaciones.
+
+<img src="/img/usermanual/sprint3/acat-intervencionform.png" height="50%"/>
+
+### Listar Usuarios
+
+La última entidad de este sistema son los usuarios. A través del listado se pueden observar los distintos usuarios con acceso al sistema. Hacer click en cualquiera de ellos nos llevará a sus detalles.
+
+<img src="/img/usermanual/sprint3/acat-users.png" height="50%"/>
+
+### Detalles de Usuario
+
+Desde los detalles de un usuario se podrán editar sus campos, incluido la contraseña.
+
+<img src="/img/usermanual/sprint3/usuariodetalle.png" height="50%"/>
+
+<img src="/img/usermanual/sprint3/usuarioedit.png" height="50%"/>
+
+### Crear Usuario
+
+En nuestro sistema un usuario existente podrá añadir nuevos usuarios al sistema accediendo a un formulario a través de la barra lateral de navegación.
+
+<img src="/img/usermanual/sprint3/usuarioform.png" height="50%"/>
+
+**Disclaimers**
+- <span style={{ color: 'red' }}>Hemos notado que, a veces, la API de verificación de email, falla en el sistema desplegado, dando un error de timeout. Sospechamos que tiene que ver con el plan de precio gratuito de la API y el momento en que se haga. Si continua fallando repetidamente por favor contactenos. Para evitar bloquear la creacion de usuarios, preguntaremos por confirmacion para continuar</span>
+
+### Cambiar/Restaurar Contraseña
+
+Nuestro sistema permite a un usuario cambiar su contraseña a través de lo que se conoce como un código de 2FA. Si uno navega al apartado “Cambiar Contraseña” del menú lateral verá un botón para generar un código QR. Si se ha generado un código con anterioridad, este se sobreescribirá con el nuevo, de modo que sólo exista a la vez un código de doble factor.
+
+<img src="/img/usermanual/sprint2/restaurar.png" height="50%"/>
+
+Una vez generado el QR se puede escanear con una aplicación de 2FA, como Google Authenticator.
+
+Si se nos olvida la contraseña podremos hacer click en el botón “¿Has olvidado tu contraseña?”.
+
+<img src="/img/usermanual/sprint2/acat-login.png" height="50%"/>
+
+<img src="/img/usermanual/sprint2/cambiarcontr.png" height="50%"/>
+
+### Donaciones
+
+Nuestro sistema permite a cualquier persona realizar una donación destinada a colaborar con la ong ACAT. Para realizar una donación, tendremos que pulsar el botón "Donar" que se encuentra en la página de inicio de ACAT.
+
+<img src="/img/usermanual/sprint3/acat-home-donate.png" height="50%"/>
+
+Una vez dentro, nos aparecerá la siguiente vista dónde tendremos que introducir la cantidad que desamos donar así como la información del método de pago para poder realizar la donación. 
+
+<img src="/img/usermanual/sprint3/acat-donate.png" height="50%"/>
+
+## Cirio y Costal
+
+A lo largo de la prueba del sistema se podrá navegar a través de la aplicación mediante la barra lateral disponible. El sistema es responsive por lo que podrá ser utilizado tanto en dispositivos móviles como de escritorio.
+
+<img src="/img/usermanual/sprint3/cyc-sidebarnormal.png" height="50%"/>
+
+Si hemos inciado sesión con un usuario maestro, la barra lateral incluirá más funcionalidades y se mostrará de la siguiente forma.
+
+<img src="/img/usermanual/sprint3/cyc-sidebarmaestro.png" height="50%"/>
+
+### Login
+
+Para usar la aplicación es necesario iniciar sesión, por tanto esta página será la primera con la que te encuentres en el sistema. No existe desde este punto ningún enlace a un registro ya que en nuestro sistema un usuario solo puede ser creado por otro, y por tanto alguien externo al sistema no podrá acceder de ninguna manera.
+
+<img src="/img/usermanual/sprint3/cyc-home.png" height="50%"/>
+
+Si no tiene credenciales de acceso y las necesita para revisar o probar el software, por favor contacte con nosotros.
+
+### Exportar
+
+En los distintos listados veremos estos botones de importar y exportar datos en relación a los listados que se muestran en pantalla. A través de estos podremos descargar o subir* los datos correspondientes al tipo de entidad que se muestra.
+
+<img src="/img/usermanual/sprint2/acat-export.png" height="50%"/>
+
+De igual forma se podrá hacer uso de la función de importar que facilitara la adición de datos en un momento inicial. Para facilitar su uso se adjuntarán en los respectivos listados excel de ejemplos con instrucciones para rellenar los datos.
+
+El sistema sin embargo es sensible a la precisión del formato por lo que no seguirlo correctamente resultará en una importación fallida.
+
+### Listado de Familias
+
+Las familias de Cirio y Costal son las personas que reciben los servicios de esta ONG. Desde este listado podemos ver su primer apellido, el número de entregas pendientes y si han sido contactados para recogerlas.
+Además, se pueden realizar búsquedas entre las familias mostradas en el listado. 
+
+<img src="/img/usermanual/ppl/cyc-familias.png" height="50%"/>
+
+Haciendo click en una de estas familias nos llevaŕa a los detalles de la misma.
+
+Además, pulsando el siguiente botón se muestran las familias que necesitan ser renovadas o están a punto de necesitar ser renovadas.
+
+<img src="/img/usermanual/sprint3/cyc-warning.png" height="50%"/>
+
+#### Importar y exportar familias
+
+Las familias se podrán exportar en dos formatos:
+- Formato Aplicación: Formato que se puede importar en la aplicación.
+- Formato solicitado por el banco de alimentos: Da la información justa y necesaria que solicita el banco de alimentos para proporcionar alimentos a Cirio y Costal.
+
+Además, se podrán importar (en formato .xlsx) familias en formato de aplicación, el cual es el siguiente:
+
+<iframe src="https://docs.google.com/spreadsheets/d/1LE2dH5uRv5zIwL2qN6uK7neeWs7RYv_zluU1Rn9l1O8/edit?usp=sharing" width="100%"
+  height="700px">Cargando…</iframe>
+
+El el excel se encuentran notas en cada columna con la información necesaria para rellenar los datos.
+
+### Detalles de Familia
+
+Desde los detalles de una familia podremos ver los detalles de una familia y sus miembros. De la misma manera podemos editarla, darla de baja y posteriormente eliminarla con los controles superiores, así como eliminar miembros de la familia que no sean cabeza de familia.
+
+También se podrán ver los detalles de una entrega, editar su estado y eliminar ciertos productos si no se entregarán finalmente. También se podrán editar los productos de una entrega.
+
+<img src="/img/usermanual/sprint3/cyc-familiadetalle.png" height="50%"/>
+
+### Dar de Alta
+
+De vuelta al listado de familias, podemos hacer click en el botón de Dar de alta en la esquina superior derecha para acceder al formulario de alta de una familia.
+
+<img src="/img/usermanual/sprint3/cyc-familiaform1.png" height="50%"/>
+
+<img src="/img/usermanual/ppl/cyc-familiaform2.png" height="50%"/>
+
+A través de este formulario podemos añadir la información de una familia, así como información sobre sus miembros y registrarlos en el sistema.
+
+### Listado de Inventario
+
+El inventario de Cirio y Costal corresponde a los alimentos que residen en sus almacenes, tanto alimentos como la cantidad en cada uno de los almacenes. Si un producto está a punto de caducar se verá con un outline rojo.
+Los alimentos del inevntario se pueden buscar por nombre y almacen y se pueden realizar filtrados según las fecha de caducidad del alimento.
+
+<img src="/img/usermanual/ppl/cyc-inventario.png" height="50%"/>
+
+Además, pulsando en el siguiente botón se muestran únicamente los alimentos que están a punto de caducar.
+
+<img src="/img/usermanual/sprint3/cyc-warning.png" height="50%"/>
+
+Haciendo click en una de estas tarjetas nos mostrará un modal con los detalles de este elemento.
+
+<img src="/img/usermanual/sprint3/cyc-inventariodetalle.png" height="50%"/>
+
+#### Importar y exportar inventario
+
+Se podrá exportar e importar (en formato .xlsx) el contenido del inventario en formato de aplicación, el cual es el siguiente:
+
+<iframe src="https://docs.google.com/spreadsheets/d/1AdiBy9TppB_BeJ_wfn2F8gjJS1J49vMI4ikcftqu6Qc/edit?usp=sharing" width="100%"
+  height="700px">Cargando…</iframe>
+
+El el excel se encuentran notas en cada columna con la información necesaria para rellenar los datos.
+
+### Añadir Inventario
+
+Desde este listado podemos agregar nuevos elementos mediante el botón Añadir Elemento.
+
+<img src="/img/usermanual/sprint2/cyc-inventarioform.png" height="50%"/>
+
+A través de este formulario podemos añadir la información de un nuevo elemento en el inventario de la ONG.
+
+### Listar Almacenes
+
+En esta vista podremos ver todas los almacenes registrados en el sistema. La información que se guarda de cada almacén es únicamente su nombre.
+
+<img src="/img/usermanual/ppl/cyc-almacenes.png" height="50%"/>
+
+Desde esta vista podremos eliminar o crear almacenes mediante los botones correspondientes **(Se solicita que no se borren almacenes ya existentes con alimentos en ellos. Borrarlos significa que los alimentos asociados se borren también del sistema).**
+
+También podremos editar un almacén y modificar su nombre.
+
+### Crear Almacén
+
+A través del botón “Añadir Almacén” podemos acceder al siguiente formulario.
+
+<img src="/img/usermanual/sprint2/cyc-almacenform.png" height="50%"/>
+
+### Listado de Entregas
+
+En esta vista podremos ver todas las entregas registradas en el sistema, incluyendo la familia, el estado, la fecha de entrega, así como los alimentos que la componen.
+En las entregas mostradas en el listado se pueden realizar búsquedas por familia y los alimentos que contenga cada entrega.
+
+<img src="/img/usermanual/ppl/cyc-entregas.png" height="50%"/>
+
+#### Importar y exportar entregas
+
+Se podrá exportar e importar (en formato .xlsx) los datos de las entregas en el formato de aplicación. Destacar que los alimentos indicados han de estar en el inventario de la ONG.
+
+El formato del execl es el siguiente:
+
+<iframe src="https://docs.google.com/spreadsheets/d/1cIKJ2nM6IOYRmEIpY1VA9MCWxEbzLncGjWnB02wVs98/edit?usp=sharing" width="100%"
+  height="700px">Cargando…</iframe>
+
+El el excel se encuentran notas en cada columna con la información necesaria para rellenar los datos.
+
+### Crear Entrega
+
+A través del botón “Añadir Entrega” podemos acceder al siguiente formulario donde podremos crear una entrega con los alimentos necesarios, la cantidad de meses para los que esa entrega es válida, y el estado actual de la entrega y los alimentos.
+- La fecha ha de ser posterior a la actual para que se cree y se enseñe correctamente.
+- El valor del campo “Cantidad de meses” ha de ser 1 o superior.
+
+<img src="/img/usermanual/sprint3/cyc-entregaform.png" height="50%"/>
+
+
+### Listar Usuarios
+
+La última entidad de este sistema son los usuarios. A través del listado se pueden observar los distintos usuarios con acceso al sistema. Hacer click en cualquiera de ellos nos llevará a sus detalles.
+
+<img src="/img/usermanual/sprint2/cyc-users.png" height="50%"/>
+
+### Detalles de Usuario
+
+Desde los detalles de un usuario se podrán editar sus campos incluido la contraseña, pero sólo si se ha inciado sesión como usuario maestro.
+
+<img src="/img/usermanual/sprint3/usuariodetalle.png" height="50%"/>
+
+<img src="/img/usermanual/sprint3/usuarioedit.png" height="50%"/>
+
+### Crear Usuario
+
+En nuestro sistema sólo el usuario maestro existente podrá añadir nuevos usuarios al sistema accediendo a un formulario a través de la barra lateral de navegación.
+
+<img src="/img/usermanual/sprint3/usuarioform.png" height="50%"/>
+
+Este usuario podrá marcar al usuario como usuario maestro usando el checkbox disponible en el formulario.
+
+**Disclaimers**
+- <span style={{ color: 'red' }}>Hemos notado que, a veces, la API de verificación de email, falla en el sistema desplegado, dando un error de timeout. Sospechamos que tiene que ver con el plan de precio gratuito de la API y el momento en que se haga. Si continua falla repetidamente durante el tiempo por favor contactenos. Para evitar bloquear la creacion de usuarios, preguntaremos por confirmacion para continuar</span>
+
+### Cambiar/Restaurar Contraseña
+
+Nuestro sistema permite a un usuario cambiar su contraseña a través de lo que se conoce como un código de 2FA. Si uno navega al apartado “Cambiar Contraseña” del menú lateral verá un botón para generar un código QR. Si se ha generado un código con anterioridad, este se sobreescribirá con el nuevo, de modo que sólo exista a la vez un código de doble factor.
+
+<img src="/img/usermanual/sprint2/restaurar.png" height="50%"/>
+
+Una vez generado el QR se puede escanear con una aplicación de 2FA, como Google Authenticator.
+
+Si se nos olvida la contraseña podremos hacer click en el botón “¿Has olvidado tu contraseña?”.
+
+<img src="/img/usermanual/sprint2/acat-login.png" height="50%"/>
+
+<img src="/img/usermanual/sprint2/cambiarcontr.png" height="50%"/>
+
+### Estadísticas
+
+Nuestro sistema permite mostrar al usuario un sistema de estadísticas relacionados con diferentes aspectos de la aplicación, como por ejemplo aspectos relacionados con las personas y las familias. Para ello, se pueden establecer filtros como los que podemos ver en la siguiente imagen que muestra el número de familias dadas de alta en las que hay hombres en un rango de edad determinado.
+
+IMPORTANTE: Para acceder al sistema de estaísticas hay que ser usuario maestro.
+
+<img src="/img/usermanual/sprint3/cyc-estadisticasnormal.png" height="50%"/>
+
+Además, seleccionando el checkbox "Alto Contraste" podemos cambiar el color para dar más contraste a las estadísitcas.
+
+<img src="/img/usermanual/sprint3/cyc-estadisticascontraste.png" height="50%"/>
+
+### Donaciones
+
+Nuestro sistema permite a cualquier persona realizar una donación destinada a colaborar con la ong Cirio y Costal. Para realizar una donación, tendremos que pulsar el botón "Donar" que se encuentra en la página de inicio de Cirio y Costal.
+
+<img src="/img/usermanual/sprint3/cyc-home-donate.png" height="50%"/>
+
+Una vez dentro, nos aparecerá la siguiente vista dónde tendremos que introducir la cantidad que desamos donar así como la información del método de pago para poder realizar la donación. 
+
+<img src="/img/usermanual/sprint3/cyc-donate.png" height="50%"/>
