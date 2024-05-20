@@ -9,7 +9,7 @@ A continuación, se recopilan los enlaces a los diferentes documentos que son re
 | Nombre del documento | Enlace                                |
 |----------------------|---------------------------------------|
 | portada.md           | [<u>Ir</u>](/docs/Recursos/6.5.%20Plantilla%20de%20la%20Portada) |
-| presentacion.md      | [<u>Ir</u>](/docs/06.%20Recursos/6.1.%20Presentaciones/6.1.8.%2007-05-2024.md) |
+| presentacion.md      | [<u>Ir</u>](/docs/06.%20Recursos/6.1.%20Presentaciones/6.1.9.%2021-05-2024.mdx) |
 | report.md            | [<u>Ir</u>](/docs/category/anexo-i-aportaci%C3%B3n-a-la-bgcc) |
 | pilots.md            | [<u>Ir</u>](/docs/Planificación/3.4.%20Pilots) |
 | PerformanceEvaluation.md | [<u>Ir</u>](/docs/Rendimiento/5.3.%20PerformanceEvaluation) |
