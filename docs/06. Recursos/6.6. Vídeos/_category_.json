@@ -1,0 +1,8 @@
+{
+    "label": "Vídeos",
+    "position": 20,
+    "link": {
+      "type": "generated-index",
+      "description": "Vídeos de Harmony"
+    }
+  }
